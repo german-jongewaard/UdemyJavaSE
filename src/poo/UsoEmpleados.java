@@ -30,8 +30,7 @@ public class UsoEmpleados {
      Juan.setIncentivo(200);
      
      
-     
-     Empleados[] losEmpleados = new Empleados[5];
+     Empleados[] losEmpleados = new Empleados[6];
      
     
      losEmpleados[0] = new Empleados("Antonio", 2300.5, 2005, 7, 5);
@@ -39,6 +38,14 @@ public class UsoEmpleados {
      losEmpleados[2] = new Empleados("Maria", 2500.5, 2006, 11, 7);
      losEmpleados[3] = new Empleados("Ana", 7000, 2009, 5, 3);
      losEmpleados[4] = Juan;//Principio de SUSTITUCIÓN upcasting/casting implicito
+     losEmpleados[5] = new Jefes("Isabel", 8000, 2007, 4, 2);
+     
+     Jefes Isabel = (Jefes)losEmpleados[5];  // aqui hago el casting para poder 
+                                        //luego incrementar el salario de Isabel
+     Isabel.setIncentivo(500);
+     
+     
+     
      
      Jefes Patricia = new Jefes("Patricia", 2500, 2007, 5, 6);
      
