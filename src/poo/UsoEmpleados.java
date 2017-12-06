@@ -12,7 +12,18 @@ public class UsoEmpleados {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here 
+        // TODO code application logic here
+        
+     /*   Empleados Antonio = new Empleados("Antonio", 2300.5, 2005, 7, 15);
+        
+        Jefes Ana = new Jefes("Ana", 5000, 2009, 5, 12);
+        
+        System.out.println("El empleado es " + Antonio.getDatosEmpleado());
+        
+        Ana.setIncentivo(300);
+        
+        System.out.println(Ana.getSueldo());
+       */
      
      Jefes Juan = new Jefes("Juan", 8000, 2013, 8, 5);
      
