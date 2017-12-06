@@ -142,13 +142,3 @@ class Jefes extends Empleados{
     private  double incentivo;
 
 }
-
-class Directores extends Jefes { 
-
-    public Directores( String nom, double sue, int agno, int mes, int dia) {
-        super(nom, sue, agno, mes, dia);
-        
-    }
-
-     
-}
