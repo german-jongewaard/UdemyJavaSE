@@ -33,12 +33,22 @@ public class UsoEmpleados {
      
      Empleados[] losEmpleados = new Empleados[5];
      
+    
      losEmpleados[0] = new Empleados("Antonio", 2300.5, 2005, 7, 5);
      losEmpleados[1] = new Empleados("Carlos", 5000.5, 2007, 6, 5);
      losEmpleados[2] = new Empleados("Maria", 2500.5, 2006, 11, 7);
      losEmpleados[3] = new Empleados("Ana", 7000, 2009, 5, 3);
-     losEmpleados[4] = Juan;//Principio de SUSTITUCIÓN
+     losEmpleados[4] = Juan;//Principio de SUSTITUCIÓN upcasting/casting implicito
      
+     Jefes Patricia = new Jefes("Patricia", 2500, 2007, 5, 6);
+     
+     Empleados PatriciaSecretaria = Patricia; //upcasting/casting implicito
+     
+     /* Esta es la forma de hacer un downCasting/casting explicito
+     convertir a Jefe y luego castear abajo a PatriciaD */
+     Empleados PatriciaD = new Jefes("Patricia", 2500, 2007, 5, 6); 
+     
+     Jefes PatriciaDirectora = (Jefes)PatriciaD;
      
      for(Empleados obj: losEmpleados){
          
