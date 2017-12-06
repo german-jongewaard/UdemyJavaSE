@@ -12,18 +12,7 @@ public class UsoEmpleados {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-     /*   Empleados Antonio = new Empleados("Antonio", 2300.5, 2005, 7, 15);
-        
-        Jefes Ana = new Jefes("Ana", 5000, 2009, 5, 12);
-        
-        System.out.println("El empleado es " + Antonio.getDatosEmpleado());
-        
-        Ana.setIncentivo(300);
-        
-        System.out.println(Ana.getSueldo());
-       */
+        // TODO code application logic here 
      
      Jefes Juan = new Jefes("Juan", 8000, 2013, 8, 5);
      
@@ -46,6 +35,7 @@ public class UsoEmpleados {
      
      /* Esta es la forma de hacer un downCasting/casting explicito
      convertir a Jefe y luego castear abajo a PatriciaD */
+     
      Empleados PatriciaD = new Jefes("Patricia", 2500, 2007, 5, 6); 
      
      Jefes PatriciaDirectora = (Jefes)PatriciaD;
