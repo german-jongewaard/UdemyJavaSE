@@ -37,7 +37,8 @@ class Empleados extends Personas{
 
     @Override
     public String getDescripcion() {
-        return null;
+        return "El empleado " + this.getNombre() + " tiene un sueldo " + 
+                "de " + sueldo + " € " + " y entró a trabajar en " + fechaAlta;
         //To change body of generated methods, choose Tools | Templates.
     }
     
