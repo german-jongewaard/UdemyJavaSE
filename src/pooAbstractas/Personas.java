@@ -3,7 +3,7 @@ package pooAbstractas;
  *
  * @author german
  */
-public abstract class Personas {
+public abstract class Personas { 
     
     public Personas(String nom){
      
@@ -20,7 +20,14 @@ public abstract class Personas {
     public abstract String getDescripcion();
         
           
-        private String nombre;
-        
-     
+        private String nombre; 
+}
+
+abstract class Empleados extends Personas{
+    
+    public Empleados(String nom) {
+        super(nom);
+    }
+    
+    
 }
