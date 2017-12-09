@@ -26,6 +26,8 @@ public abstract class Personas {
         private String nombre; 
 }
 
+//*********** CLASE EMPLEADOS ***********/
+
 class Empleados extends Personas{
     
     public Empleados(String nom, Date fechaAlta, double sueldo) {
@@ -44,8 +46,45 @@ class Empleados extends Personas{
     
     private double sueldo;
     
-    private Date fechaAlta;
+    private Date fechaAlta; 
     
+}
+
+//*********** CLASE JEFES ***********/
+class Jefes extends Empleados{
+    
+    public Jefes(String nom, Date fechaAlta, double sueldo) {
+        super(nom, fechaAlta, sueldo);
+    }
+        
+    public void setIncentivos(double incentivo){
+        
+        this.incentivos = incentivo;       
+    }    
+    
+    private double incentivos;
+    
+}
+
+//*********** CLASE ALUMNOS ***********/
+class Alumnos extends Personas{
+
+    public Alumnos(String nom, String optativa, String aula  ) {
+        super(nom);
+   //campo de clase - parametro
+        a_optativas = optativa;
+        this.aula = aula;
+        
+        
+    }
+
+    @Override
+    public String getDescripcion() {
+        return null;
+    }
+    
+    private String a_optativas;
+    private String aula;
     
     
 }
