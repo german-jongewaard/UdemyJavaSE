@@ -80,7 +80,8 @@ class Alumnos extends Personas{
 
     @Override
     public String getDescripcion() {
-        return null;
+        return "El alumno " + this.getNombre() + " esta en el aula " + 
+                aula + " y" + " ha escogido la asignatura  " + a_optativas;
     }
     
     private String a_optativas;
