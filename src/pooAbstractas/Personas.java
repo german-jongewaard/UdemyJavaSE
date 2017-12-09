@@ -1,5 +1,4 @@
 package pooAbstractas;
-
 /**
  *
  * @author german
