@@ -51,8 +51,7 @@ public class UsoPersonas {
        
        for(Empleados e: losEmpleados) {
            
-           System.out.println(e.getDescripcion());
-           
+           System.out.println(e.getDescripcion()); 
             
        }
        
