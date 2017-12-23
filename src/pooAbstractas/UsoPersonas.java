@@ -27,6 +27,13 @@ public class UsoPersonas {
         
         System.out.println(Maria.getNombre());
         System.out.println(Maria.getDescripcion());
+        
+        Jefes David = new Jefes("David", new Date (654654), 4800);
+        
+        David.setCargo("Director de RRHH");
+        
+        System.out.println(David.getNombre());
+        System.out.println(David.getDescripcion());
     }
     
 }
