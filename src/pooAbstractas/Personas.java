@@ -67,14 +67,15 @@ class Jefes extends Empleados implements ParaJefes {
 
     @Override
     public void setCargo(String cargo) {
-        
+        this.cargo = cargo;
     }
 
     @Override
     public String getCargo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "\nAdemás tiene el cargo de " + cargo;
     }
     
+    private String cargo;
 }
 
 //*********** CLASE ALUMNOS ***********/
