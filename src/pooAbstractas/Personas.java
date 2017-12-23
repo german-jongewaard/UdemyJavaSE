@@ -52,10 +52,13 @@ class Empleados extends Personas implements Comparable{
     public int compareTo(Object o) {
         //estoy transformando al Object o en un Objecto de tipo Empleados (casteando)
         Empleados otroEmpleado = (Empleados)o;
-    }
- 
-    
+        
+         if(this.sueldo<otroEmpleado.sueldo){
+             return -1;
+         }else return 1;
+    }    
 }
+
 
 //*********** CLASE JEFES ***********/
 
