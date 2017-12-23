@@ -1,5 +1,6 @@
 package pooAbstractas;
 
+import java.util.Arrays;
 import java.util.Date;
 
 /**
@@ -38,13 +39,15 @@ public class UsoPersonas {
         System.out.println(David.getDescripcion() +  David.getCargo()); 
         */
        
-       Empleados losEmpleados[] = new Empleados[5];
+       Empleados losEmpleados[] = new Empleados[5]; 
        
        losEmpleados[0] = new Empleados("Juan", new Date(345345), 2500);
        losEmpleados[1] = new Empleados("María", new Date(345345), 1500);
        losEmpleados[2] = new Empleados("Ana", new Date(345345), 3500);
        losEmpleados[3] = new Empleados("Sandra", new Date(345345), 6000);
        losEmpleados[4] = new Empleados("Antonio", new Date(345345), 2100);
+       
+       Arrays.sort(losEmpleados);
        
        for(Empleados e: losEmpleados) {
            
