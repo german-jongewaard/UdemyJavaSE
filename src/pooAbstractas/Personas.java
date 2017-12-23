@@ -53,9 +53,11 @@ class Empleados extends Personas implements Comparable{
         //estoy transformando al Object o en un Objecto de tipo Empleados (casteando)
         Empleados otroEmpleado = (Empleados)o;
         
-         if(this.sueldo<otroEmpleado.sueldo){
-             return -1;
-         }else return 1;
+         if(this.sueldo<otroEmpleado.sueldo) return -1;
+         
+         if(this.sueldo>otroEmpleado.sueldo) return -1;
+         
+         return 0;
     }    
 }
 
