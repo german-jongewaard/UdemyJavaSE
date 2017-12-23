@@ -55,7 +55,7 @@ class Empleados extends Personas implements Comparable{
         
          if(this.sueldo<otroEmpleado.sueldo) return -1;
          
-         if(this.sueldo>otroEmpleado.sueldo) return -1;
+         if(this.sueldo>otroEmpleado.sueldo) return 1;
          
          return 0;
     }    
