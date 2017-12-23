@@ -33,7 +33,7 @@ public class UsoPersonas {
         David.setCargo("Director de RRHH");
         
         System.out.println(David.getNombre());
-        System.out.println(David.getDescripcion());
+        System.out.println(David.getDescripcion() +  David.getCargo());
     }
     
 }
