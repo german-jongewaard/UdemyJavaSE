@@ -51,7 +51,8 @@ class Empleados extends Personas{
 }
 
 //*********** CLASE JEFES ***********/
-class Jefes extends Empleados{
+
+class Jefes extends Empleados implements ParaJefes {
     
     public Jefes(String nom, Date fechaAlta, double sueldo) {
         super(nom, fechaAlta, sueldo);
@@ -63,6 +64,16 @@ class Jefes extends Empleados{
     }    
     
     private double incentivos;
+
+    @Override
+    public void setCargo(String cargo) {
+        
+    }
+
+    @Override
+    public String getCargo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
 
