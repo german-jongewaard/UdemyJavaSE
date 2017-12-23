@@ -28,7 +28,7 @@ public abstract class Personas {
 
 //*********** CLASE EMPLEADOS ***********/
 
-class Empleados extends Personas{
+class Empleados extends Personas implements Comparable{
     
     public Empleados(String nom, Date fechaAlta, double sueldo) {
         super(nom);
@@ -47,6 +47,13 @@ class Empleados extends Personas{
     private double sueldo;
     
     private Date fechaAlta; 
+
+    @Override
+    public int compareTo(Object o) {
+        //estoy transformando al Object o en un Objecto de tipo Empleados (casteando)
+        Empleados otroEmpleado = (Empleados)o;
+    }
+ 
     
 }
 
