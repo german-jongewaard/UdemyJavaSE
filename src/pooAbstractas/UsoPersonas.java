@@ -55,6 +55,14 @@ public class UsoPersonas {
             
        }
        
+       
+       Jefes manuel = new Jefes("Manuel", new Date(54654), 5000);
+       
+       Empleados sonia = new Empleados("Sonia", new Date(56567), 3000);
+       
+        System.out.println("El trabajador " +  manuel.getNombre() + " tiene un bonus de " +
+                manuel.setBonus(500));
+       
     }
     
 }
