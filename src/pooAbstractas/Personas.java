@@ -28,7 +28,7 @@ public abstract class Personas {
 
 //*********** CLASE EMPLEADOS ***********/
 
-class Empleados extends Personas implements Comparable{
+class Empleados extends Personas implements Comparable, ParaTrabajadores{
     
     public Empleados(String nom, Date fechaAlta, double sueldo) {
         super(nom);
@@ -59,6 +59,12 @@ class Empleados extends Personas implements Comparable{
          
          return 0;
     }    
+
+    @Override
+    public double setBonus(double gratificacion) {
+        return gratificacion + ParaTrabajadores.bonus;
+    }
+    
 }
 
 
