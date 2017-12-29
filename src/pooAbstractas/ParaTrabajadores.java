@@ -6,4 +6,6 @@ package pooAbstractas;
  */
 public interface ParaTrabajadores {
     
+    double setBonus(double gratificacion);
+    
 }
