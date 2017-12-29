@@ -64,7 +64,6 @@ class Empleados extends Personas implements Comparable, ParaTrabajadores{
     public double setBonus(double gratificacion) {
         return gratificacion + ParaTrabajadores.bonus;
     }
-    
 }
 
 
