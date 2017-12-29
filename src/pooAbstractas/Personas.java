@@ -88,6 +88,14 @@ class Jefes extends Empleados implements ParaJefes {
     }
     
     private String cargo;
+
+    @Override
+    public double setBonus(double gratificacion) {
+        
+        double prima = 2000;
+        
+        return prima + gratificacion + ParaTrabajadores.bonus;
+    }
 }
 
 //*********** CLASE ALUMNOS ***********/
