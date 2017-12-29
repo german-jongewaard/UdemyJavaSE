@@ -60,8 +60,8 @@ public class UsoPersonas {
        
        Empleados sonia = new Empleados("Sonia", new Date(56567), 3000);
        
-        System.out.println("El trabajador " +  manuel.getNombre() + " tiene un bonus de " +
-                manuel.setBonus(500));
+        System.out.println("El trabajador " +  sonia.getNombre() + " tiene un bonus de " +
+                sonia.setBonus(500));
        
     }
     
