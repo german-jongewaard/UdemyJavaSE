@@ -19,12 +19,13 @@ public class PruebaTemporizador {
         //Temporizador oyente = new Temporizador();      
         
                         //ActionListener es una clase interna ANONIMA
-        Timer miTemporizador = new Timer(5000, new ActionListener() {
+        Timer miTemporizador = new Timer(3000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 
                 Date horaActual = new Date();
-                System.out.println("Hola alumnos" + horaActual);
+                
+                System.out.println("Hola alumnos \n" + horaActual);
                 
             }
         });
