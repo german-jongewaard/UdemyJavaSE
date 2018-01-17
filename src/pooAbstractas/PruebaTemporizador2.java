@@ -1,6 +1,8 @@
 package pooAbstractas;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
@@ -45,4 +47,21 @@ class Reloj{
     
     private int intervalo;
     private boolean sonido;
+    
+    
+    //construyo la clase interna, solo se puede aplicar el 
+    //modificador private cuando es una clase INTERNA    
+    private class DameLaHora implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            Date ahora = new Date();
+            
+            System.out.println("Te pongo la hora cada 3 segundos " + ahora);
+            
+        }
+    
+    }
+ 
 }
