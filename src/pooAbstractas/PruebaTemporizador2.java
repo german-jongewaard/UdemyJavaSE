@@ -1,5 +1,8 @@
 package pooAbstractas;
 
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
+
 /**
  *
  * @author german
@@ -27,7 +30,12 @@ class Reloj{
     
     public void ejecutarTemporizador(){
         
+        ActionListener oyente = new DameLaHora();
         
+        Timer miTemporizador = new Timer(intervalo, oyente);
+        
+        
+             
         
     }
     
