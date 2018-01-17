@@ -23,13 +23,9 @@ public class PruebaTemporizador {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Date horaActual = new Date();
+                System.out.println("Hola alumnos" + horaActual);
             }
-        }(
-        
-        
-        
-        
-        ));
+        });
         
         miTemporizador.start();
         
