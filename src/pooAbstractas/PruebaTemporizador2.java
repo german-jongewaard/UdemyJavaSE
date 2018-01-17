@@ -1,6 +1,7 @@
 package pooAbstractas;
 
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 /**
@@ -10,10 +11,14 @@ import javax.swing.Timer;
  */
 
 public class PruebaTemporizador2 {
-
     
     public static void main(String[] args) {
-       
+
+        Reloj miReloj = new Reloj(3000, true);
+        
+        miReloj.ejecutarTemporizador();
+        
+        JOptionPane.showMessageDialog(null, "Pulsa aceptar para terminar");
         
     }
     
@@ -34,8 +39,7 @@ class Reloj{
         
         Timer miTemporizador = new Timer(intervalo, oyente);
         
-        
-             
+        miTemporizador.start(); 
         
     }
     
