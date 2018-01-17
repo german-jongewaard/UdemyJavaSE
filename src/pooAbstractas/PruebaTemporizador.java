@@ -22,7 +22,7 @@ public class PruebaTemporizador {
         Timer miTemporizador = new Timer(5000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+                Date horaActual = new Date();
             }
         }(
         
