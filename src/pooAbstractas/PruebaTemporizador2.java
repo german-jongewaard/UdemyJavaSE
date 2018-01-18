@@ -31,11 +31,13 @@ public class PruebaTemporizador2 {
 //clase reloj
 class Reloj{
     //constructor de la clase reloj
-    public Reloj(int intervalo, boolean sonido){
-        
-        this.intervalo = intervalo;
-        this.sonido = sonido; 
-    }
+//    public Reloj(int intervalo, boolean sonido){
+//        
+//        this.intervalo = intervalo;
+//        this.sonido = sonido; 
+//    }
+//   Al tener la clase interna en el constructor ejecutaTemporizador. 
+//   Puedo presindir de la clase Reloj
     
     public void ejecutarTemporizador(int intervalo, boolean sonido){
         
