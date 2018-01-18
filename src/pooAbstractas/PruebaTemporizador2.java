@@ -61,7 +61,6 @@ class Reloj{
         
         Timer miTemporizador = new Timer(intervalo, oyente);
         
-        miTemporizador.start(); 
-        
+        miTemporizador.start();         
     }  
 }
