@@ -39,21 +39,8 @@ class Reloj{
     
     public void ejecutarTemporizador(){
         
-        ActionListener oyente = new DameLaHora();
-        
-        Timer miTemporizador = new Timer(intervalo, oyente);
-        
-        miTemporizador.start(); 
-        
-    }
-    
-    private int intervalo;
-    private boolean sonido;
-    
-    
-    //construyo la clase interna, solo se puede aplicar el 
-    //modificador private cuando es una clase INTERNA    
-    private class DameLaHora implements ActionListener{
+     //construyo la clase interna      
+     class DameLaHora implements ActionListener{
         
          
         Toolkit beep;
@@ -72,4 +59,15 @@ class Reloj{
         } 
     
     }
+        
+        ActionListener oyente = new DameLaHora();
+        
+        Timer miTemporizador = new Timer(intervalo, oyente);
+        
+        miTemporizador.start(); 
+        
+    }
+    
+    private int intervalo;
+    private boolean sonido; 
 }
