@@ -37,7 +37,7 @@ class Reloj{
         this.sonido = sonido; 
     }
     
-    public void ejecutarTemporizador(){
+    public void ejecutarTemporizador(int intervalo, boolean sonido){
         
      /* Construyo la clase interna *******************/
      class DameLaHora implements ActionListener{        
@@ -63,8 +63,5 @@ class Reloj{
         
         miTemporizador.start(); 
         
-    }
-    
-    private int intervalo;
-    private boolean sonido; 
+    }  
 }
