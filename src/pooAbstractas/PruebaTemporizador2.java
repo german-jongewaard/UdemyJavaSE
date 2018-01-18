@@ -1,10 +1,12 @@
 package pooAbstractas;
 
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
+import javax.swing.text.DefaultEditorKit;
 
 /**
  *
@@ -52,7 +54,12 @@ class Reloj{
     //construyo la clase interna, solo se puede aplicar el 
     //modificador private cuando es una clase INTERNA    
     private class DameLaHora implements ActionListener{
-
+        
+         
+        Toolkit beep;
+        
+        
+        
         @Override
         public void actionPerformed(ActionEvent e) {
             
@@ -60,8 +67,9 @@ class Reloj{
             
             System.out.println("Te pongo la hora cada 3 segundos " + ahora);
             
-        }
+            //si sonido es True hace beep!
+            if(sonido)Toolkit.getDefaultToolkit().beep();
+        } 
     
     }
- 
 }
