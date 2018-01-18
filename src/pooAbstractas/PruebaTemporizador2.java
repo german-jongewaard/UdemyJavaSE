@@ -39,13 +39,10 @@ class Reloj{
     
     public void ejecutarTemporizador(){
         
-     //construyo la clase interna      
-     class DameLaHora implements ActionListener{
-        
+     /* Construyo la clase interna *******************/
+     class DameLaHora implements ActionListener{        
          
         Toolkit beep;
-        
-        
         
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -56,9 +53,9 @@ class Reloj{
             
             //si sonido es True hace beep!
             if(sonido)Toolkit.getDefaultToolkit().beep();
-        } 
-    
+        }     
     }
+     /* Fin la clase interna *******************/
         
         ActionListener oyente = new DameLaHora();
         
