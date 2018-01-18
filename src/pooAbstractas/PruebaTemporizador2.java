@@ -22,10 +22,8 @@ public class PruebaTemporizador2 {
         
         miReloj.ejecutarTemporizador();
         
-        JOptionPane.showMessageDialog(null, "Pulsa aceptar para terminar");
-        
-    }
-    
+        JOptionPane.showMessageDialog(null, "Pulsa aceptar para terminar");        
+    }    
 }
 
 //clase reloj
