@@ -38,6 +38,7 @@ class MiJFrame extends JFrame{
         
         setTitle("Guitar chords");
         
+        setSize(820,300); 
          
         
     } 
