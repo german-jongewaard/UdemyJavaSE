@@ -39,7 +39,12 @@ class MiJFrame extends JFrame{
         setTitle("Guitar chords");
         
         setSize(820,300); 
-         
+        
+        setLocationRelativeTo(null);  
+        
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        setVisible(true);
         
     } 
 }
