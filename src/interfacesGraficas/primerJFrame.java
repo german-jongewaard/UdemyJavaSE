@@ -26,6 +26,9 @@ public class primerJFrame {
         
         ventana.setVisible(true);
      */
+      
+      MiJFrame miNuevaVentana = new MiJFrame();
+      
         
     }
  
@@ -36,7 +39,7 @@ class MiJFrame extends JFrame{
     
     public MiJFrame(){
         
-        setTitle("Guitar chords");
+        setTitle("Mi Ventana Nueva");
         
         setSize(820,300); 
         
