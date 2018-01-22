@@ -31,3 +31,14 @@ public class primerJFrame {
  
     
 }
+
+class MiJFrame extends JFrame{
+    
+    public MiJFrame(){
+        
+        
+        
+        
+        
+    } 
+}
