@@ -36,9 +36,9 @@ class MiJFrame extends JFrame{
     
     public MiJFrame(){
         
+        setTitle("Guitar chords");
         
-        
-        
+         
         
     } 
 }
