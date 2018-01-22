@@ -39,8 +39,8 @@ class Reloj{
     
     public void ejecutarTemporizador(int intervalo, boolean sonido){
         
-     /* Construyo la clase interna *******************/
-     class DameLaHora implements ActionListener{        
+     /* Construyo la clase interna ****************** 
+      class DameLaHora implements ActionListener{        
          
         Toolkit beep;
         
@@ -55,11 +55,21 @@ class Reloj{
             if(sonido)Toolkit.getDefaultToolkit().beep();
         }     
     }
-     /* Fin la clase interna *******************/
+      Fin la clase interna ****************** 
         
-        ActionListener oyente = new DameLaHora();
+        ActionListener oyente = new DameLaHora(); */
         
-        Timer miTemporizador = new Timer(intervalo, oyente);
+        Timer miTemporizador = new Timer(intervalo, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+               Date ahora = new Date();
+            
+            System.out.println("Te pongo la hora cada 3 segundos " + ahora);
+            
+            //si sonido es True hace beep!
+            if(sonido)Toolkit.getDefaultToolkit().beep();
+            }
+        });
         
         miTemporizador.start();         
     }  
