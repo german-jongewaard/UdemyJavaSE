@@ -13,7 +13,7 @@ public class primerJFrame {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        
+      /*  
         JFrame ventana = new JFrame();
         
         ventana.setTitle("Guitar chords");
@@ -25,7 +25,7 @@ public class primerJFrame {
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         ventana.setVisible(true);
-     
+     */
         
     }
  
