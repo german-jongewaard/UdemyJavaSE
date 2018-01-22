@@ -11,8 +11,7 @@ import javax.swing.JFrame;
 public class primerJFrame {
      
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+        // TODO code application logic here 
       /*  
         JFrame ventana = new JFrame();
         
@@ -29,10 +28,8 @@ public class primerJFrame {
       
       MiJFrame miNuevaVentana = new MiJFrame();
       
-        
-    }
- 
-    
+        miNuevaVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+    } 
 }
 
 class MiJFrame extends JFrame{
@@ -43,9 +40,7 @@ class MiJFrame extends JFrame{
         
         setSize(820,300); 
         
-        setLocationRelativeTo(null);  
-        
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);   
         
         setVisible(true);
         
