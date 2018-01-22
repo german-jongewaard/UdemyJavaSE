@@ -20,11 +20,11 @@ public class primerJFrame {
         
         ventana.setSize(820,300);   
 
-        ventana.setLocationRelativeTo(null);  
+        ventana.setLocationRelativeTo(null);          
+                 
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         ventana.setVisible(true);
-        
-        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      
         
     }
