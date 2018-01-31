@@ -34,8 +34,7 @@ class MiJFrame extends JFrame{
         
         //setLocationRelativeTo(this);        
         //setSize(820,300);         
-        //setLocationRelativeTo(null);   
-        
+        //setLocationRelativeTo(null); 
         //setResizable(false);
         
         setBounds(500, 200, 450, 450);
