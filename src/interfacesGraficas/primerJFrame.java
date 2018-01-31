@@ -14,8 +14,7 @@ public class primerJFrame {
         // TODO code application logic here 
       /*  
         JFrame ventana = new JFrame();        
-        ventana.setTitle("Guitar chords");
-        
+        ventana.setTitle("Guitar chords");        
         ventana.setSize(820,300);   
 
         ventana.setLocationRelativeTo(null);          
