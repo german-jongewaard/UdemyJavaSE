@@ -21,8 +21,7 @@ public class primerJFrame {
         ventana.setVisible(true);
      */
       
-      MiJFrame miNuevaVentana = new MiJFrame();
-      
+        MiJFrame miNuevaVentana = new MiJFrame();      
         miNuevaVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     } 
 }
