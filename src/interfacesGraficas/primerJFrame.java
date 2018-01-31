@@ -1,6 +1,6 @@
 package interfacesGraficas;
-
  
+import java.awt.Frame;
 import javax.swing.JFrame;
 
 /**
@@ -38,9 +38,21 @@ class MiJFrame extends JFrame{
         
         setTitle("Mi Ventana Nueva");
         
-        setSize(820,300); 
+        //setLocationRelativeTo(this);
         
-        setLocationRelativeTo(null);   
+        //setSize(820,300); 
+        
+        //setLocationRelativeTo(null);   
+        
+        //setResizable(false);
+        
+        setBounds(500, 200, 450, 450);
+        
+        setTitle("Ventana de pruebas");
+        
+        
+        
+        //setExtendedState(Frame.MAXIMIZED_BOTH);
         
         setVisible(true);
         
