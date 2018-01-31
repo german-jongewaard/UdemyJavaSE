@@ -33,8 +33,7 @@ class MiJFrame extends JFrame{
         setTitle("Mi Ventana Nueva");
         
         //setLocationRelativeTo(this);        
-        //setSize(820,300); 
-        
+        //setSize(820,300);         
         //setLocationRelativeTo(null);   
         
         //setResizable(false);
