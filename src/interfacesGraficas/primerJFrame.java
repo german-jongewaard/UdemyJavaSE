@@ -37,15 +37,11 @@ class MiJFrame extends JFrame{
         //setLocationRelativeTo(null); 
         //setResizable(false);
         
-        setBounds(500, 200, 450, 450);
-        
+        setBounds(500, 200, 450, 450);        
         setTitle("Ventana de pruebas");
-        
-        
         
         //setExtendedState(Frame.MAXIMIZED_BOTH);
         
-        setVisible(true);
-        
+        setVisible(true);        
     } 
 }
