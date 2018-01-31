@@ -17,8 +17,7 @@ public class primerJFrame {
         ventana.setTitle("Guitar chords");        
         ventana.setSize(820,300);   
         ventana.setLocationRelativeTo(null);    
-        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         ventana.setVisible(true);
      */
       
