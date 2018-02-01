@@ -1,7 +1,6 @@
 package interfacesGraficas;
  
-import java.awt.Frame;
-import java.awt.Toolkit;
+import java.awt.*;
 import javax.swing.JFrame;
 
 /**
@@ -43,6 +42,10 @@ class MiJFrame extends JFrame{
         //setExtendedState(Frame.MAXIMIZED_BOTH);
         
         Toolkit miSistema = Toolkit.getDefaultToolkit();
+        
+        Image miIcono = miSistema.getImage("interfacesGraficas/imagenes/ic_viking.png");
+        
+        
         
         setVisible(true);        
     } 
