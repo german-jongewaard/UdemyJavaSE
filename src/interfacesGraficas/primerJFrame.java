@@ -1,6 +1,7 @@
 package interfacesGraficas;
  
 import java.awt.Frame;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 
 /**
@@ -38,9 +39,10 @@ class MiJFrame extends JFrame{
         //setResizable(false);
         
         setBounds(500, 200, 450, 450);        
-        setTitle("Ventana de pruebas");
-        
+        setTitle("Ventana de pruebas");        
         //setExtendedState(Frame.MAXIMIZED_BOTH);
+        
+        Toolkit miSistema = Toolkit.getDefaultToolkit();
         
         setVisible(true);        
     } 
