@@ -43,9 +43,9 @@ class MiJFrame extends JFrame{
         
         Toolkit miSistema = Toolkit.getDefaultToolkit();
         
-        Image miIcono = miSistema.getImage("interfacesGraficas/imagenes/ic_viking.png");
+        Image miIcono = miSistema.getImage("src/interfacesGraficas/imagenes/ic_viking.png");
         
-        
+        setIconImage(miIcono);
         
         setVisible(true);        
     } 
