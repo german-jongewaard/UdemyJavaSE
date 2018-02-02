@@ -33,3 +33,10 @@ class MarcoTexto extends JFrame{
     }
     
 }
+
+class PrimerPanel extends JPanel{
+    
+    
+    
+    
+}
