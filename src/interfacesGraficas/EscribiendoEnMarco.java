@@ -1,6 +1,6 @@
 package interfacesGraficas;
 
-import java.awt.Graphics;
+import java.awt.*;
 import javax.swing.*;
 
 /**
@@ -45,6 +45,8 @@ class PrimerPanel extends JPanel{
     public void paintComponent(Graphics g){
         
         super.paintComponent(g);
+        
+        Color micolor = new Color(255,128,155);
         
         g.drawString("Primer panel", 20, 20);
         
