@@ -27,19 +27,39 @@ class MarcoTexto extends JFrame{
     public MarcoTexto(){
         
         
-        PrimerPanel milamina = new PrimerPanel();
+       // PrimerPanel milamina = new PrimerPanel();
         
-        add(milamina);
+       //add(milamina);
         
         setBounds(400,200,600,450);
         
         setTitle("Escritura en JFrame");
         
         setVisible(true);
+        
+        add(new JPanel (){
+            
+           public void paintComponent(Graphics g){
+        
+                super.paintComponent(g);
+
+                Color micolor = new Color(255,128,155);
+
+                g.setColor(micolor);
+
+                Font miletra = new Font("Courier", 3, 30);
+
+                g.setFont(miletra);
+
+                g.drawString("Primer panel", 200, 200); 
+            
+           }
+            
+        });
     }
     
 }
-
+/*
 class PrimerPanel extends JPanel{
     
     public void paintComponent(Graphics g){
@@ -50,7 +70,11 @@ class PrimerPanel extends JPanel{
         
         g.setColor(micolor);
         
-        g.drawString("Primer panel", 20, 20);
+        Font miletra = new Font("Courier", 3, 30);
+        
+        g.setFont(miletra);
+        
+        g.drawString("Primer panel", 200, 200);
         
          
         
@@ -60,3 +84,5 @@ class PrimerPanel extends JPanel{
     
     
 }
+
+*/
