@@ -1,5 +1,6 @@
 package interfacesGraficas;
 
+import java.awt.Graphics;
 import javax.swing.*;
 
 /**
@@ -25,6 +26,11 @@ class MarcoTexto extends JFrame{
     
     public MarcoTexto(){
         
+        
+        PrimerPanel milamina = new PrimerPanel();
+        
+        add(milamina);
+        
         setBounds(400,200,600,450);
         
         setTitle("Escritura en JFrame");
@@ -36,6 +42,16 @@ class MarcoTexto extends JFrame{
 
 class PrimerPanel extends JPanel{
     
+    public void paintComponent(Graphics g){
+        
+        super.paintComponent(g);
+        
+        g.drawString("Primer panel", 20, 20);
+        
+         
+        
+    }
+
     
     
     
