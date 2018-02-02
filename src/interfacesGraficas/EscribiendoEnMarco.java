@@ -48,6 +48,8 @@ class PrimerPanel extends JPanel{
         
         Color micolor = new Color(255,128,155);
         
+        g.setColor(micolor);
+        
         g.drawString("Primer panel", 20, 20);
         
          
