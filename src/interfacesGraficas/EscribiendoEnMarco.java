@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package interfacesGraficas;
 
 import javax.swing.*;
@@ -10,12 +5,11 @@ import javax.swing.*;
 /**
  *
  * @author german
+ * 
  */
-public class EscribiendoEnMarco {
 
-    /**
-     * @param args the command line arguments
-     */
+public class EscribiendoEnMarco {
+    
     public static void main(String[] args) {
         // TODO code application logic here
     }
