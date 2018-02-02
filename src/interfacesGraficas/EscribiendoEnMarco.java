@@ -1,6 +1,8 @@
 package interfacesGraficas;
 
 import java.awt.*;
+ 
+import static javafx.scene.paint.Color.color;
 import javax.swing.*;
 
 /**
@@ -48,6 +50,8 @@ class MarcoTexto extends JFrame{
 class PrimerPanel extends JPanel{
     
     public PrimerPanel(){
+        
+        setBackground(new Color(195));
         
         
     }
