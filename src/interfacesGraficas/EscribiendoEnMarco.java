@@ -37,13 +37,13 @@ class MarcoTexto extends JFrame{
         
         setTitle("Escritura en JFrame");                
         
-     /* PrimerPanel miLamina = new PrimerPanel();
-        add(miLamina); */
+       PrimerPanel miLamina = new PrimerPanel();
+        add(miLamina); 
         
         setVisible(true);
     
         //Clase interna anónima.
-        add(new JPanel(){
+   /*     add(new JPanel(){
         
         public void paintComponent(Graphics g){
         
@@ -54,18 +54,14 @@ class MarcoTexto extends JFrame{
             g.setFont(new Font("Courier", 3, 30));
 
             g.drawString("Primer panel", 200, 200);
-    }
-            
-            
-        });
-        
-      
+           } 
+        }); */
     }
     
 }
 
 
-/*
+ 
 class PrimerPanel extends JPanel{
     
     public PrimerPanel(){
@@ -88,5 +84,5 @@ class PrimerPanel extends JPanel{
         
         g.drawString("Primer panel", 200, 200);
     }
-} */
+}  
 
