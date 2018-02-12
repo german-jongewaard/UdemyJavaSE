@@ -35,8 +35,7 @@ class MarcoTexto extends JFrame{
         
         setBounds(400,200,600,450);
         
-        setTitle("Escritura en JFrame");
-                
+        setTitle("Escritura en JFrame");                
         
         PrimerPanel miLamina = new PrimerPanel();
         add(miLamina);
