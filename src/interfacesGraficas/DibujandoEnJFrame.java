@@ -57,8 +57,7 @@ class LaminaDibujo extends JPanel{
          
          g2.setStroke(milapiz);
             
-         g2.draw(rectangulo);
-          
+         g2.draw(rectangulo); 
             
             
      } 
