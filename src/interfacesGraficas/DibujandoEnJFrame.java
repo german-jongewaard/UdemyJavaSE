@@ -16,8 +16,7 @@ public class DibujandoEnJFrame {
         // TODO code application logic here
         MarcoDibujo mimarco = new MarcoDibujo();
         
-        mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
     }    
 }
 
