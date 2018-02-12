@@ -1,6 +1,7 @@
 package interfacesGraficas;
 
 import java.awt.*;
+import java.awt.geom.*;
 import javax.swing.*;
 
 /**
@@ -42,11 +43,20 @@ class LaminaDibujo extends JPanel{
         
             super.paintComponent(g);
             
-            g.draw3DRect(20, 20, 125, 75, true);
-            
-            g.drawLine(20, 20, 145, 95);
-            
+         /* g.draw3DRect(20, 20, 125, 75, true);            
+            g.drawLine(20, 20, 145, 95);            
             g.fillRect(20, 200, 125, 75);
+          */
+         Graphics2D g2 = (Graphics2D) g;
+         
+         Rectangle2D rectangulo = new Rectangle2D.Double(100, 100, 200, 150);
+         
+         BasicStroke milapiz = new BasicStroke(4);
+         
+         g2.setStroke(milapiz);
+            
+         g2.draw(rectangulo);
+          
             
             
      } 
