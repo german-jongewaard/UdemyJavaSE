@@ -51,7 +51,9 @@ class LaminaDibujo extends JPanel{
          
          Rectangle2D rectangulo = new Rectangle2D.Double(100, 100, 200, 150);
          
-         BasicStroke milapiz = new BasicStroke(4);
+         float midash[] = {10.4f};
+         
+         BasicStroke milapiz = new BasicStroke(4, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 10, midash, 0);
          
          g2.setStroke(milapiz);
             
