@@ -44,6 +44,10 @@ class LaminaDibujo extends JPanel{
             
             g.draw3DRect(20, 20, 125, 75, true);
             
+            g.drawLine(20, 20, 145, 95);
+            
+            g.fillRect(20, 200, 125, 75);
+            
             
      } 
 }
