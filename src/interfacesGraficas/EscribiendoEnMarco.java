@@ -49,13 +49,9 @@ class MarcoTexto extends JFrame{
         
             super.paintComponent(g);
 
-            Color micolor = new Color(255,128,155);
+            g.setColor(new Color(255,128,155));
 
-            g.setColor(micolor);
-
-            Font miletra = new Font("Courier", 3, 30);
-
-            g.setFont(miletra);
+            g.setFont(new Font("Courier", 3, 30));
 
             g.drawString("Primer panel", 200, 200);
     }
