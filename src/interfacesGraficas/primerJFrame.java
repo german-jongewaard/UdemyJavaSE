@@ -8,6 +8,7 @@ import javax.swing.JFrame;
  * @author german
  * 
  */
+
 public class primerJFrame {
      
     public static void main(String[] args) {
