@@ -52,6 +52,5 @@ class MiJFrame extends JFrame{
         
         
         
-        
     } 
 }
