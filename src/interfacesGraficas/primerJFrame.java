@@ -48,8 +48,7 @@ class MiJFrame extends JFrame{
         
         setIconImage(miIcono);
         
-        setVisible(true);        
-        
+        setVisible(true);   
         
         
         
