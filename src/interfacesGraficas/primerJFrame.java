@@ -47,6 +47,7 @@ class MiJFrame extends JFrame{
         Image miIcono = miSistema.getImage("src/interfacesGraficas/imagenes/ic_viking.png");
         
         setIconImage(miIcono);        
+        
         setVisible(true);   
     } 
 }
