@@ -50,6 +50,5 @@ class MiJFrame extends JFrame{
         
         setVisible(true);   
         
-        
     } 
 }
