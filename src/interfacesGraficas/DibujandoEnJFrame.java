@@ -61,7 +61,8 @@ class LaminaDibujo extends JPanel{
          g2.setStroke(milapiz);
             
          g2.draw(rectangulo);          
-         Color miColor = new Color(125,188,230);         
+         Color miColor = new Color(125,188,230); 
+         
          g2.setPaint(miColor);         
          
          g2.fill(rectangulo);
