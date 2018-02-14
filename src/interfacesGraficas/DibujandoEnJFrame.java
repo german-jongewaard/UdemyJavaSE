@@ -54,6 +54,8 @@ class LaminaDibujo extends JPanel{
          
          BasicStroke milapiz = new BasicStroke(4, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 10, midash, 0);
          
+         g2.setPaint(Color.BLUE);
+         
          g2.setStroke(milapiz);
             
          g2.draw(rectangulo); 
