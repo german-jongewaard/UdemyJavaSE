@@ -30,7 +30,7 @@ class MarcoDibujo extends JFrame{
         
         LaminaDibujo milamina = new LaminaDibujo();
         
-        milamina.setBackground(Color.red);
+        milamina.setBackground(Color.lightGray);
         
         add(milamina);
         
