@@ -22,5 +22,9 @@ public class TipoLetra {
 
 class MarcoFuente extends JFrame{
     
-    
+    public MarcoFuente(){
+        
+        
+        
+    } 
 }
