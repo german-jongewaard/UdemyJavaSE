@@ -1,6 +1,9 @@
 package interfacesGraficas;
 
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -32,4 +35,16 @@ class MarcoFuente extends JFrame{
         
         setVisible(true); 
     } 
+}
+
+class LaminaFuente extends JPanel{
+    
+    public void paintComponent(Graphics g){
+        
+        super.paintComponent(g);
+        
+        Graphics2D g2 = (Graphics2D) g;
+     
+        
+    }
 }
