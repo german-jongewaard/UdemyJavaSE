@@ -1,5 +1,6 @@
 package interfacesGraficas;
 
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JFrame;
@@ -44,6 +45,12 @@ class LaminaFuente extends JPanel{
         super.paintComponent(g);
         
         Graphics2D g2 = (Graphics2D) g;
+        
+        Font miLetra = new Font("Courier New", Font.BOLD, 26);
+        
+        g2.setFont(miLetra);
+        
+        g2.drawString("Hola alumnos de Java", 100, 100);
      
         
     }
