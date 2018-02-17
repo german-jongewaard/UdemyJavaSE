@@ -24,7 +24,12 @@ class MarcoFuente extends JFrame{
     
     public MarcoFuente(){
         
+        setBounds(300, 300, 800, 450);
         
+        LaminaFuente milamina = new LaminaFuente();
         
+        add(milamina);
+        
+        setVisible(true); 
     } 
 }
