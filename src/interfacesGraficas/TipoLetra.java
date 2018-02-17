@@ -24,7 +24,6 @@ public class TipoLetra {
         
         mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    
 }
 
 class MarcoFuente extends JFrame{
