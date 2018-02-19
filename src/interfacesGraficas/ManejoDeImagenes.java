@@ -1,7 +1,12 @@
 package interfacesGraficas;
 
 import java.awt.Graphics;
+import java.awt.Image;
 import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 /**
@@ -42,6 +47,17 @@ class LaminaImagenes extends JPanel{
         super.paintComponent(g);
         
         File miImagen = new File("src/interfacesGraficas/imagenes/casa.png");
+        
+        try {
+            imagen = ImageIO.read(miImagen);
+        } catch (IOException e) {
+            //Logger.getLogger(LaminaImagenes.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Lo siento la imagen no se ha encontrado.");
+        }
+        
+        g.drawImage(imagen, 50, 50, this);
 
     }
+    
+    private Image imagen;
 }
