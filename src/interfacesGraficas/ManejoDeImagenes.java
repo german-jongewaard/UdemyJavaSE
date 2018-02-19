@@ -65,7 +65,7 @@ class LaminaImagenes extends JPanel{
         for(int i=0; i<600; i++){
             for(int j=0; j<450; j++){
                 
-                g.copyArea(0, 0,  anchuraImagen,  alturaImagen, i, j);
+                g.copyArea(0, 0,  anchuraImagen,  alturaImagen, anchuraImagen * i, alturaImagen * j);
                 
             } 
         }
