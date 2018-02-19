@@ -1,14 +1,15 @@
 package interfacesGraficas;
 
 import java.awt.Graphics;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.io.File;
+import javax.swing.*;
 
 /**
  *
  * @author german
  * 
  */
+
 public class ManejoDeImagenes {
     
     public static void main(String[] args) {
@@ -20,26 +21,27 @@ public class ManejoDeImagenes {
     }
 }
 
-class MarcoImagenes extends JFrame{
-    
+class MarcoImagenes extends JFrame{    
     
     public MarcoImagenes (){
         
-     setBounds(300, 300, 800, 450);
+     setBounds(400, 200, 600, 450);
         
         LaminaImagenes milamina = new LaminaImagenes();
         
         add(milamina);
         
-        setVisible(true);    
-        
+        setVisible(true);            
     }
 }
 
 class LaminaImagenes extends JPanel{
 
     public void paintComponent(Graphics g){
- 
+            
+        super.paintComponent(g);
+        
+        File miImagen = new File("src/interfacesGraficas/imagenes/casa.png");
 
     }
 }
