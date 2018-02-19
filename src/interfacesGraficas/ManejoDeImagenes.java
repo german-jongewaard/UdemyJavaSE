@@ -46,7 +46,8 @@ class LaminaImagenes extends JPanel{
             
         super.paintComponent(g);
         
-        File miImagen = new File("src/interfacesGraficas/imagenes/casa.png");
+        //File miImagen = new File("src/interfacesGraficas/imagenes/casa.png");
+         File miImagen = new File("src/interfacesGraficas/imagenes/sol.gif");
         
         try {
             imagen = ImageIO.read(miImagen);
@@ -54,10 +55,14 @@ class LaminaImagenes extends JPanel{
             //Logger.getLogger(LaminaImagenes.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("Lo siento la imagen no se ha encontrado.");
         }
+     
+        int anchuraImagen = imagen.getWidth(this);
+        
+        int alturaImagen = imagen.getHeight(this);
         
         g.drawImage(imagen, 50, 50, this);
         
-        g.copyArea(280, 180,  50,  50, 200, 5);
+        g.copyArea(280, 180,  50,  80, 100, 10);
 
     }
     
