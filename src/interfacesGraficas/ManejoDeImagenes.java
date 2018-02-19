@@ -25,7 +25,6 @@ public class ManejoDeImagenes {
         mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
-
 class MarcoImagenes extends JFrame{    
     
     public MarcoImagenes (){
@@ -39,7 +38,6 @@ class MarcoImagenes extends JFrame{
         setVisible(true);            
     }
 }
-
 class LaminaImagenes extends JPanel{
 
     public void paintComponent(Graphics g){
@@ -71,8 +69,6 @@ class LaminaImagenes extends JPanel{
         }
         
         //g.copyArea(280, 180,  50,  80, 100, 10);
-
-    }
-    
+    }    
     private Image imagen;
 }
