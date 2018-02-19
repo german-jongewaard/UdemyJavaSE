@@ -56,6 +56,8 @@ class LaminaImagenes extends JPanel{
         }
         
         g.drawImage(imagen, 50, 50, this);
+        
+        g.copyArea(280, 180,  50,  50, 200, 5);
 
     }
     
