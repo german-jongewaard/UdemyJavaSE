@@ -30,6 +30,8 @@ class MarcoBotonColores extends JFrame {
     public MarcoBotonColores(){
         
         setTitle("Botones y eventos");
+        
+        setBounds(700, 300, 500, 300);
     }
     
 }
