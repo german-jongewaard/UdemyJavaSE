@@ -1,5 +1,7 @@
 package eventos;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -42,9 +44,19 @@ class MarcoBotonColores extends JFrame {
     
 }
 
-class LaminaBotonesColores extends JPanel {
+class LaminaBotonesColores extends JPanel implements ActionListener{
     
-    JButton azul = new JButton("Azul");
+    JButton botonAzul = new JButton("Azul");
     
-    
+    public LaminaBotonesColores(){
+        
+        add(botonAzul);
+        
+        botonAzul.addActionListener(this);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+      
+    }
 }
