@@ -1,5 +1,6 @@
 package eventos;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -57,6 +58,9 @@ class LaminaBotonesColores extends JPanel implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
+      // TODO code application logic here
       
+        setBackground(Color.BLUE);
+        
     }
 }
