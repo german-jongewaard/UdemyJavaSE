@@ -1,5 +1,6 @@
 package eventos;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -42,6 +43,8 @@ class MarcoBotonColores extends JFrame {
 }
 
 class LaminaBotonesColores extends JPanel {
+    
+    JButton azul = new JButton("Azul");
     
     
 }
