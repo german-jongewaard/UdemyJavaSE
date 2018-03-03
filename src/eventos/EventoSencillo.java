@@ -1,6 +1,7 @@
 package eventos;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -32,6 +33,15 @@ class MarcoBotonColores extends JFrame {
         setTitle("Botones y eventos");
         
         setBounds(700, 300, 500, 300);
+        
+        LaminaBotonesColores milamina = new LaminaBotonesColores();
+        
+        add(milamina);
     }
+    
+}
+
+class LaminaBotonesColores extends JPanel {
+    
     
 }
