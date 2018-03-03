@@ -1,5 +1,7 @@
 package eventos;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author german
@@ -13,6 +15,21 @@ public class EventoSencillo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        MarcoBotonColores mimarco =  new MarcoBotonColores();
+        
+        mimarco.setVisible(true);
+        
+        mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+}
+
+class MarcoBotonColores extends JFrame {
+    
+    public MarcoBotonColores(){
+        
+        setTitle("Botones y eventos");
     }
     
 }
