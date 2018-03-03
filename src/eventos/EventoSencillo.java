@@ -26,8 +26,7 @@ public class EventoSencillo {
         mimarco.setVisible(true);
         
         mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-    
+    }    
 }
 
 class MarcoBotonColores extends JFrame {
