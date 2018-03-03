@@ -14,7 +14,6 @@ import javax.swing.JPanel;
  */
 
 public class EventoSencillo {
-
     
     public static void main(String[] args) {
         // TODO code application logic here
@@ -38,8 +37,7 @@ class MarcoBotonColores extends JFrame {
         LaminaBotonesColores milamina = new LaminaBotonesColores();
         
         add(milamina);
-    }
-    
+    }    
 }
 
 class LaminaBotonesColores extends JPanel implements ActionListener{
