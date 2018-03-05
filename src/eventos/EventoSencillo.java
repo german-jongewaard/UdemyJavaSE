@@ -46,6 +46,7 @@ class LaminaBotonesColores extends JPanel implements ActionListener{
     JButton botonRojo = new JButton("Rojo");
     JButton botonVerde = new JButton("Verde");
     JButton botonAmarillo = new JButton("Amarillo");
+    JButton botonMagenta = new JButton("Magenta");
     
     public LaminaBotonesColores(){
         
@@ -53,6 +54,7 @@ class LaminaBotonesColores extends JPanel implements ActionListener{
         add(botonRojo);
         add(botonVerde);
         add(botonAmarillo);
+        add(botonMagenta);
         
         botonAzul.addActionListener(this);
         botonRojo.addActionListener(this);
@@ -70,5 +72,6 @@ class LaminaBotonesColores extends JPanel implements ActionListener{
       if(botonPulsado == botonRojo) setBackground(Color.RED);
       if(botonPulsado == botonVerde) setBackground(Color.GREEN);        
       if(botonPulsado == botonAmarillo) setBackground(Color.YELLOW);   
+      if(botonPulsado == botonAmarillo) setBackground(Color.MAGENTA);  
     }
 }
