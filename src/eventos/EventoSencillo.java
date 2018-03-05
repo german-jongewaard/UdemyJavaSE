@@ -57,6 +57,7 @@ class LaminaBotonesColores extends JPanel implements ActionListener{
         botonAzul.addActionListener(this);
         botonRojo.addActionListener(this);
         botonVerde.addActionListener(this);
+        botonAmarillo.addActionListener(this);
     }
 
     @Override
