@@ -16,8 +16,7 @@ import javax.swing.JPanel;
 public class EventoSencillo {
     
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+        // TODO code application logic here        
         MarcoBotonColores mimarco =  new MarcoBotonColores();
         
         mimarco.setVisible(true);
