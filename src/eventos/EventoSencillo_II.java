@@ -54,11 +54,17 @@ class LaminaBotonesColoresII extends JPanel {
         add(botonAmarillo);
         add(botonMagenta);
         
-        botonAzul.addActionListener(this);
-        botonRojo.addActionListener(this);
-        botonVerde.addActionListener(this);
-        botonAmarillo.addActionListener(this);
-        botonMagenta.addActionListener(this);
+        ColorDeFondo Azul = new ColorDeFondo(Color.BLUE);
+        ColorDeFondo Rojo = new ColorDeFondo(Color.RED);
+        ColorDeFondo Verde = new ColorDeFondo(Color.GREEN);
+        ColorDeFondo Amarillo = new ColorDeFondo(Color.YELLOW);
+        ColorDeFondo Magenta = new ColorDeFondo(Color.MAGENTA);
+        
+        botonAzul.addActionListener(Azul);
+        botonRojo.addActionListener(Rojo);
+        botonVerde.addActionListener(Verde);
+        botonAmarillo.addActionListener(Amarillo);
+        botonMagenta.addActionListener(Magenta);
     } 
     
     //clase Interna, encapsulada con private
