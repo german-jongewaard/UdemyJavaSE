@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.text.StyleConstants;
 
 /**
  *
@@ -53,32 +54,31 @@ class LaminaBotonesColoresII extends JPanel {
         add(botonAmarillo);
         add(botonMagenta);
         
-        botonAzul.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setBackground(Color.BLUE);
-            }
-        });
+        botonAzul.addActionListener(this);
         botonRojo.addActionListener(this);
         botonVerde.addActionListener(this);
         botonAmarillo.addActionListener(this);
         botonMagenta.addActionListener(this);
     } 
-}
+    
+    //clase Interna, encapsulada con private
+    private class ColorDeFondo implements ActionListener{
 
-class ColorDeFondo implements ActionListener{
+        public ColorDeFondo(Color c){
 
-    public ColorDeFondo(Color c){
-        
-        
+            colorDeFondo = c; 
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            setBackground(colorDeFondo);
+        }
+
+        private Color colorDeFondo;
+
+
     }
     
-    @Override
-    public void actionPerformed(ActionEvent e) {
-       
-    }
-    
-    private Color colorDeFondo;
-    
-    
 }
+
+ 
