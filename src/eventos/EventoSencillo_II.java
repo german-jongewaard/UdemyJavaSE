@@ -53,23 +53,17 @@ class LaminaBotonesColoresII extends JPanel {
         add(botonAmarillo);
         add(botonMagenta);
         
-        botonAzul.addActionListener(this);
+        botonAzul.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+            }
+        });
         botonRojo.addActionListener(this);
         botonVerde.addActionListener(this);
         botonAmarillo.addActionListener(this);
         botonMagenta.addActionListener(this);
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-      // TODO code application logic here
-      
-      Object botonPulsado = e.getSource();
-      
-      if(botonPulsado == botonAzul) setBackground(Color.BLUE);
-      if(botonPulsado == botonRojo) setBackground(Color.RED);
-      if(botonPulsado == botonVerde) setBackground(Color.GREEN);        
-      if(botonPulsado == botonAmarillo) setBackground(Color.YELLOW);   
-      if(botonPulsado == botonMagenta) setBackground(Color.MAGENTA);  
-    }
+    
 }
