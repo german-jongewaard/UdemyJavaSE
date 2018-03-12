@@ -11,6 +11,7 @@ import javax.swing.text.StyleConstants;
 /**
  *
  * @author german
+ * 
  */
 
 public class EventoSencillo_II {
