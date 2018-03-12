@@ -83,6 +83,7 @@ class LaminaBotonesColoresII extends JPanel {
         }
 
         private Color colorDeFondo;
+        
     }
 }
 
