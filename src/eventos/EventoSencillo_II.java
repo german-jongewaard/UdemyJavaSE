@@ -37,7 +37,7 @@ class MarcoBotonColoresII extends JFrame {
     }    
 }
 
-class LaminaBotonesColoresII extends JPanel implements ActionListener{
+class LaminaBotonesColoresII extends JPanel {
     
     JButton botonAzul = new JButton("Azul");
     JButton botonRojo = new JButton("Rojo");
