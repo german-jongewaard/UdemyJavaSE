@@ -12,6 +12,7 @@ import javax.swing.text.StyleConstants;
  *
  * @author german
  */
+
 public class EventoSencillo_II {
     
     public static void main(String[] args) {
@@ -82,7 +83,6 @@ class LaminaBotonesColoresII extends JPanel {
 
         private Color colorDeFondo;
     }
-    
 }
 
  
