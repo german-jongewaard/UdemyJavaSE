@@ -56,14 +56,29 @@ class LaminaBotonesColoresII extends JPanel {
         botonAzul.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+                setBackground(Color.BLUE);
             }
         });
         botonRojo.addActionListener(this);
         botonVerde.addActionListener(this);
         botonAmarillo.addActionListener(this);
         botonMagenta.addActionListener(this);
-    }
+    } 
+}
 
+class ColorDeFondo implements ActionListener{
+
+    public ColorDeFondo(Color c){
+        
+        
+    }
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+       
+    }
+    
+    private Color colorDeFondo;
+    
     
 }
