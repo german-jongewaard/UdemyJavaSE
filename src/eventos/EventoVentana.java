@@ -1,5 +1,7 @@
 package eventos;
 
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import javax.swing.JFrame;
 
 /**
@@ -27,6 +29,44 @@ class MarcoEventoVentana extends JFrame{
         setBounds(300,300,600,350);
         
         setVisible(true);
+        
+    }    
+}
+
+class EventosDeVentana implements WindowListener{
+
+    @Override
+    public void windowOpened(WindowEvent e) {
+        
+    }
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        
+    }
+
+    @Override
+    public void windowClosed(WindowEvent e) {
+        
+    }
+
+    @Override
+    public void windowIconified(WindowEvent e) {
+        System.out.println("Ventana minimizada");
+    }
+
+    @Override
+    public void windowDeiconified(WindowEvent e) {
+        
+    }
+
+    @Override
+    public void windowActivated(WindowEvent e) {
+        
+    }
+
+    @Override
+    public void windowDeactivated(WindowEvent e) {
         
     }
     
