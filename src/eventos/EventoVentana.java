@@ -39,7 +39,7 @@ class EventosDeVentana implements WindowListener{
 
     @Override
     public void windowOpened(WindowEvent e) {
-        
+         System.out.println("Ventana abierta");
     }
 
     @Override
@@ -59,7 +59,7 @@ class EventosDeVentana implements WindowListener{
 
     @Override
     public void windowDeiconified(WindowEvent e) {
-        
+         System.out.println("Ventana restaurada tras minimizar");
     }
 
     @Override
@@ -69,7 +69,7 @@ class EventosDeVentana implements WindowListener{
 
     @Override
     public void windowDeactivated(WindowEvent e) {
-        
-    }
+         System.out.println("Ventana activa");
+    }  
     
 }
