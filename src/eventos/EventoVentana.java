@@ -17,6 +17,8 @@ public class EventoVentana {
         MarcoEventoVentana mimarco = new MarcoEventoVentana();
         
         mimarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
+        mimarco.addWindowListener(new EventosDeVentana());
     }
     
 }
