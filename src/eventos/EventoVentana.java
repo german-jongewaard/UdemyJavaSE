@@ -22,6 +22,12 @@ public class EventoVentana {
 class MarcoEventoVentana extends JFrame{
     
     
-    
+    public MarcoEventoVentana(){
+        
+        setBounds(300,300,600,350);
+        
+        setVisible(true);
+        
+    }
     
 }
