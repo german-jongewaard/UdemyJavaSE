@@ -1,5 +1,7 @@
 package eventos;
 
+import com.sun.xml.internal.bind.v2.model.core.Adapter;
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import javax.swing.JFrame;
@@ -35,41 +37,13 @@ class MarcoEventoVentana extends JFrame{
     }    
 }
 
-class EventosDeVentana implements WindowListener{
+    class EventosDeVentana extends WindowAdapter{
 
-    @Override
-    public void windowOpened(WindowEvent e) {
-         
-    }
+    
+        public void windowClosed(WindowEvent e) {
+            System.out.println("Gracias por trabajar en la App. Hasta pronto");
+        }
 
-    @Override
-    public void windowClosing(WindowEvent e) {
-       
-    }
-
-    @Override
-    public void windowClosed(WindowEvent e) {
-        System.out.println("Ventana cerrada");
-    }
-
-    @Override
-    public void windowIconified(WindowEvent e) {
-      
-    }
-
-    @Override
-    public void windowDeiconified(WindowEvent e) {
-         
-    }
-
-    @Override
-    public void windowActivated(WindowEvent e) {
-       
-    }
-
-    @Override
-    public void windowDeactivated(WindowEvent e) {
-         
-    }  
+     
     
 }
