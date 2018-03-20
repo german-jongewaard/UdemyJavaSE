@@ -43,6 +43,10 @@ class MarcoEventoVentana extends JFrame{
         public void windowClosed(WindowEvent e) {
             System.out.println("Gracias por trabajar en la App. Hasta pronto");
         }
+        
+        public void windowOpened(WindowEvent e) {
+            System.out.println("Bienvenido a la App");
+        }
 
      
     
