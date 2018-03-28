@@ -41,6 +41,13 @@ class NuevoMarcoEventoVentana extends JFrame{
     @Override
     public void windowStateChanged(WindowEvent e) {
        System.out.println("La ventana ha cambiado de estado");
+       
+       System.out.println(e.getNewState());
+       
+       
     } 
+    
+    
+    
     
 }
