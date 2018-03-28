@@ -1,5 +1,6 @@
 package eventos;
 
+import java.awt.Frame;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowStateListener;
@@ -42,7 +43,13 @@ class NuevoMarcoEventoVentana extends JFrame{
     public void windowStateChanged(WindowEvent e) {
        System.out.println("La ventana ha cambiado de estado");
        
-       System.out.println(e.getNewState());
+       //System.out.println(e.getNewState());
+       
+       if(e.getNewState() == Frame.MAXIMIZED_BOTH) 
+           System.out.println("Has maximizado la ventana");
+       else if(e.getNewState() == Frame.ICONIFIED) 
+           System.out.println("Has minimizado la ventana");
+       else System.out.println("Has hecho un cambio sin especificar");  
        
        
     } 
