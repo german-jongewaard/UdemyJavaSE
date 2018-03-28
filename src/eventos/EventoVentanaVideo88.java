@@ -19,7 +19,7 @@ public class EventoVentanaVideo88 {
         
         mimarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
-        mimarco.addWindowListener(new EventosDeVentana());
+        mimarco.addWindowStateListener(new NuevoEventosDeVentana());
     }
     
 }
@@ -40,9 +40,7 @@ class NuevoMarcoEventoVentana extends JFrame{
 
     @Override
     public void windowStateChanged(WindowEvent e) {
-       
-    }
-
-     
+       System.out.println("La ventana ha cambiado de estado");
+    } 
     
 }
