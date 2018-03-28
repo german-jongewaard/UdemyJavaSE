@@ -51,6 +51,8 @@ class NuevoMarcoEventoVentana extends JFrame{
            System.out.println("Has minimizado la ventana");
        else if(e.getNewState() == Frame.MAXIMIZED_HORIZ) 
            System.out.println("Has maximizado la ventana en Horizontal");
+        else if(e.getNewState() == Frame.NORMAL) 
+           System.out.println("La ventana esta en su estado NORMAL");
        else System.out.println("Has hecho un cambio sin especificar");  
        
        
