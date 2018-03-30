@@ -40,18 +40,18 @@ class MiEventoDeTeclado implements  KeyListener{
     @Override
     public void keyTyped(KeyEvent e) {
         
-        System.out.println("Has pulsado una tecla");
+       // System.out.println("Has pulsado una tecla");
      
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-     System.out.println("Has tecleado una tecla");
+     System.out.println("Has pulsado la tecla: " + e.getKeyChar());
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-     System.out.println("Has soltado una tecla");
+     //System.out.println("Has soltado una tecla");
     }
     
     
