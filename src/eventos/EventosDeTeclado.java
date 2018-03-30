@@ -17,6 +17,8 @@ public class EventosDeTeclado {
         Marcoeventoteclado mimMarco = new Marcoeventoteclado();
         
         mimMarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
+        mimMarco.addKeyListener(new MiEventoDeTeclado());
     }
     
 }
@@ -37,17 +39,19 @@ class MiEventoDeTeclado implements  KeyListener{
 
     @Override
     public void keyTyped(KeyEvent e) {
+        
+        System.out.println("Has pulsado una tecla");
      
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-     
+     System.out.println("Has tecleado una tecla");
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-     
+     System.out.println("Has soltado una tecla");
     }
     
     
