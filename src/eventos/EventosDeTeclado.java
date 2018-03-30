@@ -1,5 +1,7 @@
 package eventos;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 
 /**
@@ -29,4 +31,24 @@ class Marcoeventoteclado extends JFrame{
         setVisible(true);
         
     }
+}
+
+class MiEventoDeTeclado implements  KeyListener{
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+     
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+     
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+     
+    }
+    
+    
 }
