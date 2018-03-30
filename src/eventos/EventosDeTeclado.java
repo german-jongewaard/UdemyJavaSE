@@ -35,7 +35,7 @@ class Marcoeventoteclado extends JFrame{
     }
 }
 
-class MiEventoDeTeclado implements  KeyListener{
+class MiEventoDeTeclado implements KeyListener{
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -47,9 +47,12 @@ class MiEventoDeTeclado implements  KeyListener{
     @Override
     public void keyPressed(KeyEvent e) {
         
-        if(e.getKeyCode()==74) System.out.println("Has pulsado la tecla J");
+        //if(e.getKeyCode()== KeyEvent.VK_J) System.out.println("Has pulsado la tecla J");
         
-     System.out.println("Has pulsado la tecla: " + e.getKeyChar() + " Has pulsado el simbolo: " + e.getKeyCode());
+       /* System.out.println("Has pulsado la tecla: " + e.getKeyChar() 
+                 + " Has pulsado el simbolo: " + e.getKeyCode()); */
+       
+        System.out.println("Has pulsado la tecla: " + KeyEvent.getKeyText(e.getKeyCode()));
     }
 
     @Override
@@ -57,5 +60,25 @@ class MiEventoDeTeclado implements  KeyListener{
      //System.out.println("Has soltado una tecla");
     }
     
+    private static String getKeyText(int keyCode) {
+    String ret = KeyEvent.getKeyText(keyCode);
+    if (ret != null) {
+        switch (keyCode) {
+            case KeyEvent.VK_KP_DOWN:
+                 
+                break;
+            case KeyEvent.VK_KP_LEFT:
+                
+                break;
+            case KeyEvent.VK_KP_RIGHT:
+                 
+                break;
+            case KeyEvent.VK_KP_UP:
+                
+                break;
+        }
+    }
+    return ret;
+}
     
 }
