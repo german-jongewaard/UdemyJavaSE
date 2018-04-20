@@ -41,8 +41,24 @@ class MarcoEventoRaton extends JFrame {
 class EventosDeRaton extends MouseAdapter {
     
     public void mousePressed(MouseEvent e) {
-        System.out.println("Haz presionado en X: " + e.getX() + 
-                " Haz presionado en Y: " + e.getY());
+       
+        /* System.out.println("Haz presionado en X: " + e.getX() + 
+                " Haz presionado en Y: " + e.getY()); */
+       
+        
+        switch(e.getModifiersEx()){
+            
+            case MouseEvent.BUTTON1_DOWN_MASK:
+                 System.out.println("Haz pulsado el boton izquierdo");
+                break;
+            case MouseEvent.BUTTON2_DOWN_MASK:
+             System.out.println("Haz pulsado el boton de la ruedita");
+            break;
+            case MouseEvent.BUTTON3_DOWN_MASK:
+             System.out.println("Haz pulsado el boton derecho");
+            break; 
+            
+        } 
     }
 }
 
