@@ -1,5 +1,6 @@
 package eventos;
 
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JFrame;
@@ -36,6 +37,16 @@ class MarcoEventoRaton extends JFrame {
     }
 }
 
+
+class EventosDeRaton extends MouseAdapter {
+    
+    public void EventosDeRaton(MouseEvent arg0){
+      
+        System.out.println("Hace Presionado"); 
+    } 
+}
+
+/*
 class EventosDeRaton implements MouseListener {
 
     @Override
@@ -62,5 +73,5 @@ class EventosDeRaton implements MouseListener {
     public void mouseExited(MouseEvent e) {
         System.out.println("Hace Salido");
     }   
-    
-}
+   
+} */
