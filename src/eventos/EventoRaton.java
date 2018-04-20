@@ -40,10 +40,9 @@ class MarcoEventoRaton extends JFrame {
 
 class EventosDeRaton extends MouseAdapter {
     
-    public void EventosDeRaton(MouseEvent arg0){
-      
-        System.out.println("Hace Presionado"); 
-    } 
+    public void mousePressed(MouseEvent e) {
+        System.out.println("Haz presionado");
+    }
 }
 
 /*
@@ -51,27 +50,27 @@ class EventosDeRaton implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        System.out.println("Hace echo click");
+        System.out.println("Haz echo click");
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-        System.out.println("Hace presionado");
+        System.out.println("Haz presionado");
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        System.out.println("Hace Soltado");
+        System.out.println("Haz Soltado");
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        System.out.println("Hace Entrado");
+        System.out.println("Haz Entrado");
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        System.out.println("Hace Salido");
+        System.out.println("Haz Salido");
     }   
    
 } */
