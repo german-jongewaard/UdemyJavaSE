@@ -1,5 +1,7 @@
 package eventos;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author german
@@ -11,4 +13,13 @@ public class EventoRaton {
         // TODO code application logic here
     }
     
+}
+
+
+class MarcoEventoRaton extends JFrame {
+    
+    public MarcoEventoRaton(){
+        
+        
+    }
 }
