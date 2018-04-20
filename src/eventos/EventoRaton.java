@@ -18,6 +18,8 @@ public class EventoRaton {
         
         miMarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
+        miMarco.addMouseListener(new EventosDeRaton());
+        
     }
     
 }
@@ -43,22 +45,22 @@ class EventosDeRaton implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-        System.out.println("Hace echo mousePressed");
+        System.out.println("Hace presionado");
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        System.out.println("Hace echo mouseReleased");
+        System.out.println("Hace Soltado");
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        System.out.println("Hace echo mouseEntered");
+        System.out.println("Hace Entrado");
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        System.out.println("Hace echo mouseExited");
+        System.out.println("Hace Salido");
     }   
     
 }
