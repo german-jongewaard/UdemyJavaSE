@@ -3,6 +3,7 @@ package eventos;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import javax.swing.JFrame;
 
 /**
@@ -21,6 +22,8 @@ public class EventoRaton {
         
         miMarco.addMouseListener(new EventosDeRaton());
         
+        miMarco.addMouseMotionListener(new EventosDeRatonArrastre());
+        
     }
     
 }
@@ -35,6 +38,20 @@ class MarcoEventoRaton extends JFrame {
         setVisible(true);
         
     }
+}
+
+class EventosDeRatonArrastre implements MouseMotionListener {
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+       System.out.println("estas arrastrando el raton...");
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        System.out.println("estas moviendo el raton...");
+    } 
+     
 }
 
 
