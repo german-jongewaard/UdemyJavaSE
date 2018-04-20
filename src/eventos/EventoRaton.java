@@ -58,8 +58,7 @@ class EventosDeRaton implements MouseListener {
 
     @Override
     public void mouseExited(MouseEvent e) {
-       
-    } System.out.println("Hace echo mouseExited");
-    
+        System.out.println("Hace echo mouseExited");
+    }   
     
 }
