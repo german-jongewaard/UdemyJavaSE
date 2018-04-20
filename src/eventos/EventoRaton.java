@@ -23,8 +23,7 @@ public class EventoRaton {
         miMarco.addMouseListener(new EventosDeRaton());
         
         miMarco.addMouseMotionListener(new EventosDeRatonArrastre());        
-    }
-    
+    }    
 }
 
 
