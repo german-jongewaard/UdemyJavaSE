@@ -1,5 +1,7 @@
 package eventos;
 
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.swing.JFrame;
 
 /**
@@ -30,4 +32,34 @@ class MarcoEventoRaton extends JFrame {
         setVisible(true);
         
     }
+}
+
+class EventosDeRaton implements MouseListener {
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        System.out.println("Hace echo click");
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        System.out.println("Hace echo mousePressed");
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        System.out.println("Hace echo mouseReleased");
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        System.out.println("Hace echo mouseEntered");
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+       
+    } System.out.println("Hace echo mouseExited");
+    
+    
 }
