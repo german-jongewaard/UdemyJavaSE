@@ -34,8 +34,7 @@ class MarcoFoco_Dos extends JFrame{
         setBounds(500, 300, 400, 250);
         
         add(new Lamina_Marco_Foco());
-    }
-    
+    }    
 }
 
 class Lamina_Marco_Foco_Dos extends JPanel{
@@ -82,7 +81,7 @@ class Lamina_Marco_Foco_Dos extends JPanel{
         
     } 
     
-    private JTextField campoTexto1, campoTexto2;
+    private JTextField campoTexto1, campoTexto2, campoTexto3;
 }
 
  
