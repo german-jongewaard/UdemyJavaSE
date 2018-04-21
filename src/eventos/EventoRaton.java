@@ -69,8 +69,7 @@ class EventosDeRaton extends MouseAdapter {
             break;
             case MouseEvent.BUTTON3_DOWN_MASK:
              System.out.println("Haz pulsado el boton derecho");
-            break; 
-            
+            break;             
         } 
     }
 }
