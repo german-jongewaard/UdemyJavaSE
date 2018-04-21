@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -68,6 +69,8 @@ class Lamina_Marco_Foco_Dos extends JPanel{
         
         campoTexto3 = new JTextField();
         
+        etiq1 = new JLabel("usuario");
+        
         campoTexto1.setBounds(120, 10, 150, 20);
         
         campoTexto2.setBounds(120, 50, 150, 20);
@@ -87,6 +90,8 @@ class Lamina_Marco_Foco_Dos extends JPanel{
     } 
     
     private JTextField campoTexto1, campoTexto2, campoTexto3;
+    
+    private JLabel etiq1, etiq2, etiq3;
 }
 
  
