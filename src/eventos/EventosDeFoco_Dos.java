@@ -40,6 +40,25 @@ class MarcoFoco_Dos extends JFrame{
 
 class Lamina_Marco_Foco_Dos extends JPanel{
     
+   private class EventoDeFoco_Dos implements FocusListener{
+
+    @Override
+    public void focusGained(FocusEvent e) {
+                 
+         System.out.println("El cuadro ha ganado el Foco!");
+    }
+
+    @Override
+    public void focusLost(FocusEvent e) {
+        
+        if(e.getSource() == campoTexto1){
+            System.out.println("El cuadro 1 ha perdido el Foco!");            
+        }else{
+            System.out.println("El cuadro 2 ha perdido el Foco!");
+        } 
+    }  
+}
+    
     public void paintComponent(Graphics g){
       
         super.paintComponent(g);
@@ -66,19 +85,4 @@ class Lamina_Marco_Foco_Dos extends JPanel{
     private JTextField campoTexto1, campoTexto2;
 }
 
-class EventoDeFoco_Dos implements FocusListener{
-
-    @Override
-    public void focusGained(FocusEvent e) {
-                 
-         System.out.println("El cuadro ha ganado el Foco!");
-    }
-
-    @Override
-    public void focusLost(FocusEvent e) {
-        
-        System.out.println("El cuadro ha perdido el Foco!");
-        
-    } 
-    
-}
+ 
