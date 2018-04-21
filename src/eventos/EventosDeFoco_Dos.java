@@ -74,16 +74,15 @@ class Lamina_Marco_Foco_Dos extends JPanel{
         
         campoTexto3.setBounds(120, 100, 150, 20);
         
-        add(campoTexto1);
-        
-        add(campoTexto2);
-        
+        add(campoTexto1);       
+        add(campoTexto2);        
         add(campoTexto3);
         
         EventoDeFoco foco = new EventoDeFoco();
         
         campoTexto1.addFocusListener(foco);
         campoTexto2.addFocusListener(foco);
+        campoTexto3.addFocusListener(foco);
         
     } 
     
