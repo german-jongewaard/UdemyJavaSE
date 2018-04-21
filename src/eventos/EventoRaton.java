@@ -33,8 +33,7 @@ class MarcoEventoRaton extends JFrame {
         
         setBounds(300, 300, 600, 350);
         
-        setVisible(true);
-        
+        setVisible(true);        
     }
 }
 
@@ -48,8 +47,7 @@ class EventosDeRatonArrastre implements MouseMotionListener {
     @Override
     public void mouseMoved(MouseEvent e) {
         System.out.println("estas moviendo el raton...");
-    } 
-     
+    }      
 }
 
 
