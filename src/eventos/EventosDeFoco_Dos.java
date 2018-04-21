@@ -69,9 +69,9 @@ class Lamina_Marco_Foco_Dos extends JPanel{
         
         campoTexto3 = new JTextField();
         
-        etiq1 = new JLabel("usuario");
-        etiq2 = new JLabel("usuario");
-        etiq3 = new JLabel("usuario");
+        etiq1 = new JLabel("Usuario");
+        etiq2 = new JLabel("Contraseña");
+        etiq3 = new JLabel("Email");
         
         campoTexto1.setBounds(120, 10, 150, 20);
         
