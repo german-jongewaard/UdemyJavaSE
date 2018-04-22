@@ -1,6 +1,8 @@
 package eventos;
 
 import java.awt.Graphics;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -54,7 +56,29 @@ class Lamina_Marco_Foco extends JPanel{
         
         add(campoTexto2);
         
+        EventoDeFoco foco = new EventoDeFoco();
+        
+        campoTexto1.addFocusListener(foco);
+        campoTexto2.addFocusListener(foco);
+        
     } 
     
     private JTextField campoTexto1, campoTexto2;
+}
+
+class EventoDeFoco implements FocusListener{
+
+    @Override
+    public void focusGained(FocusEvent e) {
+  
+         System.out.println("El cuadro ha ganado el Foco!");
+    }
+
+    @Override
+    public void focusLost(FocusEvent e) {
+        
+        System.out.println("El cuadro ha perdido el Foco!");
+        
+    } 
+    
 }
