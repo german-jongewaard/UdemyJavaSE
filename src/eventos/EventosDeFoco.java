@@ -70,7 +70,7 @@ class EventoDeFoco implements FocusListener{
 
     @Override
     public void focusGained(FocusEvent e) {
-  
+                 
          System.out.println("El cuadro ha ganado el Foco!");
     }
 
