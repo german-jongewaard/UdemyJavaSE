@@ -3,6 +3,7 @@ package eventos;
 import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -41,5 +42,11 @@ class Lamina_Marco_Foco extends JPanel{
       
         super.paintComponent(g);
         
+        campoTexto1 = new JTextField();
+        
+        campoTexto2 = new JTextField();
+        
     } 
+    
+    private JTextField campoTexto1, campoTexto2;
 }
