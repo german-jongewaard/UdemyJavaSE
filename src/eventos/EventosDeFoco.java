@@ -46,6 +46,14 @@ class Lamina_Marco_Foco extends JPanel{
         
         campoTexto2 = new JTextField();
         
+        campoTexto1.setBounds(120, 10, 150, 20);
+        
+        campoTexto2.setBounds(120, 50, 150, 20);
+        
+        add(campoTexto1);
+        
+        add(campoTexto2);
+        
     } 
     
     private JTextField campoTexto1, campoTexto2;
