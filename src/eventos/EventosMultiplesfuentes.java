@@ -1,10 +1,8 @@
 package eventos;
 
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.Color;
+import java.awt.event.*; 
+import javax.swing.*; 
 
 /**
  *
@@ -46,17 +44,32 @@ class LaminaFuentes extends JPanel{
 
                JButton botonRojo = new JButton("Rojo");
 
-               JButton botonVerde = new JButton("Verde");
-               
+               JButton botonVerde = new JButton("Verde");               
                
                add(botonAzul);
                add(botonRojo);
-               add(botonVerde);
-               
-               
+               add(botonVerde); 
 
         } 
+}
+
+class EventoColorDeFondo extends AbstractAction {
+    
+    public EventoColorDeFondo(String nombre, Color color_fondo){
+        
+        putValue(Action.NAME, nombre);
+        
+        putValue("color_fondo_JPanel", color_fondo );
+        
     }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+    }
+    
+    
+}
 
 
  
