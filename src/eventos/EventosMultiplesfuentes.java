@@ -53,6 +53,10 @@ class LaminaFuentes extends JPanel{
               EventoColorDeFondo colorAzul = new EventoColorDeFondo("Azul", Color.BLUE);
               EventoColorDeFondo colorRojo = new EventoColorDeFondo("Azul", Color.RED);
               EventoColorDeFondo colorVerde = new EventoColorDeFondo("Azul", Color.GREEN);
+              
+              add(new JButton(colorAzul));
+              add(new JButton(colorRojo));
+              add(new JButton(colorVerde));
 
         } 
         
