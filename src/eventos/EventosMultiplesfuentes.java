@@ -66,6 +66,8 @@ class EventoColorDeFondo extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         
+        Color c = (Color) getValue("color_fondo_JPanel");
+        
     }
     
     
