@@ -44,9 +44,16 @@ class LaminaFuentes extends JPanel{
 
                JButton botonAzul = new JButton("Azul");
 
-               JButton botonAmarillo = new JButton("Amarillo");
-
                JButton botonRojo = new JButton("Rojo");
+
+               JButton botonVerde = new JButton("Verde");
+               
+               
+               add(botonAzul);
+               add(botonRojo);
+               add(botonVerde);
+               
+               
 
         } 
     }
