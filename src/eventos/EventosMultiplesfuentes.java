@@ -51,9 +51,8 @@ class LaminaFuentes extends JPanel{
                add(botonVerde); 
 
         } 
-}
-
-class EventoColorDeFondo extends AbstractAction {
+        
+        class EventoColorDeFondo extends AbstractAction {
     
     public EventoColorDeFondo(String nombre, Color color_fondo){
         
@@ -68,10 +67,13 @@ class EventoColorDeFondo extends AbstractAction {
         
         Color c = (Color) getValue("color_fondo_JPanel");
         
+        setBackground(c);
+    } 
     }
-    
-    
+        
 }
+
+ 
 
 
  
