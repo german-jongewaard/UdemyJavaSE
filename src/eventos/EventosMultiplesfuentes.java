@@ -52,23 +52,23 @@ class LaminaFuentes extends JPanel{
 
         } 
         
-        class EventoColorDeFondo extends AbstractAction {
+    private class EventoColorDeFondo extends AbstractAction {
     
-    public EventoColorDeFondo(String nombre, Color color_fondo){
-        
-        putValue(Action.NAME, nombre);
-        
-        putValue("color_fondo_JPanel", color_fondo );
-        
-    }
+        public EventoColorDeFondo(String nombre, Color color_fondo){
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        
-        Color c = (Color) getValue("color_fondo_JPanel");
-        
-        setBackground(c);
-    } 
+            putValue(Action.NAME, nombre);
+
+            putValue("color_fondo_JPanel", color_fondo );
+
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            Color c = (Color) getValue("color_fondo_JPanel");
+
+            setBackground(c);
+        } 
     }
         
 }
