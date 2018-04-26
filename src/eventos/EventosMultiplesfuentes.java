@@ -40,7 +40,7 @@ class LaminaFuentes extends JPanel{
     
         public LaminaFuentes() {
 
-               JButton botonAzul = new JButton("Azul");
+              /* JButton botonAzul = new JButton("Azul");
 
                JButton botonRojo = new JButton("Rojo");
 
@@ -48,7 +48,11 @@ class LaminaFuentes extends JPanel{
                
                add(botonAzul);
                add(botonRojo);
-               add(botonVerde); 
+               add(botonVerde); */
+              
+              EventoColorDeFondo colorAzul = new EventoColorDeFondo("Azul", Color.BLUE);
+              EventoColorDeFondo colorRojo = new EventoColorDeFondo("Azul", Color.RED);
+              EventoColorDeFondo colorVerde = new EventoColorDeFondo("Azul", Color.GREEN);
 
         } 
         
