@@ -41,10 +41,19 @@ class Lamina_Principal extends JPanel {
         
         add(boton_nuevo);
         
+        
+        
+        
         boton_cerrar = new JButton("Cerrar todo");  
         
+        
+        
         add(boton_cerrar);
+        
+        
+        
     }
     
     JButton boton_cerrar;
 }
+
