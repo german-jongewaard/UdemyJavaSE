@@ -9,16 +9,12 @@ import javax.swing.JPanel;
  * @author german
  * 
  */
-
 public class EventoMultiplesOyente {
 
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        Marco_Principal miMarco_Pr = new Marco_Principal();
-        
-        miMarco_Pr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        // TODO code application logic here        
+        Marco_Principal miMarco_Pr = new Marco_Principal();        
+        miMarco_Pr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         miMarco_Pr.setVisible(true);
     }    
 }
@@ -45,8 +41,7 @@ class Lamina_Principal extends JPanel {
         
         add(boton_nuevo);
         
-        boton_cerrar = new JButton("Cerrar todo");        
-        
+        boton_cerrar = new JButton("Cerrar todo");  
         
         add(boton_cerrar);
     }
