@@ -79,8 +79,6 @@ class Marco_Nuevo extends JFrame {
         
         
         
-        
-        
     } 
     
     private class CierraTodo implements ActionListener{
