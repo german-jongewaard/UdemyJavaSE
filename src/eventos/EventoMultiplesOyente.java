@@ -1,5 +1,7 @@
 package eventos;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -44,6 +46,24 @@ class Lamina_Principal extends JPanel {
         boton_cerrar = new JButton("Cerrar todo");  
         
         add(boton_cerrar);
+        
+        boton_nuevo.addActionListener(new Crea_Marco());
+        
+    }
+    
+    private class Crea_Marco implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            Marco_Nuevo miMarco = new Marco_Nuevo();
+            
+            miMarco.setVisible(true);
+
+            
+        }
+        
+        
         
     }
     
