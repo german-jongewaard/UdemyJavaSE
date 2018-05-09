@@ -61,11 +61,11 @@ class LaminaFuentes extends JPanel{
               
               InputMap mapaEntrada = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
               
-              KeyStroke teclaAzul = KeyStroke.getKeyStroke("ctrl A");
+              //KeyStroke teclaAzul = KeyStroke.getKeyStroke("ctrl A");
               KeyStroke teclaRojo = KeyStroke.getKeyStroke("ctrl R");
               KeyStroke teclaVerde = KeyStroke.getKeyStroke("ctrl W");
               
-              mapaEntrada.put(teclaAzul, "fondo azul");
+              mapaEntrada.put(KeyStroke.getKeyStroke("ctrl A"), "fondo azul");
               mapaEntrada.put(teclaRojo, "fondo rojo");
               mapaEntrada.put(teclaVerde, "fondo verde");
               
