@@ -75,8 +75,7 @@ class Marco_Nuevo extends JFrame {
         
         setBounds(50*contador, 50*contador, 350, 200);
         
-        botonCierra.addActionListener(new  CierraTodo());
-        
+        botonCierra.addActionListener(new  CierraTodo());        
         
         
     } 
@@ -86,8 +85,7 @@ class Marco_Nuevo extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
           dispose();
-        }
-        
+        }        
     }
     
     private static int contador = 0;
