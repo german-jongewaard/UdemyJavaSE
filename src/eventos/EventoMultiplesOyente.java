@@ -58,6 +58,8 @@ class Marco_Nuevo extends JFrame {
         
         setTitle("Ventana " + contador);
         
+        setBounds(50*contador, 50*contador, 350, 200);
+        
         
         
         
