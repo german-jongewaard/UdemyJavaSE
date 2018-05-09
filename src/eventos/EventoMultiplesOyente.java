@@ -54,8 +54,14 @@ class Marco_Nuevo extends JFrame {
     
     public Marco_Nuevo (){
         
+        contador++;
+        
+        
+        
         
         
     } 
+    
+    private static int contador = 0;
 }
 
