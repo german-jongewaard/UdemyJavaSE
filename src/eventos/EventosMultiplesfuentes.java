@@ -57,6 +57,9 @@ class LaminaFuentes extends JPanel{
               add(new JButton(colorAzul));
               add(new JButton(colorRojo));
               add(new JButton(colorVerde));
+              
+              
+              InputMap mapaEntrada = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
 
         } 
         
