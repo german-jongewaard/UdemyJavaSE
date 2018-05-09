@@ -56,15 +56,10 @@ class Lamina_Principal extends JPanel {
         @Override
         public void actionPerformed(ActionEvent e) {
 
-            Marco_Nuevo miMarco = new Marco_Nuevo();
+            Marco_Nuevo miMarco = new Marco_Nuevo(boton_cerrar);
             
-            miMarco.setVisible(true);
-
-            
-        }
-        
-        
-        
+            miMarco.setVisible(true);            
+        }        
     }
     
     JButton boton_cerrar;
@@ -72,7 +67,7 @@ class Lamina_Principal extends JPanel {
 
 class Marco_Nuevo extends JFrame {
     
-    public Marco_Nuevo (){
+    public Marco_Nuevo (JButton botonCierra){
         
         contador++;
         
@@ -85,6 +80,15 @@ class Marco_Nuevo extends JFrame {
         
         
     } 
+    
+    private class CierraTodo implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+          dispose();
+        }
+        
+    }
     
     private static int contador = 0;
 }
