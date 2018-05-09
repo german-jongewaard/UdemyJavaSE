@@ -76,6 +76,8 @@ class LaminaFuentes extends JPanel{
             Color c = (Color) getValue("color_fondo_JPanel");
 
             setBackground(c);
+            
+            System.out.println("Nombre: " + getValue(NAME) + " Descripción: " + getValue(NAME));
         } 
     }
         
