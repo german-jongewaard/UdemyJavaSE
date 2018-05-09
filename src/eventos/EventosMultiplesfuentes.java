@@ -65,6 +65,8 @@ class LaminaFuentes extends JPanel{
         public EventoColorDeFondo(String nombre, Color color_fondo){
 
             putValue(Action.NAME, nombre);
+            
+            putValue(Action.SHORT_DESCRIPTION, "Pone la lámina JPane de Color: " + nombre);
 
             putValue("color_fondo_JPanel", color_fondo );
 
@@ -77,7 +79,7 @@ class LaminaFuentes extends JPanel{
 
             setBackground(c);
             
-            System.out.println("Nombre: " + getValue(NAME) + " Descripción: " + getValue(NAME));
+            System.out.println("Nombre: " + getValue(NAME) + " Descripción: " + getValue(Action.SHORT_DESCRIPTION));
         } 
     }
         
