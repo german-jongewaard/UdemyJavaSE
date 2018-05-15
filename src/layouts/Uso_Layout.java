@@ -46,7 +46,7 @@ class PanelconLayout extends JPanel{
 	
 		public PanelconLayout(){                    
                     
-                    setLayout(new FlowLayout(FlowLayout.RIGHT));                         
+                    setLayout(new FlowLayout(FlowLayout.CENTER, 50, 150));                         
 			
 			add(new JButton("Amarillo"));
 			
