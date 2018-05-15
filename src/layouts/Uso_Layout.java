@@ -32,10 +32,12 @@ class MaroConLayout extends JFrame{
 		
 		PanelconLayout lamina=new PanelconLayout();
                 
-                FlowLayout disposicion = new FlowLayout(FlowLayout.RIGHT);
+                //FlowLayout disposicion = new FlowLayout(FlowLayout.RIGHT);
                 
-                lamina.setLayout(disposicion);
+               //lamina.setLayout(disposicion);
                 
+               //lamina.setLayout(new FlowLayout(FlowLayout.RIGHT));
+               
 		add(lamina);	
 	}	
 }
@@ -43,6 +45,10 @@ class MaroConLayout extends JFrame{
 class PanelconLayout extends JPanel{
 	
 		public PanelconLayout(){
+                    
+                    
+                    setLayout(new FlowLayout(FlowLayout.RIGHT));
+                         
 			
 			add(new JButton("Amarillo"));
 			
