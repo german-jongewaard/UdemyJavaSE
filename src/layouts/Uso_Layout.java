@@ -1,5 +1,6 @@
 package layouts;
 
+import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -46,12 +47,18 @@ class PanelconLayout extends JPanel{
 	
 		public PanelconLayout(){                    
                     
-                    setLayout(new FlowLayout(FlowLayout.CENTER, 50, 150));                         
+                    //setLayout(new FlowLayout(FlowLayout.CENTER, 50, 150));  
+                    
+                    setLayout(new BorderLayout());
 			
-			add(new JButton("Amarillo"));
+			add(new JButton("Amarillo"), BorderLayout.NORTH);
 			
-			add(new JButton("Rojo"));	
+			add(new JButton("Rojo"), BorderLayout.SOUTH);	
 			
-			add(new JButton("Azul"));	
+			add(new JButton("Azul"), BorderLayout.EAST);	
+                        
+                        add(new JButton("Verde"), BorderLayout.WEST);	
+			
+			add(new JButton("Morado"), BorderLayout.CENTER);	
 		}
 }
