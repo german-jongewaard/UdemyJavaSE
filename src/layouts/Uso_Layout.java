@@ -44,11 +44,9 @@ class MaroConLayout extends JFrame{
 
 class PanelconLayout extends JPanel{
 	
-		public PanelconLayout(){
+		public PanelconLayout(){                    
                     
-                    
-                    setLayout(new FlowLayout(FlowLayout.RIGHT));
-                         
+                    setLayout(new FlowLayout(FlowLayout.RIGHT));                         
 			
 			add(new JButton("Amarillo"));
 			
