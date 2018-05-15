@@ -1,5 +1,6 @@
 package layouts;
 
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,13 +19,10 @@ public class Uso_Layout {
 		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		miMarco.setVisible(true);
-
 	}
-
 }
 
-class MaroConLayout extends JFrame{
-	
+class MaroConLayout extends JFrame{	
 	
 	public MaroConLayout(){
 		
@@ -33,11 +31,13 @@ class MaroConLayout extends JFrame{
 		setBounds(600,350,600,300);
 		
 		PanelconLayout lamina=new PanelconLayout();
-		
-		add(lamina);
-	
-	}
-	
+                
+                FlowLayout disposicion = new FlowLayout(FlowLayout.RIGHT);
+                
+                lamina.setLayout(disposicion);
+                
+		add(lamina);	
+	}	
 }
 
 class PanelconLayout extends JPanel{
@@ -49,7 +49,5 @@ class PanelconLayout extends JPanel{
 			add(new JButton("Rojo"));	
 			
 			add(new JButton("Azul"));	
-			
-			
 		}
 }
