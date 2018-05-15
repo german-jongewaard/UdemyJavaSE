@@ -63,6 +63,8 @@ class PanelConLeyaout2 extends JPanel {
     
     public PanelConLeyaout2(){
         
+        setLayout(new FlowLayout(FlowLayout.LEFT));
+        
         
         add(new JButton("Amarillo"), BorderLayout.NORTH);
 			
