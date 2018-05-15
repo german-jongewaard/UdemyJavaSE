@@ -49,7 +49,7 @@ class PanelconLayout extends JPanel{
                     
                     //setLayout(new FlowLayout(FlowLayout.CENTER, 50, 150));  
                     
-                    setLayout(new BorderLayout(10, 10)); 
+                    setLayout(new BorderLayout()); 
 			
 			add(new JButton("Azul"), BorderLayout.EAST);	
                         
