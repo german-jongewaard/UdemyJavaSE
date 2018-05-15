@@ -49,11 +49,7 @@ class PanelconLayout extends JPanel{
                     
                     //setLayout(new FlowLayout(FlowLayout.CENTER, 50, 150));  
                     
-                    setLayout(new BorderLayout(10, 10));
-			
-			add(new JButton("Amarillo"), BorderLayout.NORTH);
-			
-			add(new JButton("Rojo"), BorderLayout.SOUTH);	
+                    setLayout(new BorderLayout(10, 10)); 
 			
 			add(new JButton("Azul"), BorderLayout.EAST);	
                         
@@ -61,4 +57,21 @@ class PanelconLayout extends JPanel{
 			
 			add(new JButton("Morado"), BorderLayout.CENTER);	
 		}
+}
+
+class PanelConLeyaout2 extends JPanel {
+    
+    public PanelConLeyaout2(){
+        
+        
+        add(new JButton("Amarillo"), BorderLayout.NORTH);
+			
+        add(new JButton("Rojo"), BorderLayout.SOUTH);	
+        
+        
+        
+        
+        
+    }
+    
 }
