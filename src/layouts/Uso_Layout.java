@@ -39,11 +39,10 @@ class MaroConLayout extends JFrame{
                 
                //lamina.setLayout(disposicion);
                 
-               //lamina.setLayout(new FlowLayout(FlowLayout.RIGHT));
-               
-               
+               //lamina.setLayout(new FlowLayout(FlowLayout.RIGHT));  
                
 		add(lamina, BorderLayout.SOUTH);	
+                
                 add(lamina2, BorderLayout.NORTH);
 	}	
 }
@@ -68,8 +67,7 @@ class PanelConLeyaout2 extends JPanel {
     
     public PanelConLeyaout2(){
         
-        setLayout(new FlowLayout(FlowLayout.LEFT));
-        
+        setLayout(new FlowLayout(FlowLayout.LEFT));        
         
         add(new JButton("Amarillo"));
 			
