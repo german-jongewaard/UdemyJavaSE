@@ -51,7 +51,9 @@ class MaroConLayout extends JFrame{
 
 class PanelCalculadora extends JPanel{
 	
-            public PanelCalculadora(){      
+            public PanelCalculadora(){    
+                
+                setLayout(new BorderLayout());
 
 
 
