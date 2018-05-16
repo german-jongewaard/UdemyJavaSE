@@ -55,6 +55,10 @@ class PanelCalculadora extends JPanel{
                 
                 setLayout(new BorderLayout());
                 
+                JButton pantalla = new JButton("0");
+                
+                add(pantalla, BorderLayout.NORTH);
+                
                 JPanel numeracion = new JPanel();
                 
                 
