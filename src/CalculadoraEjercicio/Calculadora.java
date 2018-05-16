@@ -64,8 +64,6 @@ class PanelCalculadora extends JPanel{
                 JPanel numeracion = new JPanel();                
                 
                 numeracion.setLayout(new GridLayout(4,4));
-
-
             }
  
 }
