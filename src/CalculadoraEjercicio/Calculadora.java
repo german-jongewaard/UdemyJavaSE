@@ -41,6 +41,8 @@ class MaroConLayout extends JFrame{
 		
 		PanelCalculadora lamina=new PanelCalculadora();
                 
+                
+                add(lamina);
            
                 
              
@@ -49,9 +51,11 @@ class MaroConLayout extends JFrame{
 
 class PanelCalculadora extends JPanel{
 	
-		public PanelCalculadora(){                    
-                    
-          	
-		}
+            public PanelCalculadora(){      
+
+
+
+
+            }
  
 }
