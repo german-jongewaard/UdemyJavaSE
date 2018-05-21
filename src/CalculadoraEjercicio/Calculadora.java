@@ -45,6 +45,8 @@ class PanelCalculadora extends JPanel{
 	
             public PanelCalculadora(){    
                 
+                comienzo = true;
+                
                 setLayout(new BorderLayout());
                 
                 pantalla = new JButton("0");
