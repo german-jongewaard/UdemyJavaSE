@@ -97,7 +97,9 @@ class PanelCalculadora extends JPanel{
 
             
             if(comienzo == true){
+                pantalla.setText(entrada);
                 
+                comienzo = false;
                 
                 
                 
