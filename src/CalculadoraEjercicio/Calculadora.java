@@ -95,13 +95,13 @@ class PanelCalculadora extends JPanel{
         @Override
         public void actionPerformed(ActionEvent e) {
             
-        String entrada = e.getActionCommand();
-            
-            if(comienzo == true){
-                
-                pantalla.setText(entrada);
-                
-                comienzo = false;
+            String entrada = e.getActionCommand();
+
+                if(comienzo == true){
+
+                    pantalla.setText(entrada);
+
+                    comienzo = false;
                 
                 
                 
