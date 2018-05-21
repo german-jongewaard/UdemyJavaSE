@@ -105,10 +105,13 @@ class PanelCalculadora extends JPanel{
                 
                 
                 
+            }else {
+                    pantalla.setText(pantalla.getText() + entrada);
+                    
             }
             
 
-            pantalla.setText(pantalla.getText() + entrada);
+             
 
         }
     }
