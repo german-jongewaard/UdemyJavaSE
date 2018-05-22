@@ -111,8 +111,7 @@ class PanelCalculadora extends JPanel{
             
     private void ponerBoton (String textoBoton, InsertarNumero oyente){
 
-            JButton boton = new JButton(textoBoton);            
-            
+            JButton boton = new JButton(textoBoton);    
             
             boton.addActionListener(oyente);
 
