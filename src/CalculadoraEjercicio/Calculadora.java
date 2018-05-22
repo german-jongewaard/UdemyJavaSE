@@ -45,7 +45,6 @@ class MaroConLayout extends JFrame{
                 
                 
                 add(lamina);
-           
                 
              
 	}	
