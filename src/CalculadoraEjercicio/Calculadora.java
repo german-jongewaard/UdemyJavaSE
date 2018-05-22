@@ -84,8 +84,7 @@ class PanelCalculadora extends JPanel{
                 numeracion.add(new JButton("="));
                 numeracion.add(new JButton(""));           */
            
-           InsertarNumero insertar = new InsertarNumero();
-           
+           InsertarNumero insertar = new InsertarNumero();           
            
                 ponerBoton("7", insertar);
                 ponerBoton("8", insertar);
