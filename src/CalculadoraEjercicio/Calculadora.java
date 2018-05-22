@@ -131,7 +131,6 @@ class PanelCalculadora extends JPanel{
 
         }
 
-
     }
     
     private JButton pantalla;
