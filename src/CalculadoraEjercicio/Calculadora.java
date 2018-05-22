@@ -130,7 +130,6 @@ class PanelCalculadora extends JPanel{
             pantalla.setText(pantalla.getText() + entrada);
 
         }
-
     }
     
     private JButton pantalla;
