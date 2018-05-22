@@ -113,10 +113,11 @@ class PanelCalculadora extends JPanel{
 
             JButton boton = new JButton(textoBoton);
             
+            
+            
             boton.addActionListener(oyente);
 
             numeracion.add(boton);
-
     }
     
     
