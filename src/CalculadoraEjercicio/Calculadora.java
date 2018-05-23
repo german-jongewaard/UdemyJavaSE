@@ -76,8 +76,7 @@ class PanelCalculadora extends JPanel{
                 ponerBoton("=", insertar);
                 ponerBoton("", insertar);                
                 
-                add(numeracion, BorderLayout.CENTER);
-                 
+                add(numeracion, BorderLayout.CENTER);                 
             }
             
     private void ponerBoton (String textoBoton, InsertarNumero oyente){
