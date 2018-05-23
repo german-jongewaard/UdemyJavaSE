@@ -55,8 +55,7 @@ class PanelCalculadora extends JPanel{
                 
                 numeracion = new JPanel();                
                 
-                numeracion.setLayout(new GridLayout(4,4));                
-          
+                numeracion.setLayout(new GridLayout(4,4)); 
            
            InsertarNumero insertar = new InsertarNumero();           
            
