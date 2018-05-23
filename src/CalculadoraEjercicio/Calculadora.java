@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 /**
  *
  * @author german
+ * 
  */
 public class Calculadora {
 
