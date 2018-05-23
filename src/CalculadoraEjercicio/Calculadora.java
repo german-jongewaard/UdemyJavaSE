@@ -35,8 +35,7 @@ class MaroConLayout extends JFrame{
 		
 		setBounds(500,300,450,300);
 		
-		PanelCalculadora lamina=new PanelCalculadora();
-                
+		PanelCalculadora lamina=new PanelCalculadora();                
                 
                 add(lamina);                
              
