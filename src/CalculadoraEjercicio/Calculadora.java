@@ -88,7 +88,7 @@ class PanelCalculadora extends JPanel{
             numeracion.add(boton);
     }    
     
-        private class InsertarNumero implements ActionListener {
+    private class InsertarNumero implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
