@@ -57,7 +57,7 @@ class PanelCalculadora extends JPanel{
                 
                 setLayout(new BorderLayout());
                 
-                JButton pantalla = new JButton("0");
+                pantalla = new JButton("0");
                 
                 pantalla.setEnabled(false); 
                 
@@ -115,21 +115,24 @@ class PanelCalculadora extends JPanel{
 
     }
     
+    
+        private class InsertarNumero implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+
+            String entrada = e.getActionCommand();
+
+            pantalla.setText(pantalla.getText() + entrada);
+
+        }
+
+
+    }
+    
+    private JButton pantalla;
     private JPanel numeracion;
 }
 
 
-class InsertarNumero implements ActionListener{
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        
-        
-        String entrada = e.getActionCommand();
-        
-        pantalla.setText(pantalla.getText() + entrada);
-        
-    }
-    
-    
-}
