@@ -114,6 +114,11 @@ class PanelCalculadora extends JPanel{
     private JButton pantalla;
     private JPanel numeracion;
     private boolean comienzo;
+    
+    private String ultimaOperacion = "";
+    private double resultado;
+    private double ultimoValor;
+    
 }
 
 
