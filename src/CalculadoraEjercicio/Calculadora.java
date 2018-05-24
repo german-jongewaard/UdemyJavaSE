@@ -124,6 +124,9 @@ class InsertarNumero implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         
+        
+        String entrada = e.getActionCommand();
+        
     }
     
     
