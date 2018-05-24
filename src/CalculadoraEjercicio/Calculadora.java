@@ -83,6 +83,13 @@ class PanelCalculadora extends JPanel{
                 numeracion.add(new JButton(""));        
                 
                 add(numeracion, BorderLayout.CENTER);
-                        
-            } 
+                 
+            }
+            
+    private void ponerBoton (String textoBoton){
+
+
+
+
+    }
 }
