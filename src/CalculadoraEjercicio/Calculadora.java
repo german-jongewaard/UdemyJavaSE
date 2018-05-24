@@ -89,29 +89,29 @@ class PanelCalculadora extends JPanel{
            
            
            
-                ponerBoton("7");
-                ponerBoton("8");
-                ponerBoton("9");
-                ponerBoton("x");
-                ponerBoton("4");
-                ponerBoton("5");
-                ponerBoton("6");
-                ponerBoton("-");
-                ponerBoton("1");
-                ponerBoton("2");
-                ponerBoton("3");
-                ponerBoton("+");
-                ponerBoton("0");
-                ponerBoton(",");
-                ponerBoton("=");
-                ponerBoton("");
+                ponerBoton("7", insertar);
+                ponerBoton("8", insertar);
+                ponerBoton("9", insertar);
+                ponerBoton("x", insertar);
+                ponerBoton("4", insertar);
+                ponerBoton("5", insertar);
+                ponerBoton("6", insertar);
+                ponerBoton("-", insertar);
+                ponerBoton("1", insertar);
+                ponerBoton("2", insertar);
+                ponerBoton("3", insertar);
+                ponerBoton("+", insertar);
+                ponerBoton("0", insertar);
+                ponerBoton(",", insertar);
+                ponerBoton("=", insertar);
+                ponerBoton("", insertar);
                 
                 
                 add(numeracion, BorderLayout.CENTER);
                  
             }
             
-    private void ponerBoton (String textoBoton){
+    private void ponerBoton (String textoBoton, InsertarNumero oyente){
 
             JButton boton = new JButton(textoBoton);
 
