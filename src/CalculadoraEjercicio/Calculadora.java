@@ -65,7 +65,7 @@ class PanelCalculadora extends JPanel{
                 
                 numeracion.setLayout(new GridLayout(4,4));
                 
-                numeracion.add(new JButton("7"));
+           /*     numeracion.add(new JButton("7"));
                 numeracion.add(new JButton("8"));
                 numeracion.add(new JButton("9"));
                     numeracion.add(new JButton("x"));
@@ -80,7 +80,26 @@ class PanelCalculadora extends JPanel{
                 numeracion.add(new JButton("0"));
                 numeracion.add(new JButton(","));
                 numeracion.add(new JButton("="));
-                numeracion.add(new JButton(""));        
+                numeracion.add(new JButton(""));           */
+           
+           
+                ponerBoton("7");
+                ponerBoton("8");
+                ponerBoton("9");
+                ponerBoton("x");
+                ponerBoton("4");
+                ponerBoton("5");
+                ponerBoton("6");
+                ponerBoton("-");
+                ponerBoton("1");
+                ponerBoton("2");
+                ponerBoton("3");
+                ponerBoton("+");
+                ponerBoton("0");
+                ponerBoton(",");
+                ponerBoton("=");
+                ponerBoton("");
+                
                 
                 add(numeracion, BorderLayout.CENTER);
                  
