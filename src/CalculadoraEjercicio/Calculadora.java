@@ -88,7 +88,7 @@ class PanelCalculadora extends JPanel{
             
     private void ponerBoton (String textoBoton){
 
-
+            JButton boton = new JButton(textoBoton);
 
 
     }
