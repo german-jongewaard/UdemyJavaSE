@@ -127,6 +127,8 @@ class InsertarNumero implements ActionListener{
         
         String entrada = e.getActionCommand();
         
+        pantalla.setText(pantalla.getText() + entrada);
+        
     }
     
     
