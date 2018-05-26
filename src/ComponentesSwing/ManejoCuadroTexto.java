@@ -2,6 +2,7 @@ package ComponentesSwing;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -36,6 +37,10 @@ class MarcoCuadrotexto extends JFrame{
 class LaminaCuadroTexto extends JPanel{
     
     public LaminaCuadroTexto() {
+        
+        JTextField cuadrotexto = new JTextField(20);
+        
+        add(cuadrotexto);
         
     }
 }
