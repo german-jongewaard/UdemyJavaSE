@@ -1,5 +1,6 @@
 package ComponentesSwing;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -41,6 +42,8 @@ class LaminaCuadroTexto extends JPanel{
         JTextField cuadrotexto = new JTextField(20);
         
         add(cuadrotexto);
+        
+        JButton boton = new JButton("Obtener texto");
         
     }
 }
