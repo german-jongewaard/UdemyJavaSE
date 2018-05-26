@@ -3,7 +3,9 @@ package ComponentesSwing;
 /**
  *
  * @author german
+ * 
  */
+
 public class ManejoCuadroTexto {
 
     /**
