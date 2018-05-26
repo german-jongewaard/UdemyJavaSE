@@ -1,5 +1,6 @@
 package ComponentesSwing;
 
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -46,6 +47,10 @@ class LaminaCuadroTexto extends JPanel{
         JButton boton = new JButton("Obtener texto");
         
         add(boton);
+        
+    }
+    
+    private class ObtenerTexto implements ActionListener{
         
     }
 }
