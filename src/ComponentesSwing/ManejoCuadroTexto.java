@@ -1,6 +1,7 @@
 package ComponentesSwing;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -29,5 +30,12 @@ class MarcoCuadrotexto extends JFrame{
         add(new LaminaCuadroTexto());
         
         setVisible(true);
+    }
+}
+
+class LaminaCuadroTexto extends JPanel{
+    
+    public LaminaCuadroTexto() {
+        
     }
 }
