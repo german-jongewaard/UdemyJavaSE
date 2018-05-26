@@ -45,5 +45,7 @@ class LaminaCuadroTexto extends JPanel{
         
         JButton boton = new JButton("Obtener texto");
         
+        add(boton);
+        
     }
 }
