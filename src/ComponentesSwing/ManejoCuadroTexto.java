@@ -55,7 +55,7 @@ class LaminaCuadroTexto extends JPanel{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-          
+            System.out.print(cuadrotexto.getText());
         }
         
     }
