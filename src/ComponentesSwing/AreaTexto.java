@@ -40,17 +40,35 @@ class LaminaAreaTexto extends JPanel{
     
     public LaminaAreaTexto() {
         
-        JTextArea miareaTexto = new JTextArea(7,25);
+        miareaTexto = new JTextArea(7,25);
         
-        JScrollPane laminaScroll = new JScrollPane(miareaTexto);
+        laminaScroll = new JScrollPane(miareaTexto);
         
         miareaTexto.setLineWrap(true); 
         
+        miBoton = new JButton("Obtener texto");
+        
+        miBoton.addActionListener(new ObtenerElTexto());
+        
+        add(miBoton);
+        
         add(laminaScroll);
         
-        
-        
     }
+    
+    private class ObtenerElTexto implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            System.out.print(miareaTexto.getText()); 
+            
+        }         
+    }
+    
+    private JButton miBoton;
+    private  JTextArea miareaTexto;
+    private JScrollPane laminaScroll;
      
 }
 
