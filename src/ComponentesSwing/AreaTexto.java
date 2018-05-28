@@ -19,8 +19,7 @@ public class AreaTexto {
      public static void main(String[] args) {
         // TODO code application logic here
         
-        MarcoAreaTexto mimarco = new MarcoAreaTexto();
-                
+        MarcoAreaTexto mimarco = new MarcoAreaTexto();                
     }    
 }
 
