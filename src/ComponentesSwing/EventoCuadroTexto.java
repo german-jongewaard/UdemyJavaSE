@@ -1,9 +1,9 @@
 package ComponentesSwing;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.text.Document;
 
 /**
  *
@@ -38,6 +38,30 @@ class LaminaCuadroEvento extends JPanel{
         
         JTextField cuadroTexto = new JTextField(20);
         
+        Document miDocumento = cuadroTexto.getDocument();
+        
+        miDocumento.addDocumentListener(listener);
+        
         add(cuadroTexto);        
     }
+    
+    private class EscuchaTexto implements DocumentListener {
+
+        @Override
+        public void insertUpdate(DocumentEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void removeUpdate(DocumentEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void changedUpdate(DocumentEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+        
+        
+    } 
 }
