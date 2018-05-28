@@ -28,7 +28,7 @@ class MarcoAreaTexto extends JFrame{
         
         setBounds(600, 300, 600, 400);
         
-        add(new LaminaCuadroTexto());
+        add(new LaminaAreaTexto());
         
         setVisible(true);
     }
