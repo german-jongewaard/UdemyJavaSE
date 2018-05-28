@@ -73,8 +73,7 @@ class LaminaAreaTexto extends JPanel{
     
     private JButton miBoton;
     private  JTextArea miareaTexto;
-    private JScrollPane laminaScroll;
-     
+    private JScrollPane laminaScroll;     
 }
 
 
