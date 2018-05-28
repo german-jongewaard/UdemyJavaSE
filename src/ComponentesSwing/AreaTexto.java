@@ -48,7 +48,14 @@ class LaminaAreaTexto extends JPanel{
         
         miBoton = new JButton("Obtener texto");
         
-        miBoton.addActionListener(new ObtenerElTexto());
+        //miBoton.addActionListener(new ObtenerElTexto());
+        
+        miBoton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+              System.out.print(miareaTexto.getText()); 
+            }
+        });
         
         add(miBoton);
         
@@ -56,15 +63,15 @@ class LaminaAreaTexto extends JPanel{
         
     }
     
-    private class ObtenerElTexto implements ActionListener{
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            
-            System.out.print(miareaTexto.getText()); 
-            
-        }         
-    }
+//    private class ObtenerElTexto implements ActionListener{
+//
+//        @Override
+//        public void actionPerformed(ActionEvent e) {
+//            
+//            System.out.print(miareaTexto.getText()); 
+//            
+//        }         
+//    }
     
     private JButton miBoton;
     private  JTextArea miareaTexto;
