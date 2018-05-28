@@ -14,13 +14,9 @@ import javax.swing.JTextField;
 public class EventoCuadroTexto {
    
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+        // TODO code application logic here        
          MarcoCuadroEvento mimarco = new MarcoCuadroEvento();
-        
-        
-    }
-    
+    }    
 }
 
 class MarcoCuadroEvento extends JFrame{
@@ -40,7 +36,8 @@ class LaminaCuadroEvento extends JPanel{
     
     public LaminaCuadroEvento() {
         
+        JTextField cuadroTexto = new JTextField(20);
         
-        
+        add(cuadroTexto);        
     }
 }
