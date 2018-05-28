@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -41,12 +42,16 @@ class LaminaAreaTexto extends JPanel{
         
         JTextArea miareaTexto = new JTextArea(7,25);
         
-        miareaTexto.setLineWrap(true);
+        JScrollPane laminaScroll = new JScrollPane(miareaTexto);
         
-        add(miareaTexto);
+        miareaTexto.setLineWrap(true); 
+        
+        add(laminaScroll);
         
         
         
     }
      
 }
+
+
