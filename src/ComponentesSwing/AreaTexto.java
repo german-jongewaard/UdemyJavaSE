@@ -41,6 +41,8 @@ class LaminaAreaTexto extends JPanel{
         
         JTextArea miareaTexto = new JTextArea(7,25);
         
+        add(miareaTexto);
+        
         
         
     }
