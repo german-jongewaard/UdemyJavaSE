@@ -58,8 +58,7 @@ class LaminaAreaTexto extends JPanel{
         
         add(miBoton);
         
-        add(laminaScroll);
-        
+        add(laminaScroll);        
     }
     
 //    private class ObtenerElTexto implements ActionListener{
