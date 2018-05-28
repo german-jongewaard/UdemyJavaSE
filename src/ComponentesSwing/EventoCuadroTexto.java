@@ -40,7 +40,7 @@ class LaminaCuadroEvento extends JPanel{
         
         Document miDocumento = cuadroTexto.getDocument();
         
-        miDocumento.addDocumentListener(listener);
+        miDocumento.addDocumentListener(new EscuchaTexto());
         
         add(cuadroTexto);        
     }
@@ -49,19 +49,17 @@ class LaminaCuadroEvento extends JPanel{
 
         @Override
         public void insertUpdate(DocumentEvent e) {
-           
+            System.out.println("Has introducido texto...");
         }
 
         @Override
         public void removeUpdate(DocumentEvent e) {
-            
+            System.out.println("Has borrado texto...");
         }
 
         @Override
         public void changedUpdate(DocumentEvent e) {
             
         }
-        
-        
     } 
 }
