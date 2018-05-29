@@ -3,6 +3,7 @@ package ComponentesSwing;
 /**
  *
  * @author german
+ * 
  */
 public class ManejoCheckBox {
 
