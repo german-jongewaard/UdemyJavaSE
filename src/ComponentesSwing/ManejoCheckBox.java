@@ -1,5 +1,7 @@
 package ComponentesSwing;
 
+import javafx.scene.control.CheckBox;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -23,7 +25,7 @@ class MarcoCheckBoxEvento extends JFrame{
         
         setBounds(600, 300, 600, 400);
         
-        add(new LaminaCuadroEvento());
+        add(new LaminaCheckBoxEvento());
         
         setVisible(true);
     }
@@ -33,6 +35,10 @@ class MarcoCheckBoxEvento extends JFrame{
 class LaminaCheckBoxEvento extends JPanel{
     
     public LaminaCheckBoxEvento() {
+        
+          JCheckBox miBox = new JCheckBox("Que bien!");
+        
+        add(miBox);
         
         
         
