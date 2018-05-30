@@ -45,7 +45,7 @@ class LaminaCheckBoxEvento extends JPanel{
         
         setLayout(new BorderLayout());
                 
-        miTexto = new JTextField("0");
+        miTexto = new JTextField("Este texto puede cambiar...");
 
         miTexto.setEnabled(true); 
 
