@@ -1,9 +1,14 @@
 package ComponentesSwing;
 
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import javafx.scene.control.CheckBox;
+import javafx.scene.text.Text;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -25,6 +30,8 @@ class MarcoCheckBoxEvento extends JFrame{
         
         setBounds(600, 300, 600, 400);
         
+        
+        
         add(new LaminaCheckBoxEvento());
         
         setVisible(true);
@@ -34,13 +41,26 @@ class MarcoCheckBoxEvento extends JFrame{
 
 class LaminaCheckBoxEvento extends JPanel{
     
-    public LaminaCheckBoxEvento() {
+    public LaminaCheckBoxEvento() {        
         
-        JCheckBox miBox = new JCheckBox("Que bien!");
+        setLayout(new BorderLayout());
+                
+        miTexto = new JTextField("0");
+
+        miTexto.setEnabled(true); 
+
+        add(miTexto, BorderLayout.NORTH);
+                
+        JCheckBox miBoxUno = new JCheckBox("Negrita");
         
-        add(miBox);
+        JCheckBox miBoxDos = new JCheckBox("Cursiva");
         
+        add(miBoxUno, BorderLayout.SOUTH);
+        
+        add(miBoxDos, BorderLayout.AFTER_LAST_LINE);
         
         
         }
+    
+     private JTextField miTexto;
     }
