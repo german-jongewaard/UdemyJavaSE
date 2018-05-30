@@ -50,17 +50,23 @@ class LaminaCheckBoxEvento extends JPanel{
          
         texto.setFont(new Font("Courier", Font.PLAIN, 24));
         
-        add(texto, BorderLayout.NORTH);
-
-
+        JPanel superior = new JPanel();
+        
+        JPanel inferior = new JPanel();
+        
+        superior.add(texto);  
         
         negrita = new JCheckBox("Negrita");
         
         cursiva = new JCheckBox("Cursiva");       
        
-        add(cursiva, BorderLayout.SOUTH);
+        inferior.add(negrita);
         
-        add(negrita, BorderLayout.SOUTH);
+        inferior.add(cursiva);
+        
+        add(superior, BorderLayout.NORTH);
+        
+        add(inferior, BorderLayout.SOUTH);
          
          
         
