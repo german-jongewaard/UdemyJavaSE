@@ -1,5 +1,7 @@
 package ComponentesSwing;
 
+import java.awt.event.ActionListener;
+import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -34,15 +36,20 @@ class LaminaRadioButtonEvento extends JPanel{
     
     public LaminaRadioButtonEvento(){
         
+        
+        
         boton1 = new JRadioButton("Masculino");
+        boton1.setSelected(true);
         boton2 = new JRadioButton("Femenino");
         boton3 = new JRadioButton("Neutro");
+                
+        ButtonGroup miGrupo = new ButtonGroup();
         
-        add(boton1);
-        add(boton2);
-        add(boton3);
+        miGrupo.add(boton1);
+        miGrupo.add(boton2);
+        miGrupo.add(boton3);
         
-        
+       
         
     } 
     
