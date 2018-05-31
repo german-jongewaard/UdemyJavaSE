@@ -49,7 +49,9 @@ class LaminaRadioButtonEvento extends JPanel{
         miGrupo.add(boton2);
         miGrupo.add(boton3);
         
-       
+        add(boton1);
+        add(boton2);
+        add(boton3);
         
     } 
     
