@@ -84,7 +84,7 @@ class LaminaCheckBoxEvento extends JPanel{
             
             if(cursiva.isSelected()) negrita_cursiva += Font.ITALIC;
             
-            texto.setFont(font);
+            texto.setFont(new Font("Courier", negrita_cursiva, 24));
          
         }       
     }
