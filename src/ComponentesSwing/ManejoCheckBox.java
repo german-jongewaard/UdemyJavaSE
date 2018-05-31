@@ -60,7 +60,11 @@ class LaminaCheckBoxEvento extends JPanel{
         
         negrita = new JCheckBox("Negrita");
         
-        cursiva = new JCheckBox("Cursiva");       
+        cursiva = new JCheckBox("Cursiva");     
+        
+        negrita.addActionListener(new ManejaChecks());
+        
+        cursiva.addActionListener(new ManejaChecks());
        
         inferior.add(negrita);
         
