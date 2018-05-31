@@ -3,6 +3,8 @@ package ComponentesSwing;
 import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javafx.scene.control.CheckBox;
 import javafx.scene.text.Text;
 import javax.swing.JButton;
@@ -67,15 +69,32 @@ class LaminaCheckBoxEvento extends JPanel{
         add(superior, BorderLayout.NORTH);
         
         add(inferior, BorderLayout.SOUTH);
-         
-         
         
         }
     
-     private JTextField miTexto;
+    
+    private class ManejaChecks implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+             
+            int negrita_cursiva = 0;
+            
+            if(negrita.isSelected()) negrita_cursiva += Font.BOLD;
+            
+            if(cursiva.isSelected()) negrita_cursiva += Font.ITALIC;
+         
+        }       
+    }
+    
+    
+    
+    
+    
+    
+  
      
      private JCheckBox negrita;
-     private JCheckBox cursiva;
-     
+     private JCheckBox cursiva;     
      private JLabel texto;
     }
