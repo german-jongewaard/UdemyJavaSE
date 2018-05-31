@@ -83,6 +83,8 @@ class LaminaCheckBoxEvento extends JPanel{
             if(negrita.isSelected()) negrita_cursiva += Font.BOLD;
             
             if(cursiva.isSelected()) negrita_cursiva += Font.ITALIC;
+            
+            texto.setFont(font);
          
         }       
     }
