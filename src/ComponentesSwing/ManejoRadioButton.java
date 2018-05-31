@@ -38,6 +38,10 @@ class LaminaRadioButtonEvento extends JPanel{
         boton2 = new JRadioButton("Femenino");
         boton3 = new JRadioButton("Neutro");
         
+        add(boton1);
+        add(boton2);
+        add(boton3);
+        
         
         
     } 
