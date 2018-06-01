@@ -1,5 +1,6 @@
 package ComponentesSwing;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
@@ -54,6 +55,18 @@ class LaminaRadioButtonEvento extends JPanel{
         add(boton3);
         
     } 
+    
+    private class ManejaRadioButton implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            if(boton1.isSelected()) System.out.println("has seleccionado Masculino");
+                
+            
+        }
+        
+    }
     
     private JRadioButton boton1, boton2, boton3;
 }
