@@ -95,8 +95,7 @@ class LaminaGeneralEvento extends JPanel{
         
         inferior.add(radio1);
         inferior.add(radio2); 
-        //***************************************************** 
-        
+        //*****************************************************         
         add(superior, BorderLayout.NORTH);
         add(central, BorderLayout.CENTER);
         add(inferior, BorderLayout.SOUTH);
