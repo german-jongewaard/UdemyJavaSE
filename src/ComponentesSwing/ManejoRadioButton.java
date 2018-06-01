@@ -43,6 +43,12 @@ class LaminaRadioButtonEvento extends JPanel{
         boton1.setSelected(true);
         boton2 = new JRadioButton("Femenino");
         boton3 = new JRadioButton("Neutro");
+        
+        boton1.addActionListener(new ManejaRadioButton());
+        
+        boton2.addActionListener(new ManejaRadioButton());
+        
+        boton3.addActionListener(new ManejaRadioButton());
                 
         ButtonGroup miGrupo = new ButtonGroup();
         
@@ -62,6 +68,10 @@ class LaminaRadioButtonEvento extends JPanel{
         public void actionPerformed(ActionEvent e) {
             
             if(boton1.isSelected()) System.out.println("has seleccionado Masculino");
+            
+            if(boton2.isSelected()) System.out.println("has seleccionado Femenino");
+            
+            if(boton3.isSelected()) System.out.println("has seleccionado Neutro");
                 
             
         }
