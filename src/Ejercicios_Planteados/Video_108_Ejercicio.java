@@ -2,11 +2,19 @@ package Ejercicios_Planteados;
  
 import java.awt.BorderLayout;
 import java.awt.Button;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javafx.scene.control.RadioButton;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 /**
@@ -40,40 +48,109 @@ class LaminaGeneralEvento extends JPanel{
     public LaminaGeneralEvento() {        
  
         setLayout(new BorderLayout());
-                
-        nombreEtiqueta = new JLabel("Nombre");
         
-        nombre = new JTextField(15);        
+        JPanel superior = new JPanel();  
         
-        apellidoEtiqueta = new JLabel("Apellido");
-        
-        apellido = new JTextField(15);        
-        
-        JPanel superior = new JPanel();
-        
-        JPanel central = new JPanel();
+        JPanel central = new JPanel();   
         
         JPanel inferior = new JPanel();
+                
+        nombreEtiqueta = new JLabel("Nombre");        
+        nombre = new JTextField(15);                
+        apellidoEtiqueta = new JLabel("Apellido");        
+        apellido = new JTextField(15);    
         
         superior.add(nombreEtiqueta);
         superior.add(nombre);
         superior.add(apellidoEtiqueta);
         superior.add(apellido);
+        //*****************************************************
+        miareaTexto = new JTextArea(20,30);        
+        laminaScroll = new JScrollPane(miareaTexto);        
+        miareaTexto.setLineWrap(true); 
+        
+        central.add(laminaScroll); 
+         //*****************************************************
+        
+        boton1 = new JButton("Boton 1");
+        boton2 = new JButton("Boton 2");
+        
+        inferior.add(boton1);
+        inferior.add(boton2);
+        //*****************************************************
+         casilla1 = new JCheckBox("casilla 1");
+        casilla2 = new JCheckBox("casilla 2");
+        
+        inferior.add(casilla1);
+        inferior.add(casilla2);        
+        //*****************************************************
+        ButtonGroup miGrupoBoton = new ButtonGroup();
+        
+        radio1 = new JRadioButton("Radio 1");
+        radio1.setSelected(true);
+        radio2 = new JRadioButton("Radio 2");
+        
+        miGrupoBoton.add(radio1);
+        miGrupoBoton.add(radio2);
+        
+        inferior.add(radio1);
+        inferior.add(radio2); 
+        //***************************************************** 
         
         add(superior, BorderLayout.NORTH);
-        
-        
+        add(central, BorderLayout.CENTER);
+        add(inferior, BorderLayout.SOUTH);
+    }
+    
+      private class ManejaChecks implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) { 
+            
+            if(casilla1.isSelected()){
+                miareaTexto.setText("Casilla 1 Activada");
+            }else{
+                miareaTexto.setText("Casilla 1 Desactivada");
+            }
+            
+            if(casilla2.isSelected()){
+                miareaTexto.setText("Casilla 2 Activada");
+            }else {
+                miareaTexto.setText("Casilla 2 Desactivada");
+            }
+        }       
+    }
+      
+       private class ManejaCasilla implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) { 
+            
+            if(casilla1.isSelected()){
+                miareaTexto.setText("Casilla 1 Activada");
+            }else{
+                miareaTexto.setText("Casilla 1 Desactivada");
+            }
+            
+            if(casilla2.isSelected()){
+                miareaTexto.setText("Casilla 2 Activada");
+            }else {
+                miareaTexto.setText("Casilla 2 Desactivada");
+            }
+        }       
     }
     
       
      private JCheckBox casilla1;
      private JCheckBox casilla2;     
-     private RadioButton radio1;
-     private RadioButton radio2;
-     private Button boton1;
-     private Button boton2;
+     private JRadioButton radio1;
+     private JRadioButton radio2;
+     private JButton boton1;
+     private JButton boton2;
      private JLabel nombreEtiqueta;
      private JLabel apellidoEtiqueta;
      private JTextField nombre;
      private JTextField apellido;
+     private JTextArea miareaTexto;
+     private JScrollPane laminaScroll; 
 }
