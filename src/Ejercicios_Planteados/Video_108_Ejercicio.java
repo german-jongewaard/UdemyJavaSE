@@ -9,9 +9,6 @@ import javax.swing.JFrame;
  */
 public class Video_108_Ejercicio {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
     }
