@@ -43,7 +43,11 @@ class LaminaGeneralEvento extends JPanel{
                 
         nombreEtiqueta = new JLabel("Nombre");
         
+        nombre = new JTextField(15);        
+        
         apellidoEtiqueta = new JLabel("Apellido");
+        
+        apellido = new JTextField(15);        
         
         JPanel superior = new JPanel();
         
@@ -52,8 +56,9 @@ class LaminaGeneralEvento extends JPanel{
         JPanel inferior = new JPanel();
         
         superior.add(nombreEtiqueta);
-        
+        superior.add(nombre);
         superior.add(apellidoEtiqueta);
+        superior.add(apellido);
         
         add(superior, BorderLayout.NORTH);
         
