@@ -1,11 +1,13 @@
 package Ejercicios_Planteados;
  
+import java.awt.BorderLayout;
 import java.awt.Button;
 import javafx.scene.control.RadioButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -37,6 +39,23 @@ class LaminaGeneralEvento extends JPanel{
     
     public LaminaGeneralEvento() {        
  
+        setLayout(new BorderLayout());
+                
+        nombreEtiqueta = new JLabel("Nombre");
+        
+        apellidoEtiqueta = new JLabel("Apellido");
+        
+        JPanel superior = new JPanel();
+        
+        JPanel central = new JPanel();
+        
+        JPanel inferior = new JPanel();
+        
+        superior.add(nombreEtiqueta);
+        
+        superior.add(apellidoEtiqueta);
+        
+        add(superior, BorderLayout.NORTH);
         
         
     }
@@ -48,5 +67,8 @@ class LaminaGeneralEvento extends JPanel{
      private RadioButton radio2;
      private Button boton1;
      private Button boton2;
-     private JLabel texto;
+     private JLabel nombreEtiqueta;
+     private JLabel apellidoEtiqueta;
+     private JTextField nombre;
+     private JTextField apellido;
 }
