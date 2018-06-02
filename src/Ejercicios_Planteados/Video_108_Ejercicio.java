@@ -68,7 +68,7 @@ class LaminaGeneralEvento extends JPanel{
         miareaTexto = new JTextArea(20,30);        
         laminaScroll = new JScrollPane(miareaTexto);        
         miareaTexto.setLineWrap(true); 
-        
+         
         central.add(laminaScroll); 
          //*****************************************************        
         boton1 = new JButton("Boton 1");
@@ -79,7 +79,7 @@ class LaminaGeneralEvento extends JPanel{
             public void actionPerformed(ActionEvent e) { 
                 
                 
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "\n");
             }
         });
         
@@ -87,7 +87,7 @@ class LaminaGeneralEvento extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
                 
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "\n");
             }
         });
         
