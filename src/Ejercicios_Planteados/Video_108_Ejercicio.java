@@ -143,8 +143,7 @@ class LaminaGeneralEvento extends JPanel{
             if(boton1.isEnabled()){
                 int contador=0;
                 if(contador==0){
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "1");
-                //miareaTexto.setText("Boton 1 Pulsado");              
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "1");                 
                 }
                 contador ++;
             }
@@ -152,8 +151,7 @@ class LaminaGeneralEvento extends JPanel{
             if(boton2.isEnabled()){
                 int contador=0;
                 if(contador==0){
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "2");
-                //miareaTexto.setText("Boton 1 Pulsado");              
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "2");                         
                 }
                 contador ++;
             }
