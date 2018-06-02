@@ -65,9 +65,8 @@ class LaminaGeneralEvento extends JPanel{
         superior.add(apellidoEtiqueta);
         superior.add(apellido);
         //*****************************************************
-        miareaTexto = new JTextArea(20,30);  
-         
-        laminaScroll = new JScrollPane(miareaTexto);           
+        miareaTexto = new JTextArea(20,30);        
+        laminaScroll = new JScrollPane(miareaTexto);        
         miareaTexto.setLineWrap(true); 
         
         central.add(laminaScroll); 
@@ -75,10 +74,22 @@ class LaminaGeneralEvento extends JPanel{
         boton1 = new JButton("Boton 1");
         boton2 = new JButton("Boton 2");
         
-        boton1.addActionListener(new ManejaBotones());
+        boton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) { 
+                
+                
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+            }
+        });
         
-        boton2.addActionListener(new ManejaBotones()); 
-         
+        boton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+            }
+        });
         
         inferior.add(boton1);
         inferior.add(boton2);
@@ -91,19 +102,19 @@ class LaminaGeneralEvento extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(casilla1.isSelected()){
-                miareaTexto.setText("Casilla 1 Activada" + "\n");
+                miareaTexto.setText("Casilla 1 Activada");
             }else{
-                miareaTexto.setText("Casilla 1 Desactivada" + "\n");
-              }
+                miareaTexto.setText("Casilla 1 Desactivada");
+            }
             }
         });        
         casilla2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
           if(casilla2.isSelected()){
-                miareaTexto.setText("Casilla 2 Activada" + "\n");
+                miareaTexto.setText("Casilla 2 Activada");
             }else {
-                miareaTexto.setText("Casilla 2 Desactivada" + "\n");
+                miareaTexto.setText("Casilla 2 Desactivada");
             }
             }
         });    
@@ -134,43 +145,18 @@ class LaminaGeneralEvento extends JPanel{
         add(central, BorderLayout.CENTER);
         add(inferior, BorderLayout.SOUTH);
     }
-    
-    private class ManejaBotones implements ActionListener{
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            
-            if(boton1.isEnabled()){
-                int contador=0;
-                if(contador==0){
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "1");                 
-                }
-                contador ++;
-            }
-
-            if(boton2.isEnabled()){
-                int contador=0;
-                if(contador==0){
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText() + "2");                         
-                }
-                contador ++;
-            }
-        }        
-    }
       
        private class ManejaRadioButton implements ActionListener{ 
         @Override
         public void actionPerformed(ActionEvent e) {
             
-            if(radio1.isSelected()) miareaTexto.setText("Radio 1 Activado" + newline);
+            if(radio1.isSelected()) miareaTexto.setText("Radio 1 Activado");
             
-            if(radio2.isSelected()) miareaTexto.setText("Radio 2 Activado" + newline); 
+            if(radio2.isSelected()) miareaTexto.setText("Radio 2 Activado"); 
         } 
     }
     
-    private final static String newline = "\n";
- 
- 
+      
      private JCheckBox casilla1;
      private JCheckBox casilla2;     
      private JRadioButton radio1;
