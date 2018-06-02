@@ -74,6 +74,22 @@ class LaminaGeneralEvento extends JPanel{
         boton1 = new JButton("Boton 1");
         boton2 = new JButton("Boton 2");
         
+        boton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+            }
+        });
+        
+        boton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+            }
+        });
+        
         inferior.add(boton1);
         inferior.add(boton2);
         //*****************************************************
