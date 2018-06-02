@@ -79,10 +79,29 @@ class LaminaGeneralEvento extends JPanel{
         inferior.add(boton2);
         //*****************************************************
         casilla1 = new JCheckBox("casilla 1");
+        casilla1.setSelected(true);
         casilla2 = new JCheckBox("casilla 2"); 
         
-        casilla1.addActionListener(new ManejaChecks());
-        casilla2.addActionListener(new ManejaChecks());
+        casilla1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(casilla1.isSelected()){
+                miareaTexto.setText("Casilla 1 Activada");
+            }else{
+                miareaTexto.setText("Casilla 1 Desactivada");
+            }
+            }
+        });        
+        casilla2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+          if(casilla2.isSelected()){
+                miareaTexto.setText("Casilla 2 Activada");
+            }else {
+                miareaTexto.setText("Casilla 2 Desactivada");
+            }
+            }
+        });    
         
         inferior.add(casilla1);
         inferior.add(casilla2);        
@@ -92,6 +111,9 @@ class LaminaGeneralEvento extends JPanel{
         radio1 = new JRadioButton("Radio 1");
         radio1.setSelected(true);
         radio2 = new JRadioButton("Radio 2");
+        
+        radio1.addActionListener(new ManejaRadioButton());
+        radio2.addActionListener(new ManejaRadioButton());
         
         miGrupoBoton.add(radio1);
         miGrupoBoton.add(radio2);
@@ -103,43 +125,21 @@ class LaminaGeneralEvento extends JPanel{
         add(central, BorderLayout.CENTER);
         add(inferior, BorderLayout.SOUTH);
     }
-    
-      private class ManejaChecks implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) { 
-            
-            if(casilla1.isSelected()){
-                miareaTexto.setText("Casilla 1 Activada");
-            }else{
-                miareaTexto.setText("Casilla 1 Desactivada");
-            }
-            
-            if(casilla2.isSelected()){
-                miareaTexto.setText("Casilla 2 Activada");
-            }else {
-                miareaTexto.setText("Casilla 2 Desactivada");
-            }
-        }       
-    }
       
-       private class ManejaCasilla implements ActionListener {
+       private class ManejaRadioButton implements ActionListener{
 
         @Override
-        public void actionPerformed(ActionEvent e) { 
+        public void actionPerformed(ActionEvent e) {
             
-            if(casilla1.isSelected()){
-                miareaTexto.setText("Casilla 1 Activada");
-            }else{
-                miareaTexto.setText("Casilla 1 Desactivada");
-            }
+            if(radio1.isSelected()) miareaTexto.setText("Radio 1 Activado");
             
-            if(casilla2.isSelected()){
-                miareaTexto.setText("Casilla 2 Activada");
-            }else {
-                miareaTexto.setText("Casilla 2 Desactivada");
-            }
-        }       
+            if(radio2.isSelected()) miareaTexto.setText("Radio 2 Activado");
+            
+             
+                
+            
+        }
+        
     }
     
       
