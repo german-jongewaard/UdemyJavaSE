@@ -104,7 +104,7 @@ class LaminaGeneralEvento extends JPanel{
                 miareaTexto.setText("Casilla 1 Activada");
             }else{
                 miareaTexto.setText("Casilla 1 Desactivada");
-            }
+              }
             }
         });        
         casilla2.addActionListener(new ActionListener() {
@@ -143,6 +143,16 @@ class LaminaGeneralEvento extends JPanel{
         add(superior, BorderLayout.NORTH);
         add(central, BorderLayout.CENTER);
         add(inferior, BorderLayout.SOUTH);
+    }
+    
+    private class ManejaBotones implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if(boton1.)
+          miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+          
+        }        
     }
       
        private class ManejaRadioButton implements ActionListener{ 
