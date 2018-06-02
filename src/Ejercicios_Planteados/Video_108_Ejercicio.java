@@ -70,8 +70,7 @@ class LaminaGeneralEvento extends JPanel{
         miareaTexto.setLineWrap(true); 
         
         central.add(laminaScroll); 
-         //*****************************************************
-        
+         //*****************************************************        
         boton1 = new JButton("Boton 1");
         boton2 = new JButton("Boton 2");
         
@@ -120,26 +119,24 @@ class LaminaGeneralEvento extends JPanel{
         
         inferior.add(radio1);
         inferior.add(radio2); 
-        //*****************************************************         
+        //****************************************************** 
+        
+        
+        
+        //*****************************************************   
         add(superior, BorderLayout.NORTH);
         add(central, BorderLayout.CENTER);
         add(inferior, BorderLayout.SOUTH);
     }
       
-       private class ManejaRadioButton implements ActionListener{
-
+       private class ManejaRadioButton implements ActionListener{ 
         @Override
         public void actionPerformed(ActionEvent e) {
             
             if(radio1.isSelected()) miareaTexto.setText("Radio 1 Activado");
             
-            if(radio2.isSelected()) miareaTexto.setText("Radio 2 Activado");
-            
-             
-                
-            
-        }
-        
+            if(radio2.isSelected()) miareaTexto.setText("Radio 2 Activado"); 
+        } 
     }
     
       
