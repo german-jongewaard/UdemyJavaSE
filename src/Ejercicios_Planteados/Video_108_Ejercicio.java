@@ -54,7 +54,7 @@ class LaminaGeneralEvento extends JPanel{
         JPanel central = new JPanel();   
         
         JPanel inferior = new JPanel();
-                
+        //*****************************************************     
         nombreEtiqueta = new JLabel("Nombre");        
         nombre = new JTextField(15);                
         apellidoEtiqueta = new JLabel("Apellido");        
@@ -78,8 +78,11 @@ class LaminaGeneralEvento extends JPanel{
         inferior.add(boton1);
         inferior.add(boton2);
         //*****************************************************
-         casilla1 = new JCheckBox("casilla 1");
-        casilla2 = new JCheckBox("casilla 2");
+        casilla1 = new JCheckBox("casilla 1");
+        casilla2 = new JCheckBox("casilla 2"); 
+        
+        casilla1.addActionListener(new ManejaChecks());
+        casilla2.addActionListener(new ManejaChecks());
         
         inferior.add(casilla1);
         inferior.add(casilla2);        
