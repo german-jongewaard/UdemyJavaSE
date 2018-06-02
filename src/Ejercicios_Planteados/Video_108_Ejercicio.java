@@ -74,13 +74,15 @@ class LaminaGeneralEvento extends JPanel{
         boton1 = new JButton("Boton 1");
         boton2 = new JButton("Boton 2");
         
-        boton1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                                                
-                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
-            }
-        });
+        boton1.addActionListener(new ManejaBotones());
+        
+//        boton1.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                                                
+//                miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+//            }
+//        });
         
         boton2.addActionListener(new ActionListener() {
             @Override
@@ -149,8 +151,19 @@ class LaminaGeneralEvento extends JPanel{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if(boton1.)
-          miareaTexto.setText(nombre.getText() + " " + apellido.getText());
+          
+          int contador=0;
+          
+          if(boton1.isEnabled()){
+               
+              if(contador==0){
+              miareaTexto.setText(nombre.getText() + " " + apellido.getText() + contador);
+              //miareaTexto.setText("Boton 1 Pulsado");              
+              }
+              contador ++;
+          }
+           
+          //miareaTexto.setText(nombre.getText() + " " + apellido.getText());
           
         }        
     }
