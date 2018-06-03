@@ -1,6 +1,9 @@
 package ComponentesSwing;
 
+import java.awt.BorderLayout;
+import java.awt.Font;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
@@ -36,5 +39,14 @@ class LaminaComboBox extends JPanel{
     
     public LaminaComboBox(){
         
+        setLayout(new BorderLayout());
+        
+        texto = new JLabel("En breve aprenderemos JavaFx");
+        
+        texto.setFont(new Font("Serif", Font.PLAIN, 18));
+        
+        
     }
+    
+    private JLabel texto;
 }
