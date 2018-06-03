@@ -61,6 +61,10 @@ class LaminaComboBox extends JPanel{
         miCombo.addItem("Dialog");
         
         miCombo.addItem("Calibri");
+        
+        superior.add(miCombo);
+        
+        add(miCombo, BorderLayout.NORTH);
          
         
          
