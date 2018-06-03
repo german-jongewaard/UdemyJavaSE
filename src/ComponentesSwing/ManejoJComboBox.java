@@ -2,6 +2,7 @@ package ComponentesSwing;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -49,7 +50,23 @@ class LaminaComboBox extends JPanel{
         
         JPanel superior = new JPanel();
         
+        miCombo = new JComboBox();
+        
+        miCombo.addItem("Serif");
+        
+        miCombo.addItem("SansSerif");
+        
+        miCombo.addItem("Monospaced");
+        
+        miCombo.addItem("Dialog");
+        
+        miCombo.addItem("Calibri");
+         
+        
+         
+        
     }
     
-    private JLabel texto;
+    JLabel texto;
+    JComboBox miCombo;
 }
