@@ -22,7 +22,9 @@ class MarcoComboBox extends JFrame{
         
         setBounds(600, 300, 600, 400);
         
-        add(this);
+        add(new LaminaComboBox());
+        
+        setVisible(true);
     }
     
 }
