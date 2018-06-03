@@ -1,6 +1,7 @@
 package ComponentesSwing;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -17,6 +18,19 @@ public class ManejoJComboBox {
 
 class MarcoComboBox extends JFrame{
     
+    public MarcoComboBox(){
+        
+        setBounds(600, 300, 600, 400);
+        
+        add(this);
+    }
     
+}
+
+
+class LaminaComboBox extends JPanel{
     
+    public LaminaComboBox(){
+        
+    }
 }
