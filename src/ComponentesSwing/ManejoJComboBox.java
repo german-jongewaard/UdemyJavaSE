@@ -45,6 +45,9 @@ class LaminaComboBox extends JPanel{
         
         texto.setFont(new Font("Serif", Font.PLAIN, 18));
         
+        add(texto, BorderLayout.CENTER);
+        
+        JPanel superior = new JPanel();
         
     }
     
