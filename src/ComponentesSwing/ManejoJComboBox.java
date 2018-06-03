@@ -12,6 +12,9 @@ public class ManejoJComboBox {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        MarcoComboBox miMarcoComboBox = new MarcoComboBox();
+        
+        miMarcoComboBox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }    
 }
@@ -28,7 +31,6 @@ class MarcoComboBox extends JFrame{
     }
     
 }
-
 
 class LaminaComboBox extends JPanel{
     
