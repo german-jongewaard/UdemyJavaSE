@@ -87,8 +87,7 @@ class LaminaComboBox extends JPanel{
         
         texto.setFont(new Font("Serif", Font.PLAIN, 18));
         
-        add(texto, BorderLayout.CENTER);        
-         
+        add(texto, BorderLayout.CENTER); 
     }
     
     private class EventoComboFuente implements ActionListener{
