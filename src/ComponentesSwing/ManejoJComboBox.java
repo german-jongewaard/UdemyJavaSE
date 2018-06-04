@@ -8,6 +8,9 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 /**
  *
@@ -34,8 +37,7 @@ class MarcoComboBox extends JFrame{
         add(new LaminaComboBox());
         
         setVisible(true);
-    }
-    
+    }    
 }
 
 class LaminaComboBox extends JPanel{
@@ -44,31 +46,57 @@ class LaminaComboBox extends JPanel{
         
         setLayout(new BorderLayout());
         
+        JPanel superior = new JPanel();
+        
+        miCombo = new JComboBox();
+        
+        miCombo.addItem("Serif");        
+        miCombo.addItem("SansSerif");        
+        miCombo.addItem("Monospaced");        
+        miCombo.addItem("Dialog");        
+        miCombo.addItem("Calibri");
+        
+        miCombo.addActionListener(new EventoComboFuente()); 
+        
+        superior.add(miCombo);
+        
+        add(superior, BorderLayout.NORTH);
+        
+        miSlider = new JSlider(8, 36, 24);
+        
+        miSlider.setMajorTickSpacing(12);
+        
+        miSlider.setMinorTickSpacing(2);
+        
+        miSlider.setPaintTicks(true);
+        
+        miSlider.setPaintLabels(true); 
+        
+        miSlider.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                texto.setFont(new Font((String) miCombo.getSelectedItem(), Font.PLAIN, miSlider.getValue()));
+            }
+        });
+        
+        
+        superior.add(miSlider);
+        
+        add(superior, BorderLayout.NORTH);
+        
+         
+        
+        
+        
+        //********************************************************
+        
         texto = new JLabel("En breve aprenderemos JavaFx");
         
         texto.setFont(new Font("Serif", Font.PLAIN, 18));
         
         add(texto, BorderLayout.CENTER);
         
-        JPanel superior = new JPanel();
-        
-        miCombo = new JComboBox();
-        
-        miCombo.addItem("Serif");
-        
-        miCombo.addItem("SansSerif");
-        
-        miCombo.addItem("Monospaced");
-        
-        miCombo.addItem("Dialog");
-        
-        miCombo.addItem("Calibri");
-        
-        miCombo.addActionListener(new EventoComboFuente());
-        
-        superior.add(miCombo);
-        
-        add(miCombo, BorderLayout.NORTH);
+         
     }
     
     private class EventoComboFuente implements ActionListener{
@@ -83,4 +111,5 @@ class LaminaComboBox extends JPanel{
     
     JLabel texto;
     JComboBox miCombo;
+    JSlider miSlider;
 }
