@@ -2,6 +2,8 @@ package ComponentesSwing;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -62,13 +64,21 @@ class LaminaComboBox extends JPanel{
         
         miCombo.addItem("Calibri");
         
+        miCombo.addActionListener(new EventoComboFuente());
+        
         superior.add(miCombo);
         
         add(miCombo, BorderLayout.NORTH);
-         
-        
-         
-        
+    }
+    
+    private class EventoComboFuente implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            texto.setFont(new Font((String) miCombo.getSelectedItem(), Font.PLAIN, 18));
+                   
+        } 
     }
     
     JLabel texto;
