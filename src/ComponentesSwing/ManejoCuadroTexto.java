@@ -43,13 +43,17 @@ class LaminaCuadroTexto extends JPanel{
         
         cuadroTexto = new JTextField(20);
         
-        add(cuadroTexto);
+        cuadroTextoDos = new JTextField(20);
+        
+        add(cuadroTexto);      
         
         JButton boton = new JButton("Obtener texto");
         
         boton.addActionListener(new ObtenerTexto());
         
         add(boton);
+        
+        add(cuadroTextoDos);
         
     }
     
@@ -58,8 +62,12 @@ class LaminaCuadroTexto extends JPanel{
         @Override
         public void actionPerformed(ActionEvent e) {
             System.out.print(cuadroTexto.getText());
+            
+            cuadroTextoDos.setText(cuadroTexto.getText()); 
+            
         }         
     }
     
     JTextField cuadroTexto;
+    JTextField cuadroTextoDos;
 }
