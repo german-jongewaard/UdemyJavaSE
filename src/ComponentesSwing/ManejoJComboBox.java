@@ -82,8 +82,7 @@ class LaminaComboBox extends JPanel{
         
         superior.add(miSlider);
         
-        add(superior, BorderLayout.NORTH);        
-         
+        add(superior, BorderLayout.NORTH);    
         
         
         
