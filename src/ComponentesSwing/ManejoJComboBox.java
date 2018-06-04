@@ -23,8 +23,7 @@ public class ManejoJComboBox {
         // TODO code application logic here
         MarcoComboBox miMarcoComboBox = new MarcoComboBox();
         
-        miMarcoComboBox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        miMarcoComboBox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
     }    
 }
 
