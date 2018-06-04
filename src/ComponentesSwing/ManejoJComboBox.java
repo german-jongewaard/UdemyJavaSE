@@ -85,7 +85,6 @@ class LaminaComboBox extends JPanel{
         add(superior, BorderLayout.NORTH);    
         
         
-        
         //********************************************************
         
         texto = new JLabel("En breve aprenderemos JavaFx");
