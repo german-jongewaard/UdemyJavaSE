@@ -36,7 +36,7 @@ class LaminaCheckBoxEvento extends JPanel{
     
     public LaminaCheckBoxEvento() {
         
-          JCheckBox miBox = new JCheckBox("Que bien!");
+        JCheckBox miBox = new JCheckBox("Que bien!");
         
         add(miBox);
         
