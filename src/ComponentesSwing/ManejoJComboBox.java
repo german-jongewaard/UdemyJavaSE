@@ -96,7 +96,7 @@ class LaminaComboBox extends JPanel{
         @Override
         public void actionPerformed(ActionEvent e) {
             
-            texto.setFont(new Font((String) miCombo.getSelectedItem(), Font.PLAIN, 18));                   
+            texto.setFont(new Font((String) miCombo.getSelectedItem(), Font.PLAIN, miSlider.getValue()));                   
         } 
     }
     
