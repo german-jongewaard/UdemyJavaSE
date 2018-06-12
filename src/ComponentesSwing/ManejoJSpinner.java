@@ -27,8 +27,7 @@ class MarcoJSpinner extends JFrame{
         add(new LaminaJSpinner());
         
         setVisible(true);
-    }
-    
+    }    
 }
 
 class LaminaJSpinner extends JPanel{
