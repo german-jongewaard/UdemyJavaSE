@@ -22,6 +22,10 @@ class MarcoJSpinner extends JFrame{
     
     public MarcoJSpinner(){
         
+        setBounds(600, 300, 600, 400);
+        
+        add(new)
+        
         
     }
     
