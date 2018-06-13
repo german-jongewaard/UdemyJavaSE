@@ -14,7 +14,7 @@ public class ManejoJSpinner {
         // TODO code application logic here
         
         MarcoJSpinner miMarco = new MarcoJSpinner();
-        
+        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }
     
