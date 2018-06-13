@@ -25,8 +25,13 @@ class MarcoJSpinner extends JFrame{
         setBounds(600, 300, 600, 400);
         
         add(new)
-        
-        
     }
     
+}
+
+class LaminaJSpinner extends JPanel{
+    
+    public LaminaJSpinner(){
+        
+    }
 }
