@@ -44,7 +44,7 @@ class LaminaDeMenu extends JPanel{
         
         JMenuBar miBarra = new JMenuBar();
         
-        
+        //----- Aquí irán los elementos del Menú ----
         
     }
 }
