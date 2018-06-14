@@ -40,7 +40,7 @@ class LaminaJSpinner extends JPanel{
         control.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
-                    System.out.println("");
+                    System.out.println("seria.." + control.getValue());
             }
         });
         
