@@ -35,6 +35,10 @@ class LaminaJSpinner extends JPanel{
     
     public LaminaJSpinner(){
         
+        String meses[]= {"Enero","Febrero","Marzo","Abril","Mayo",
+            "Junio","Julio","Agosto","Septiembre","Octubre",
+            "Noviembre","Diciembre"};
+        
         JSpinner control = new JSpinner();
          
         control.addChangeListener(new ChangeListener() {
