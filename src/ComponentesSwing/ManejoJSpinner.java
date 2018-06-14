@@ -45,6 +45,8 @@ class LaminaJSpinner extends JPanel{
         Dimension d = new Dimension(150, 20);
         
         
+        control.setPreferredSize(d);
+        
          
         control.addChangeListener(new ChangeListener() {
             @Override
