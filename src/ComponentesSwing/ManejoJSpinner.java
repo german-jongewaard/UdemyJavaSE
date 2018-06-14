@@ -39,7 +39,7 @@ class LaminaJSpinner extends JPanel{
             "Junio","Julio","Agosto","Septiembre","Octubre",
             "Noviembre","Diciembre"};
         
-        JSpinner control = new JSpinner(new SpinnerListModel());
+        JSpinner control = new JSpinner(new SpinnerListModel(meses));
          
         control.addChangeListener(new ChangeListener() {
             @Override
