@@ -54,8 +54,8 @@ class LaminaDeMenu extends JPanel{
         JMenu herramientas = new JMenu("Herramientas");
         
         miBarra.add(archivo);
-        miBarra.add(archivo);
-        miBarra.add(archivo);
+        miBarra.add(edicion);
+        miBarra.add(herramientas);
         
     }
 }
