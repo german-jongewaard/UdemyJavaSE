@@ -20,7 +20,8 @@ public class ManejoDeMenu {
     public static void main(String[] args) {
         // TODO code application logic here
      MarcoDeMenu miMarco = new MarcoDeMenu();
-        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
+     
+     miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
     }    
 }
 
