@@ -49,6 +49,8 @@ class LaminaDeMenu extends JPanel{
         
         JMenu archivo = new JMenu("Archivo");
         
+        JMenu edicion = new JMenu("Edición");
+        
     }
 }
  
