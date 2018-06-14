@@ -34,6 +34,8 @@ class LaminaJSpinner extends JPanel{
     public LaminaJSpinner(){
         
         JSpinner control = new JSpinner();
+         
+        control.addChangeListener(listener);
         
         add(control);
         
