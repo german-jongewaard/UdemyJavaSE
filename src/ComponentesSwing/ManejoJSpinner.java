@@ -1,5 +1,6 @@
 package ComponentesSwing;
 
+import java.awt.Dimension;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -40,6 +41,10 @@ class LaminaJSpinner extends JPanel{
             "Noviembre","Diciembre"};
         
         JSpinner control = new JSpinner(new SpinnerListModel(meses));
+        
+        Dimension d = new Dimension(150, 20);
+        
+        
          
         control.addChangeListener(new ChangeListener() {
             @Override
