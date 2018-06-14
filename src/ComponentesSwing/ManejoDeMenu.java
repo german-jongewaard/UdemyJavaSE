@@ -6,6 +6,7 @@
 package ComponentesSwing;
 
 import javax.swing.JFrame;
+import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 
 /**
@@ -40,6 +41,10 @@ class MarcoDeMenu extends JFrame{
 class LaminaDeMenu extends JPanel{
     
     public LaminaDeMenu(){
+        
+        JMenuBar miBarra = new JMenuBar();
+        
+        
         
     }
 }
