@@ -16,10 +16,7 @@ import javax.swing.JPanel;
  * @author german
  */
 public class ManejoDeMenu {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
      MarcoDeMenu miMarco = new MarcoDeMenu();
