@@ -60,8 +60,10 @@ class LaminaDeMenu extends JPanel{
         
         //---- Aquí irían los elementos de Archivo -------
         
-        JmenuItem guardar = new JMenuItem("Guardar");
+        JMenuItem guardar = new JMenuItem("Guardar");
+        JMenuItem guardarComo = new JMenuItem("Guardar como");
         
+        archivo.add(guardar);
         
         
         
