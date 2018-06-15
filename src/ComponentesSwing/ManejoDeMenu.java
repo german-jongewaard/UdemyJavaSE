@@ -61,6 +61,15 @@ class LaminaDeMenu extends JPanel{
         JMenuItem guardarComo = new JMenuItem("Guardar como");
         
         archivo.add(guardar);
+        archivo.add(guardarComo);
+        
+        //---- Aquí irían los elementos de Edición -------
+        
+        JMenuItem guardar = new JMenuItem("Guardar");
+        JMenuItem guardarComo = new JMenuItem("Guardar como");
+        
+        archivo.add(guardar);
+        archivo.add(guardarComo);
         
         
         
