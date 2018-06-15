@@ -40,9 +40,10 @@ class LaminaJSpinner extends JPanel{
             "Junio","Julio","Agosto","Septiembre","Octubre",
             "Noviembre","Diciembre"};
         
-        JSpinner control = new JSpinner(new SpinnerListModel(meses));
-        
+       //JSpinner control = new JSpinner(new SpinnerListModel(meses));        
         //Dimension d = new Dimension(150, 20);
+        
+        JSpinner control = new JSpinner();        
          
         control.setPreferredSize(new Dimension(150, 20));
         
