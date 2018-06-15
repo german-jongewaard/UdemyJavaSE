@@ -57,6 +57,10 @@ class LaminaDeMenu extends JPanel{
         miBarra.add(edicion);
         miBarra.add(herramientas);
         
+        //---- Aquí irían los elementos de Archivo -------
+        
+        add(miBarra);
+        
     }
 }
  
