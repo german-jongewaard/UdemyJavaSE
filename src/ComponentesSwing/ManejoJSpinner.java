@@ -43,7 +43,7 @@ class LaminaJSpinner extends JPanel{
        //JSpinner control = new JSpinner(new SpinnerListModel(meses));        
         //Dimension d = new Dimension(150, 20);
         
-        JSpinner control = new JSpinner(new SpinnerNumberModel(5, 15, -5, 1));        
+        JSpinner control = new JSpinner(new SpinnerNumberModel(5, -5, 15, 1));        
          
         control.setPreferredSize(new Dimension(150, 20));
         
