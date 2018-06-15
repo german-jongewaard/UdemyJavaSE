@@ -8,6 +8,7 @@ package ComponentesSwing;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 /**
@@ -58,6 +59,13 @@ class LaminaDeMenu extends JPanel{
         miBarra.add(herramientas);
         
         //---- Aquí irían los elementos de Archivo -------
+        
+        JmenuItem guardar = new JMenuItem("Guardar");
+        
+        
+        
+        
+        
         
         add(miBarra);
         
