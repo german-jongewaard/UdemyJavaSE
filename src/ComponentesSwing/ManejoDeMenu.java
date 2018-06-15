@@ -71,11 +71,7 @@ class LaminaDeMenu extends JPanel{
         
         edicion.add(cortar);
         edicion.add(copiar);
-        edicion.add(pegar);
-        
-        
-        
-        
+        edicion.add(pegar         
         
         add(miBarra);
         
