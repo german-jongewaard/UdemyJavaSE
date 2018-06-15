@@ -67,7 +67,7 @@ class LaminaDeMenu extends JPanel{
         
         JMenuItem cortar = new JMenuItem("Cortar");
         JMenuItem copiar = new JMenuItem("Copiar");
-        JMenuItem pegar = new JMenuItem("Copiar");
+        JMenuItem pegar = new JMenuItem("Pegar");
         
         edicion.add(cortar);
         edicion.add(copiar);
