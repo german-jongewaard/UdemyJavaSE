@@ -78,6 +78,7 @@ class LaminaDeMenu extends JPanel{
         JMenuItem preferencias = new JMenuItem("Preferencias");
         
         herramientas.add(opciones);
+        herramientas.add(preferencias);
         
         
         add(miBarra);
