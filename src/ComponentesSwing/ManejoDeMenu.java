@@ -71,7 +71,12 @@ class LaminaDeMenu extends JPanel{
         
         edicion.add(cortar);
         edicion.add(copiar);
-        edicion.add(pegar         
+        edicion.add(pegar);         
+        
+        //---- Aquí irían los elementos de Herramientas -------
+        JMenuItem opciones = new JMenuItem("Opciones");
+        JMenuItem preferencias = new JMenuItem("Preferencias");
+        
         
         add(miBarra);
         
