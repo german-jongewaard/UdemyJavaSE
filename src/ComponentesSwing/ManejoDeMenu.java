@@ -84,6 +84,8 @@ class LaminaDeMenu extends JPanel{
          JMenuItem ayuda = new JMenuItem("Ayuda");
          
          JMenuItem generales = new JMenuItem("Generales");
+         
+         preferencias.add(ayuda);
         
         
         
