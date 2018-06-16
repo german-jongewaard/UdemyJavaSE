@@ -75,7 +75,7 @@ class LaminaDeMenu extends JPanel{
         
         //---- Aquí irían los elementos de Herramientas -------
         JMenuItem opciones = new JMenuItem("Opciones");
-        JMenuItem preferencias = new JMenuItem("Preferencias");
+        JMenu preferencias = new JMenu("Preferencias");
         
         herramientas.add(opciones);
         herramientas.add(preferencias);
