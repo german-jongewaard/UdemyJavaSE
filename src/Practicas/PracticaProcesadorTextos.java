@@ -119,6 +119,8 @@ class LaminaProcesadorTextos extends  JPanel{
         @Override
         public void actionPerformed(ActionEvent e) {
             
+            letraExistente = miArea.getFont();
+            
             miArea.setFont(new Font(tipoLetra, estilos, tamanios));
             
         }
