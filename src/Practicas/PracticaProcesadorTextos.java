@@ -121,6 +121,8 @@ class LaminaProcesadorTextos extends  JPanel{
             
             letraExistente = miArea.getFont();//almaceno el tipo de letra que tengo en el area de texto.
             
+            if(rotulo == "Arial" || rotulo == "Courier" || rotulo == "Verdana")
+            
             miArea.setFont(new Font(tipoLetra, estilos, tamanios));
             
         }
