@@ -130,7 +130,7 @@ class LaminaProcesadorTextos extends  JPanel{
             }else if(rotulo == "Cursiva" || rotulo == "Negrita"){
                 
                 if(letraExistente.getStyle()==1 || letraExistente.getStyle()==2){
-                    estilos
+                    estilos = 3;
                 }
                 
                 tipoLetra = letraExistente.getFontName();
