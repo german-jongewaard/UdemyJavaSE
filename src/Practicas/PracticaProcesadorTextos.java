@@ -10,6 +10,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
+import javax.swing.text.StyledEditorKit;
 
 /**
  *
@@ -99,6 +100,8 @@ class LaminaProcesadorTextos extends  JPanel{
          if(menu == "fuente"){ 
              
              fuente.add(elemMenuItem);
+             
+             elemMenuItem.addActionListener(new StyledEditorKit.FontFamilyAction("cambiaLetra", tipoLetra));
          
          }else if(menu == "estilo"){ 
              
@@ -109,7 +112,7 @@ class LaminaProcesadorTextos extends  JPanel{
              tamanio.add(elemMenuItem);
          }
          
-         elemMenuItem.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tamanios));
+         //elemMenuItem.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tamanios));
     }
     
     //clase Interna que utilizo en confirguraMenu
