@@ -106,15 +106,15 @@ class LaminaProcesadorTextos extends  JPanel{
     }
     
     //clase Interna que utilizo en confirguraMenu
-    private class GestionaEventos implements ActionListener{
-
-        public GestionaEventos(String rotulo, String tipoLetra, int estilos, int tamanios ) {
-            
-            this.rotulo = rotulo;
-            this.tipoLetra = tipoLetra;
-            this.estilos = estilos;
-            this.tamanios = tamanios;
-        } 
+//    private class GestionaEventos implements ActionListener{
+//
+//        public GestionaEventos(String rotulo, String tipoLetra, int estilos, int tamanios ) {
+//            
+//            this.rotulo = rotulo;
+//            this.tipoLetra = tipoLetra;
+//            this.estilos = estilos;
+//            this.tamanios = tamanios;
+//        } 
 
         @Override
         public void actionPerformed(ActionEvent e) {
