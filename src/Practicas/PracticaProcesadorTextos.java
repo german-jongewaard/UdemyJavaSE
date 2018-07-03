@@ -132,7 +132,7 @@ class LaminaProcesadorTextos extends  JPanel{
                 tipoLetra = letraExistente.getFontName();
                 
                  tamanios = letraExistente.getSize();
-            }else if(rotulo == "12" || rotulo == "Negrita"){
+            }else if(rotulo == "12" || rotulo == "16" || rotulo == "20" ||){
         
             }
             miArea.setFont(new Font(tipoLetra, estilos, tamanios));
