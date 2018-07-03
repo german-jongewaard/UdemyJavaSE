@@ -96,11 +96,18 @@ class LaminaProcesadorTextos extends  JPanel{
         
          JMenuItem elemMenuItem = new JMenuItem(rotulo);
          
-         if(menu == "fuente") fuente.add(elemMenuItem);
+         if(menu == "fuente"){ 
+             
+             fuente.add(elemMenuItem);
          
-         else if(menu == "estilo") estilo.add(elemMenuItem);
+         }else if(menu == "estilo"){ 
+             
+             estilo.add(elemMenuItem);
          
-         else if(menu == "tamaño") tamanio.add(elemMenuItem);
+         }else if(menu == "tamaño"){ 
+             
+             tamanio.add(elemMenuItem);
+         }
          
          elemMenuItem.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tamanios));
     }
@@ -116,42 +123,42 @@ class LaminaProcesadorTextos extends  JPanel{
 //            this.tamanios = tamanios;
 //        } 
 
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            
-            letraExistente = miArea.getFont();//almaceno el tipo de letra que tengo en el area de texto.
-            
-            if(rotulo == "Arial" || rotulo == "Courier" || rotulo == "Verdana"){
-                
-                estilos = letraExistente.getStyle();
-                
-                tamanios = letraExistente.getSize();
-                
-            }else if(rotulo == "Cursiva" || rotulo == "Negrita"){
-                
-                if(letraExistente.getStyle()==1 || letraExistente.getStyle()==2){
-                    estilos = 3;
-                }
-                
-                tipoLetra = letraExistente.getFontName();
-                
-                tamanios = letraExistente.getSize();
-                
-            }else if(rotulo == "12" || rotulo == "16" || rotulo == "20" || rotulo == "24"){
-        
-                tipoLetra = letraExistente.getFontName();
-                
-                estilos = letraExistente.getStyle();
-            }
-            miArea.setFont(new Font(tipoLetra, estilos, tamanios));
-            
-        }
-        
-        String rotulo, tipoLetra;
-        
-        int estilos, tamanios;
-        
-    }
+//        @Override
+//        public void actionPerformed(ActionEvent e) {
+//            
+//            letraExistente = miArea.getFont();//almaceno el tipo de letra que tengo en el area de texto.
+//            
+//            if(rotulo == "Arial" || rotulo == "Courier" || rotulo == "Verdana"){
+//                
+//                estilos = letraExistente.getStyle();
+//                
+//                tamanios = letraExistente.getSize();
+//                
+//            }else if(rotulo == "Cursiva" || rotulo == "Negrita"){
+//                
+//                if(letraExistente.getStyle()==1 || letraExistente.getStyle()==2){
+//                    estilos = 3;
+//                }
+//                
+//                tipoLetra = letraExistente.getFontName();
+//                
+//                tamanios = letraExistente.getSize();
+//                
+//            }else if(rotulo == "12" || rotulo == "16" || rotulo == "20" || rotulo == "24"){
+//        
+//                tipoLetra = letraExistente.getFontName();
+//                
+//                estilos = letraExistente.getStyle();
+//            }
+//            miArea.setFont(new Font(tipoLetra, estilos, tamanios));
+//            
+//        }
+//        
+//        String rotulo, tipoLetra;
+//        
+//        int estilos, tamanios;
+//        
+//    }
     
     JTextPane miArea;
     
