@@ -111,7 +111,7 @@ class LaminaProcesadorTextos extends  JPanel{
              
              tamanio.add(elemMenuItem);
              
-             elemMenuItem
+             elemMenuItem.addActionListener(l);
          }
          
          //elemMenuItem.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tamanios));
