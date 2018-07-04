@@ -109,7 +109,7 @@ class LaminaProcesadorTextos extends  JPanel{
              
              if(estilos == Font.BOLD) elemMenuItem.addActionListener(new StyledEditorKit.BoldAction());
              
-             else   elemMenuItem.addActionListener(l);
+             else   elemMenuItem.addActionListener(new );
          
          }else if(menu == "tamaño"){ 
              
