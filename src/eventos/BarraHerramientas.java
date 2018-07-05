@@ -18,3 +18,17 @@ public class BarraHerramientas {
     }
     
 }
+
+class MarcoBarra extends JFrame{
+    
+    public MarcoBarra(){
+        
+        setBounds(600, 300, 500, 350);
+        
+        add(new LaminaBarra);
+        
+        setVisible(true);
+    }
+    
+    
+}
