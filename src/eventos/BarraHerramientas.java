@@ -14,8 +14,7 @@ public class BarraHerramientas {
         
         MarcoBarra miMarco = new MarcoBarra();
         
-        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
     }    
 }
 
