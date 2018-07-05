@@ -14,7 +14,9 @@ public class BarraHerramientas {
         
         MarcoBarra miMarco = new MarcoBarra();
         
-        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
+        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        miMarco.setVisible(true);
     }    
 }
 
@@ -26,7 +28,7 @@ class MarcoBarra extends JFrame{
         
         add(new LaminaBarra());
         
-        setVisible(true);
+        //setVisible(true);
     }   
 }
 
@@ -36,4 +38,6 @@ class LaminaBarra extends JPanel{
         
         
     }    
+    
+    JPanel miLamina;
 }
