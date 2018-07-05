@@ -1,5 +1,7 @@
 package eventos;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author german
@@ -11,7 +13,7 @@ public class BarraHerramientas {
         
         MarcoBarra miMarco = MarcoBarra();
         
-        miMarco.setDefaultCloseOperation()
+        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }
     
