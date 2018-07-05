@@ -1,6 +1,7 @@
 package eventos;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -24,7 +25,7 @@ class MarcoBarra extends JFrame{
         
         setBounds(600, 300, 500, 350);
         
-        add(new LaminaBarra);
+        add(new LaminaBarra());
         
         setVisible(true);
     }   
