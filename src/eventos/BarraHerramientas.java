@@ -12,7 +12,7 @@ public class BarraHerramientas {
 
     public static void main(String[] args) {
         
-        MarcoBarra miMarco = MarcoBarra();
+        MarcoBarra miMarco = new MarcoBarra();
         
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
@@ -36,6 +36,5 @@ class LaminaBarra extends JPanel{
     public LaminaBarra(){
         
         
-    }
-    
+    }    
 }
