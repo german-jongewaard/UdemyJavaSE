@@ -1,5 +1,6 @@
 package eventos;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
@@ -94,7 +95,7 @@ class LaminaBarra extends JPanel{
               barra.add(colorRojo);
               barra.add(colorVerde);
               
-              add(barra);
+              add(barra, BorderLayout.NORTH);
 
         } 
         
