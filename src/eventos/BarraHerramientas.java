@@ -101,7 +101,7 @@ class LaminaBarra extends JPanel{
         
     private class EventoColorDeFondo extends AbstractAction {
     
-        public EventoColorDeFondo(String nombre, Color color_fondo){
+        public EventoColorDeFondo(String nombre, Color color_fondo, Icon icono){
 
             putValue(Action.NAME, nombre);
             
