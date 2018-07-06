@@ -7,6 +7,7 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import static javax.swing.Action.NAME;
 import javax.swing.ActionMap;
+import javax.swing.Icon;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -104,6 +105,8 @@ class LaminaBarra extends JPanel{
         public EventoColorDeFondo(String nombre, Color color_fondo, Icon icono){
 
             putValue(Action.NAME, nombre);
+            
+            putValue(Action.SMALL_ICON, icono);
             
             putValue(Action.SHORT_DESCRIPTION, "Pone la lámina JPane de Color: " + nombre);
 
