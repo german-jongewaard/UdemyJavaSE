@@ -36,17 +36,21 @@ class MarcoBarra extends JFrame{
         
         setBounds(600, 300, 500, 350);
         
-        add(new LaminaBarra());
+        miLamina = new JPanel();
+        
+        add(miLamina);
+        
+        //add(new LaminaBarra());
         
         //setVisible(true);
-    }   
+   /* }   
 }
 
 class LaminaBarra extends JPanel{
     
     public LaminaBarra() {
 
-              /* JButton botonAzul = new JButton("Azul");
+               JButton botonAzul = new JButton("Azul");
 
                JButton botonRojo = new JButton("Rojo");
 
@@ -60,28 +64,28 @@ class LaminaBarra extends JPanel{
               EventoColorDeFondo colorRojo = new EventoColorDeFondo("Rojo", Color.RED);
               EventoColorDeFondo colorVerde = new EventoColorDeFondo("Verde", Color.GREEN);
               
-              add(new JButton(colorAzul));
-              add(new JButton(colorRojo));
-              add(new JButton(colorVerde));
-              
-              
-              InputMap mapaEntrada = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
-              
-              //KeyStroke teclaAzul = KeyStroke.getKeyStroke("ctrl A");
-              KeyStroke teclaRojo = KeyStroke.getKeyStroke("ctrl R");
-              KeyStroke teclaVerde = KeyStroke.getKeyStroke("ctrl W");
-              
-              mapaEntrada.put(KeyStroke.getKeyStroke("ctrl A"), "fondo azul");
-              mapaEntrada.put(teclaRojo, "fondo rojo");
-              mapaEntrada.put(teclaVerde, "fondo verde");
-              
-              ActionMap mapaAccion = getActionMap();
-              
-              mapaAccion.put("fondo azul", colorAzul);
-              
-              mapaAccion.put("fondo rojo", colorRojo);
-              
-              mapaAccion.put("fondo verde", colorVerde);
+//              add(new JButton(colorAzul));
+//              add(new JButton(colorRojo));
+//              add(new JButton(colorVerde));
+//              
+//              
+//              InputMap mapaEntrada = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+//              
+//              //KeyStroke teclaAzul = KeyStroke.getKeyStroke("ctrl A");
+//              KeyStroke teclaRojo = KeyStroke.getKeyStroke("ctrl R");
+//              KeyStroke teclaVerde = KeyStroke.getKeyStroke("ctrl W");
+//              
+//              mapaEntrada.put(KeyStroke.getKeyStroke("ctrl A"), "fondo azul");
+//              mapaEntrada.put(teclaRojo, "fondo rojo");
+//              mapaEntrada.put(teclaVerde, "fondo verde");
+//              
+//              ActionMap mapaAccion = getActionMap();
+//              
+//              mapaAccion.put("fondo azul", colorAzul);
+//              
+//              mapaAccion.put("fondo rojo", colorRojo);
+//              
+//              mapaAccion.put("fondo verde", colorVerde);
               
               
 
