@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JToolBar;
 import javax.swing.KeyStroke;
 
 /**
@@ -86,6 +87,8 @@ class LaminaBarra extends JPanel{
 //              mapaAccion.put("fondo rojo", colorRojo);
 //              
 //              mapaAccion.put("fondo verde", colorVerde);
+              
+              JToolBar barra = new JToolBar();
               
               
 
