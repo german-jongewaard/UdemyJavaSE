@@ -91,7 +91,8 @@ class LaminaBarra extends JPanel{
               JToolBar barra = new JToolBar();
               
               barra.add(colorAzul);
-              barra.add(colorAzul);
+              barra.add(colorRojo);
+              barra.add(colorVerde);
 
         } 
         
