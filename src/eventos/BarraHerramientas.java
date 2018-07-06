@@ -93,6 +93,8 @@ class LaminaBarra extends JPanel{
               barra.add(colorAzul);
               barra.add(colorRojo);
               barra.add(colorVerde);
+              
+              add(barra);
 
         } 
         
