@@ -14,9 +14,7 @@ public class MenuEmergente {
         
         EmergenteFrame miMarcoFont = new EmergenteFrame();
         
-        miMarcoFont.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        
+        miMarcoFont.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
         
     }
 }
