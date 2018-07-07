@@ -1,6 +1,7 @@
 package eventos;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -26,8 +27,16 @@ class EmergenteFrame extends JFrame{
         
         setBounds(600, 300, 500, 350);
         
-        add(new LaminaFuentes());
+        add(new EmergentePanel());
         
         setVisible(true);
     }    
+}
+
+
+class EmergentePanel extends JPanel{
+    
+        public EmergentePanel() {
+            
+        }
 }
