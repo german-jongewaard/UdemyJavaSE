@@ -8,6 +8,7 @@ import javax.swing.Action;
 import static javax.swing.Action.NAME;
 import javax.swing.ActionMap;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -63,9 +64,9 @@ class LaminaBarra extends JPanel{
                add(botonRojo);
                add(botonVerde); */
               
-              EventoColorDeFondo colorAzul = new EventoColorDeFondo("Azul", Color.BLUE);
-              EventoColorDeFondo colorRojo = new EventoColorDeFondo("Rojo", Color.RED);
-              EventoColorDeFondo colorVerde = new EventoColorDeFondo("Verde", Color.GREEN);
+              EventoColorDeFondo colorAzul = new EventoColorDeFondo("Azul", Color.BLUE, new ImageIcon("src/eventos/imagenes/bola_azul"));
+              EventoColorDeFondo colorRojo = new EventoColorDeFondo("Rojo", Color.RED, new ImageIcon("src/eventos/imagenes/bola_roja"));
+              EventoColorDeFondo colorVerde = new EventoColorDeFondo("Verde", Color.GREEN, new ImageIcon("src/eventos/imagenes/bola_amarilla"));
               
 //              add(new JButton(colorAzul));
 //              add(new JButton(colorRojo));
