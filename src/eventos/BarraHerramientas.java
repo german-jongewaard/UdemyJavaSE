@@ -66,7 +66,7 @@ class LaminaBarra extends JPanel{
               
               EventoColorDeFondo colorAzul = new EventoColorDeFondo("Azul", Color.BLUE, new ImageIcon("src/eventos/imagenes/bola_azul.gif"));
               EventoColorDeFondo colorRojo = new EventoColorDeFondo("Rojo", Color.RED, new ImageIcon("src/eventos/imagenes/bola_roja.gif"));
-              EventoColorDeFondo colorVerde = new EventoColorDeFondo("Verde", Color.GREEN, new ImageIcon("src/eventos/imagenes/bola_amarilla"));
+              EventoColorDeFondo colorVerde = new EventoColorDeFondo("Verde", Color.GREEN, new ImageIcon("src/eventos/imagenes/bola_amarilla.gif"));
               
 //              add(new JButton(colorAzul));
 //              add(new JButton(colorRojo));
