@@ -1,7 +1,9 @@
 package eventos;
 
 import javax.swing.JFrame;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 
 /**
  *
@@ -36,6 +38,10 @@ class EmergenteFrame extends JFrame{
 class EmergentePanel extends JPanel{
     
         public EmergentePanel() {
+            
+            JPopupMenu emergente = new JPopupMenu();
+            
+            JMenuItem opcion1 = new JMenuItem("Opcion 1");
             
             
             
