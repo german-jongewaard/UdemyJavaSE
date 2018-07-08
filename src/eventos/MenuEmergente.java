@@ -1,5 +1,8 @@
 package eventos;
 
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
@@ -44,6 +47,15 @@ class EmergentePanel extends JPanel{
             JMenuItem azul = new JMenuItem("Azul");
             JMenuItem verde = new JMenuItem("verde");
             JMenuItem rojo = new JMenuItem("Rojo");
+            
+            azul.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    setBackground(Color.BLUE);
+                }
+            });
+            
+             
             
             emergente.add(azul);
             emergente.add(verde);
