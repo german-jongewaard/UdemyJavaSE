@@ -43,7 +43,7 @@ class EmergentePanel extends JPanel{
             
             JMenuItem opcion1 = new JMenuItem("Opcion 1");
             
-            
+            emergente.add(opcion1);
             
         }
 }
