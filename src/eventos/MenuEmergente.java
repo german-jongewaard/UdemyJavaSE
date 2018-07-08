@@ -45,5 +45,7 @@ class EmergentePanel extends JPanel{
             
             emergente.add(opcion1);
             
+            setComponentPopupMenu(emergente);
+            
         }
 }
