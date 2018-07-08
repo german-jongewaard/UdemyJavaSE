@@ -18,8 +18,7 @@ public class MenuEmergente {
         miMarcoFont.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
         
     }
-}
-    
+}    
     
 class EmergenteFrame extends JFrame{
     
@@ -37,6 +36,8 @@ class EmergenteFrame extends JFrame{
 class EmergentePanel extends JPanel{
     
         public EmergentePanel() {
+            
+            
             
         }
 }
