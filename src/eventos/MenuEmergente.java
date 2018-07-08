@@ -55,6 +55,13 @@ class EmergentePanel extends JPanel{
                 }
             });
             
+             verde.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    setBackground(Color.GREEN);
+                }
+            });
+            
              
             
             emergente.add(azul);
