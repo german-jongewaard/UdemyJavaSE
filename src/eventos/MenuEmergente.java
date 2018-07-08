@@ -62,7 +62,7 @@ class EmergentePanel extends JPanel{
                 }
             });
             
-             rojo.addActionListener(new ActionListener() {
+            rojo.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     setBackground(Color.RED);
