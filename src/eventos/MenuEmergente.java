@@ -37,7 +37,6 @@ class EmergenteFrame extends JFrame{
     }    
 }
 
-
 class EmergentePanel extends JPanel{
     
         public EmergentePanel() {
