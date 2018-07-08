@@ -41,7 +41,7 @@ class EmergentePanel extends JPanel{
             
             JPopupMenu emergente = new JPopupMenu();
             
-            JMenuItem opcion1 = new JMenuItem("Opcion 1");
+            JMenuItem opcion1 = new JMenuItem("Azul");
             
             emergente.add(opcion1);
             
