@@ -70,8 +70,7 @@ class EmergentePanel extends JPanel{
             
             emergente.add(azul);
             emergente.add(verde);
-            emergente.add(rojo);
-            
+            emergente.add(rojo);            
             
             setComponentPopupMenu(emergente);
             
