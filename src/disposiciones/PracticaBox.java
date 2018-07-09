@@ -22,6 +22,6 @@ class MarcoBox extends JFrame{
         
         setTitle("Disposición Box");
         
-        setBounds(700, );
+        setBounds(700, 400, 200, 200);
     }
 }
