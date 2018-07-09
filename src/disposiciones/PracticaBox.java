@@ -13,6 +13,8 @@ public class PracticaBox {
         // TODO code application logic here
         
         MarcoBox miMarcoBox = new MarcoBox();
+        
+        miMarcoBox.setDefaultCloseOperation(0);
     }
     
 }
