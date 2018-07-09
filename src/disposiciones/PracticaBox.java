@@ -14,7 +14,7 @@ public class PracticaBox {
         
         MarcoBox miMarcoBox = new MarcoBox();
         
-        miMarcoBox.setDefaultCloseOperation(JFrame);
+        miMarcoBox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
