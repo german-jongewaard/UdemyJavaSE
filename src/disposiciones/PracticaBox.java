@@ -2,6 +2,7 @@ package disposiciones;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -29,5 +30,7 @@ class MarcoBox extends JFrame{
         setBounds(700, 400, 200, 200);
         
         JLabel nUsuario = new JLabel("Nombre");
+        
+        JTextField
     }
 }
