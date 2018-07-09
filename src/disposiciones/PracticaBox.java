@@ -1,6 +1,7 @@
 package disposiciones;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 /**
  *
@@ -19,13 +20,14 @@ public class PracticaBox {
     
 }
 
-class MarcoBox extends JFrame{
-    
+class MarcoBox extends JFrame{    
     
     public MarcoBox(){
         
         setTitle("Disposición Box");
         
         setBounds(700, 400, 200, 200);
+        
+        JLabel nUsuario = new JLabel("Nombre");
     }
 }
