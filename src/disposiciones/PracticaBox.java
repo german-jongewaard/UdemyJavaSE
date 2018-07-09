@@ -11,6 +11,8 @@ public class PracticaBox {
     
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        MarcoBox miMarcoBox = new MarcoBox();
     }
     
 }
