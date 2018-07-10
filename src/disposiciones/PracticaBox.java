@@ -30,6 +30,8 @@ class MarcoBox extends JFrame{
         
         setBounds(700, 400, 200, 200);
         
+        //----- Primer BOX -------------
+        
         JLabel nUsuario = new JLabel("Nombre");
         
         JTextField cUsuario = new JTextField(10);
@@ -46,6 +48,23 @@ class MarcoBox extends JFrame{
         
         cajaUsuario.add(cUsuario);
         
+        //----- Segundo BOX -------------
+        
+        JLabel nPass = new JLabel("Contraseña");
+        
+        JTextField cPass = new JTextField(10);
+        
+        cUsuario.setMaximumSize(cUsuario.getPreferredSize());
+        
+        //-------------------------------------------------
+        
+        Box cajaPassword = Box.createHorizontalBox();
+        
+        cajaUsuario.add(nUsuario);
+        
+        cajaUsuario.add(Box.createHorizontalStrut(10));
+        
+        cajaUsuario.add(cUsuario);
         
     }
 }
