@@ -1,5 +1,6 @@
 package disposiciones;
 
+import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -34,5 +35,9 @@ class MarcoBox extends JFrame{
         JTextField cUsuario = new JTextField(10);
         
         cUsuario.setMaximumSize(cUsuario.getPreferredSize());
+        
+        //-------------------------------------------------
+        
+        Box cajaUsuario = Box.createHorizontalBox();
     }
 }
