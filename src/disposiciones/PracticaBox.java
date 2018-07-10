@@ -42,6 +42,8 @@ class MarcoBox extends JFrame{
         
         cajaUsuario.add(nUsuario);
         
+        cajaUsuario.add(Box.createHorizontalStrut(10));
+        
         cajaUsuario.add(cUsuario);
         
         
