@@ -1,6 +1,7 @@
 package disposiciones;
 
 import javax.swing.Box;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -65,6 +66,11 @@ class MarcoBox extends JFrame{
         cajaPassword.add(Box.createHorizontalStrut(10));
         
         cajaPassword.add(cPass);
+        
+        
+        //----- Tercer BOX -------------
+        
+        JButton button1 = new JButton("Ok");
         
     }
 }
