@@ -54,17 +54,17 @@ class MarcoBox extends JFrame{
         
         JTextField cPass = new JTextField(10);
         
-        cUsuario.setMaximumSize(cUsuario.getPreferredSize());
+        cUsuario.setMaximumSize(cPass.getPreferredSize());
         
         //-------------------------------------------------
         
         Box cajaPassword = Box.createHorizontalBox();
         
-        cajaPassword.add(nUsuario);
+        cajaPassword.add(nPass);
         
         cajaPassword.add(Box.createHorizontalStrut(10));
         
-        cajaUsuario.add(cUsuario);
+        cajaPassword.add(cPass);
         
     }
 }
