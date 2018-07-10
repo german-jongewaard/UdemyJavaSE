@@ -33,6 +33,6 @@ class MarcoBox extends JFrame{
         
         JTextField cUsuario = new JTextField(10);
         
-        cUsuario.setMaximumSize(maximumSize);
+        cUsuario.setMaximumSize(cUsuario.getPreferredSize());
     }
 }
