@@ -42,7 +42,7 @@ class MarcoBox extends JFrame{
         
         cajaUsuario.add(nUsuario);
         
-        
+        cajaUsuario.add(this)
         
         
     }
