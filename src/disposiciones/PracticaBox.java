@@ -31,6 +31,8 @@ class MarcoBox extends JFrame{
         
         JLabel nUsuario = new JLabel("Nombre");
         
-        JTextField
+        JTextField cUsuario = new JTextField(10);
+        
+        cUsuario.setMaximumSize(maximumSize);
     }
 }
