@@ -60,9 +60,9 @@ class MarcoBox extends JFrame{
         
         Box cajaPassword = Box.createHorizontalBox();
         
-        cajaUsuario.add(nUsuario);
+        cajaPassword.add(nUsuario);
         
-        cajaUsuario.add(Box.createHorizontalStrut(10));
+        cajaPassword.add(Box.createHorizontalStrut(10));
         
         cajaUsuario.add(cUsuario);
         
