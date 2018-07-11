@@ -73,5 +73,7 @@ class MarcoBox extends JFrame{
         JButton button1 = new JButton("OK");
         
         JButton button2 = new JButton("Cancelar");
+        
+        Box cajaBotones = Box.createHorizontalBox()
     }
 }
