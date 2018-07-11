@@ -23,7 +23,11 @@ class MarcoMuelle extends JFrame{
     
     public MarcoMuelle(){
         
-      
+        setBounds(300, 400, 1000, 350);
+        
+        LaminaMuelle miLamina = new LaminaMuelle();
+        
+        add(miLamina);
         
     } 
 }
