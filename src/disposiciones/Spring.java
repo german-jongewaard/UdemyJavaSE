@@ -14,7 +14,7 @@ public class Spring {
         
         MarcoMuelle miMarco = new MarcoMuelle();
         
-        miMarco.setDefault
+        miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
