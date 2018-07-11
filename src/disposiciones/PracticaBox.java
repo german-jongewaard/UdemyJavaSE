@@ -84,6 +84,6 @@ class MarcoBox extends JFrame{
         
          //----- Vertical Box -------------
          
-         Box 
+         Box cajaVertical = Box.createVerticalBox()
     }
 }
