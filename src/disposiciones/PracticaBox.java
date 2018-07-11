@@ -72,5 +72,6 @@ class MarcoBox extends JFrame{
         
         JButton button1 = new JButton("Ok");
         
+        JButton button2 = new JButton("Cancel");
     }
 }
