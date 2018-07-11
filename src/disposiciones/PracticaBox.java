@@ -78,6 +78,9 @@ class MarcoBox extends JFrame{
         
         cajaBotones.add(button1);
         
+        cajaBotones.add(Box)
         cajaBotones.add(button2);
+        
+        
     }
 }
