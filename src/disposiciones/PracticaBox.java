@@ -74,6 +74,6 @@ class MarcoBox extends JFrame{
         
         JButton button2 = new JButton("Cancelar");
         
-        Box cajaBotones = Box.createHorizontalBox()
+        Box cajaBotones = Box.createHorizontalBox();
     }
 }
