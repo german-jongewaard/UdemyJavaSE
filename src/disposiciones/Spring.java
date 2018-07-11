@@ -1,5 +1,7 @@
 package disposiciones;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author german
@@ -17,4 +19,7 @@ public class Spring {
     
 }
 
-
+class MarcoMuelle extends JFrame{
+    
+    
+}
