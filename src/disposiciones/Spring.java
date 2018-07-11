@@ -29,5 +29,7 @@ class MarcoMuelle extends JFrame{
         
         add(miLamina);
         
+        setVisible(true);
+        
     } 
 }
