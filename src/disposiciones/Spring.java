@@ -21,5 +21,9 @@ public class Spring {
 
 class MarcoMuelle extends JFrame{
     
-    
+    public MarcoMuelle(){
+        
+      
+        
+    } 
 }
