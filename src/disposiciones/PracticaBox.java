@@ -70,8 +70,8 @@ class MarcoBox extends JFrame{
         
         //----- Tercer BOX -------------
         
-        JButton button1 = new JButton("Ok");
+        JButton button1 = new JButton("OK");
         
-        JButton button2 = new JButton("Cancel");
+        JButton button2 = new JButton("Cancelar");
     }
 }
