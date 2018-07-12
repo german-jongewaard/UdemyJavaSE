@@ -88,6 +88,6 @@ class MarcoBox extends JFrame{
          
          cajaVertical.add(cajaUsuario);
          
-         cajaVertical.add(cajaUsuario);
+         cajaVertical.add(cajaPassword);
     }
 }
