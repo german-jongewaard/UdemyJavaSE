@@ -85,5 +85,9 @@ class MarcoBox extends JFrame{
          //----- Vertical Box -------------
          
          Box cajaVertical = Box.createVerticalBox();
+         
+         cajaVertical.add(cajaUsuario);
+         
+         cajaVertical.add(cajaUsuario);
     }
 }
