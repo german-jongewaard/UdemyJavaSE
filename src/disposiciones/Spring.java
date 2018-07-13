@@ -42,6 +42,6 @@ class LaminaMuelle extends JPanel{
         
         JButton boton1 = new JButton("Boton 1");
         JButton boton2 = new JButton("Boton 2");
-        JButton boton1 = new JButton("Boton 1");
+        JButton boton3 = new JButton("Boton 1");
     }
 }
