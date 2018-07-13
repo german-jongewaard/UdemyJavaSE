@@ -3,6 +3,7 @@ package disposiciones;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.SpringLayout;
 
 /**
  *
@@ -43,6 +44,8 @@ class LaminaMuelle extends JPanel{
         JButton boton1 = new JButton("Boton 1");
         JButton boton2 = new JButton("Boton 2");
         JButton boton3 = new JButton("Boton 3");
+        
+        SpringLayout miLayout = new SpringLayout();
         
         add(boton1);
         add(boton2);
