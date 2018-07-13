@@ -1,6 +1,7 @@
 package disposiciones;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -32,4 +33,11 @@ class MarcoMuelle extends JFrame{
         setVisible(true);
         
     } 
+}
+
+class LaminaMuelle extends JPanel{
+    
+    public LaminaMuelle(){
+        
+    }
 }
