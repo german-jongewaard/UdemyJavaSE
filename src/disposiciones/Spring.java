@@ -1,5 +1,6 @@
 package disposiciones;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -39,5 +40,6 @@ class LaminaMuelle extends JPanel{
     
     public LaminaMuelle(){
         
+        JButton boton1 = new JButton("Boton 1");
     }
 }
