@@ -60,5 +60,14 @@ class LaminaMuelle extends JPanel{
         miLayout.putConstraint(SpringLayout.WEST, 
                 boton1, miMuelle, SpringLayout.WEST, this);
         
+        miLayout.putConstraint(SpringLayout.WEST, 
+                boton2, miMuelle, SpringLayout.EAST, boton1);
+        
+         miLayout.putConstraint(SpringLayout.WEST, 
+                boton3, miMuelle, SpringLayout.EAST, boton2);
+         
+          miLayout.putConstraint(SpringLayout.EAST, 
+                this, miMuelle, SpringLayout.EAST, boton3);
+        
     }
 }
