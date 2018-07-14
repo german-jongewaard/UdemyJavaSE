@@ -55,7 +55,7 @@ class LaminaMuelle extends JPanel{
         add(boton2);
         add(boton3);
         
-         Spring miMuelle = Spring.constant(WIDTH, ERROR, WIDTH);
+         Spring miMuelle = Spring.constant(0, 10, 100);
         
     }
 }
