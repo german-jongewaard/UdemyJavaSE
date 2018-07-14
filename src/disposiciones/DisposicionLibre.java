@@ -22,7 +22,7 @@ class MarcoDispLibre extends JFrame{
         
         setBounds(300, 400, 1000, 350);
         
-        LaminaDispLibre miLamina = new LaminaMuelle();
+        LaminaDispLibre miLamina = new LaminaDispLibre();
         
         add(miLamina);
         
