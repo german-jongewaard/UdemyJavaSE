@@ -31,9 +31,9 @@ class MarcoDispLibre extends JFrame{
     } 
 }
 
-class LaminaMuelle extends JPanel{
+class LaminaDispLibre extends JPanel{
     
-    public LaminaMuelle(){
+    public LaminaDispLibre(){
         
     }
     }
