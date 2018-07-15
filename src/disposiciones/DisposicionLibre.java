@@ -2,6 +2,7 @@ package disposiciones;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
@@ -24,7 +25,7 @@ class MarcoDispLibre extends JFrame{
     
     public MarcoDispLibre(){
         
-        setBounds(300, 400, 1000, 350);
+        setBounds(300, 250, 500, 350);
         
         LaminaDispLibre miLamina = new LaminaDispLibre();
         
@@ -41,11 +42,7 @@ class LaminaDispLibre extends JPanel{
         
         setLayout(null); //Para poder trabajar con Disposiciones Libres
         
-        JButton boton1 = new JButton("Boton 1");
-        
-        boton1.setBounds(200, 300, 80, 40);
-        
-        add(boton1);
+        JLabel nombre = 
         
         
         
