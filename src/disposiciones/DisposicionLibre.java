@@ -44,7 +44,7 @@ class LaminaDispLibre extends JPanel{
         
         JLabel nombre = new JLabel("Nombre: ");
         
-        
+        JLabel apellido = new JLabel("Nombre: ");
         
         
         
