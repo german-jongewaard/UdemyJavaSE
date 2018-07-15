@@ -1,5 +1,6 @@
 package disposiciones;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -39,6 +40,8 @@ class LaminaDispLibre extends JPanel{
     public LaminaDispLibre(){
         
         setLayout(null); //Para poder trabajar con Disposiciones Libres
+        
+        JButton boton1
         
         
         
