@@ -41,7 +41,7 @@ class LaminaDispLibre extends JPanel{
         
         setLayout(null); //Para poder trabajar con Disposiciones Libres
         
-        JButton boton1
+        JButton boton1 = new JButton()
         
         
         
