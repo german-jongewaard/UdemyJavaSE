@@ -38,5 +38,9 @@ class LaminaDispLibre extends JPanel{
     
     public LaminaDispLibre(){
         
+        setLayout(null); //Para poder trabajar con Disposiciones Libres
+        
+        
+        
     }
-    }
+}
