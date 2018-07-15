@@ -43,7 +43,9 @@ class LaminaDispLibre extends JPanel{
         
         JButton boton1 = new JButton("Boton 1");
         
-        boton1.setBounds(WIDTH, WIDTH, WIDTH, HEIGHT);
+        boton1.setBounds(200, 200, 80, 40);
+        
+        add(boton1);
         
         
         
