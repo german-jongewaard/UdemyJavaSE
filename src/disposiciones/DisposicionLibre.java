@@ -51,7 +51,7 @@ class LaminaDispLibre extends JPanel{
         
         JTextField c_apellido = new JTextField();
         
-        
+        nombre.setBounds(20, 20, 80, 40);
         
     }
 }
