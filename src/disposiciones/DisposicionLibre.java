@@ -42,7 +42,9 @@ class LaminaDispLibre extends JPanel{
         
         setLayout(null); //Para poder trabajar con Disposiciones Libres
         
-        JLabel nombre = 
+        JLabel nombre = new JLabel("Nombre: ");
+        
+        
         
         
         
