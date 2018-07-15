@@ -4,6 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -45,6 +46,8 @@ class LaminaDispLibre extends JPanel{
         JLabel nombre = new JLabel("Nombre: ");
         
         JLabel apellido = new JLabel("Apellido: ");
+        
+        JTextField c_nombre = new JTextField();
         
         
         
