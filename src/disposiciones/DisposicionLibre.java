@@ -65,5 +65,7 @@ class LaminaDispLibre extends JPanel{
         
         add(apellido);
         
+        add(c_apellido);
+        
     }
 }
