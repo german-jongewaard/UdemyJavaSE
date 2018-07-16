@@ -55,7 +55,7 @@ class LaminaDispLibre extends JPanel{
         
         c_nombre.setBounds(100, 20, 100, 20);
         
-        apellido.setBounds(r);
+        apellido.setBounds(20, 60, 80, 10);
         
         add(nombre);
         
