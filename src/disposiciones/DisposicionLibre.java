@@ -103,7 +103,9 @@ class EnColumnas implements LayoutManager{
         
         for(int i=0; i<n; i++){
             
-            Component c = miContenedor.getComponent(n);
+            Component c = miContenedor.getComponent(i);
+            
+            c.setBounds(x, y, i, i);
             
         }
     }
