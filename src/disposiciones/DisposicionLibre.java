@@ -97,7 +97,7 @@ class EnColumnas implements LayoutManager{
     }
 
     @Override
-    public void layoutContainer(Container parent) {
+    public void layoutContainer(Container miContenedor) {
        
     }
     
