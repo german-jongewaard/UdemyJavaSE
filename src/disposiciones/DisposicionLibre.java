@@ -88,7 +88,7 @@ class EnColumnas implements LayoutManager{
 
     @Override
     public Dimension preferredLayoutSize(Container parent) {
-       
+       return null;
     }
 
     @Override
