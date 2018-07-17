@@ -100,7 +100,11 @@ class EnColumnas implements LayoutManager{
     public void layoutContainer(Container miContenedor) {
         
         int n=miContenedor.getComponentCount();
-       
+        
+        for(int i=0; i<n; i++){
+            
+            
+        }
     }
     
     private int x=20;
