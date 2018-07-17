@@ -98,7 +98,12 @@ class EnColumnas implements LayoutManager{
 
     @Override
     public void layoutContainer(Container miContenedor) {
+        
+        int n=miContenedor.getComponentCount();
        
     }
+    
+    private int x=20;
+    private int y=20;
     
 }
