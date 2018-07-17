@@ -93,7 +93,7 @@ class EnColumnas implements LayoutManager{
 
     @Override
     public Dimension minimumLayoutSize(Container parent) {
-       
+       return null;
     }
 
     @Override
