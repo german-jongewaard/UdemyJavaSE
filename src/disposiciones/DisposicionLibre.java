@@ -69,3 +69,5 @@ class LaminaDispLibre extends JPanel{
         
     }
 }
+
+class EnColumnas 
