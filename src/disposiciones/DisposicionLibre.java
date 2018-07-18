@@ -101,7 +101,10 @@ class EnColumnas implements LayoutManager{
         
         int n=miContenedor.getComponentCount();
         
+        int contador = 0;
+        
         for(int i=0; i<n; i++){
+            contador++;
             
             Component c = miContenedor.getComponent(i);
             
@@ -109,6 +112,7 @@ class EnColumnas implements LayoutManager{
             
             x += 100;
         }
+        y += 100;
     }
     
     private int x=20;
