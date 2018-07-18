@@ -45,15 +45,15 @@ class LaminaDispLibre extends JPanel{
     
     public LaminaDispLibre(){
         
-        setLayout(null); //Para poder trabajar con Disposiciones Libres
+        setLayout(new EnColumnas());  //Aqui utilizo la disposicion creada abajo!
         
         JLabel nombre = new JLabel("Nombre: ");
         
-        JLabel apellido = new JLabel("Apellido: ");
+    //  JLabel apellido = new JLabel("Apellido: ");
         
         JTextField c_nombre = new JTextField();
         
-        JTextField c_apellido = new JTextField();
+    //  JTextField c_apellido = new JTextField();
         
     /*  nombre.setBounds(20, 20, 80, 10);
         
