@@ -104,6 +104,7 @@ class EnColumnas implements LayoutManager{
         int contador = 0;
         
         for(int i=0; i<n; i++){
+            
             contador++;
             
             Component c = miContenedor.getComponent(i);
@@ -111,8 +112,14 @@ class EnColumnas implements LayoutManager{
             c.setBounds(x, y, 100, 20);      
             
             x += 100;
-        }
-        y += 100;
+            
+            if(contador%2 == 0){
+                
+                x=20;
+                y=40;
+                
+            }
+        }        
     }
     
     private int x=20;
