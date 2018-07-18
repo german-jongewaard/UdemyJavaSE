@@ -49,11 +49,11 @@ class LaminaDispLibre extends JPanel{
         
         JLabel nombre = new JLabel("Nombre: ");
         
-    //  JLabel apellido = new JLabel("Apellido: ");
+        JLabel apellido = new JLabel("Apellido: ");
         
         JTextField c_nombre = new JTextField();
         
-    //  JTextField c_apellido = new JTextField();
+        JTextField c_apellido = new JTextField();
         
     /*  nombre.setBounds(20, 20, 80, 10);
         
@@ -67,9 +67,9 @@ class LaminaDispLibre extends JPanel{
         
         add(c_nombre);
         
-     /* add(apellido);
+       add(apellido);
         
-        add(c_apellido); */
+        add(c_apellido);  
         
     }
 }
@@ -116,7 +116,7 @@ class EnColumnas implements LayoutManager{
             if(contador%2 == 0){
                 
                 x=20;
-                y=40;
+                y+=40;
                 
             }
         }        
