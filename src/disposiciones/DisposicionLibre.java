@@ -122,7 +122,7 @@ class EnColumnas implements LayoutManager{
             
             Component c = miContenedor.getComponent(i);
             
-            c.setBounds(x-200, y, 100, 20);      
+            c.setBounds(x-100, y, 100, 20);      
             
             x += 100;
             
