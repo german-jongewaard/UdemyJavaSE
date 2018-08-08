@@ -110,6 +110,7 @@ class EnColumnas implements LayoutManager{
         int d = miContenedor.getWidth();
         
         x = d/2;
+        y=20;
         
         int n=miContenedor.getComponentCount();
         
