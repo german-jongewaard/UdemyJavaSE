@@ -107,6 +107,8 @@ class EnColumnas implements LayoutManager{
     @Override
     public void layoutContainer(Container miContenedor) {
         
+        int d = miContenedor.getWidth();
+        
         int n=miContenedor.getComponentCount();
         
         int contador = 0;
