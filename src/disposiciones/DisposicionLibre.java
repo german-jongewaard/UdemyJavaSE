@@ -109,6 +109,8 @@ class EnColumnas implements LayoutManager{
         
         int d = miContenedor.getWidth();
         
+        x = d/2;
+        
         int n=miContenedor.getComponentCount();
         
         int contador = 0;
@@ -119,14 +121,14 @@ class EnColumnas implements LayoutManager{
             
             Component c = miContenedor.getComponent(i);
             
-            c.setBounds(x, y, 100, 20);      
+            c.setBounds(x-200, y, 100, 20);      
             
             x += 100;
             
             if(contador%2 == 0){
                 
-                x=20;
-                y+=40;                
+                x = d/2; //x es igual a la dimension sobre dos, para que localice el centro de la pantalla
+                y += 40;                
             }
         }        
     }
