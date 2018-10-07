@@ -14,7 +14,7 @@ public class EntradaDatos {
         // TODO code application logic here
         System.out.println("¿Qué deseas hacer?");
         System.out.println("1. Introducir datos");
-        System.out.println("");
+        System.out.println("2. Salir del programa");
     }
     
 }
