@@ -19,6 +19,8 @@ public class EntradaDatos {
         System.out.println("2. Salir del programa");
         
         Scanner entrada = new Scanner(System.in);
+        
+        int decision = entrada.nextInt();
     }
     
 }
