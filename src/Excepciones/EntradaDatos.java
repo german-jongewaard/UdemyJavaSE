@@ -21,6 +21,20 @@ public class EntradaDatos {
         Scanner entrada = new Scanner(System.in);
         
         int decision = entrada.nextInt();
+        
+        if(decision == 1){
+            
+            pedirDatos();
+            
+        }else{
+            
+            System.out.println("Adios");
+        }
+            
+    }
+
+    private static void pedirDatos() {
+        
     }
     
 }
