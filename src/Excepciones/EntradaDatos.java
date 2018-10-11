@@ -29,6 +29,8 @@ public class EntradaDatos {
         }else{
             
             System.out.println("Adios");
+            
+            System.exit(0);
         }
             
     }
