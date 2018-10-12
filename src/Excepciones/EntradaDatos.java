@@ -32,6 +32,10 @@ public class EntradaDatos {
             
             System.exit(0);
         }
+        
+        entrada.close();
+        
+        Syste
             
     }
 
