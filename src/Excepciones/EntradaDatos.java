@@ -35,7 +35,7 @@ public class EntradaDatos {
         
         entrada.close();
         
-        Syste
+        System.out.println("Hemos terminado");
             
     }
 
