@@ -41,6 +41,8 @@ public class EntradaDatos {
 
     private static void pedirDatos() {
         
+        Scanner entrada = new Scanner(System.in);
+        
     }
     
 }
