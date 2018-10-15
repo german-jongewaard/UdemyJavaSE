@@ -43,6 +43,8 @@ public class EntradaDatos {
         
         Scanner entrada = new Scanner(System.in);
         
+        System.out.println("Introduce tu nombre por favor");
+        
     }
     
 }
