@@ -43,7 +43,9 @@ public class EntradaDatos {
         
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("Introduce tu nombre por favor");
+        System.out.println("Introduce tu nombre, por favor");
+        
+        String nombre_usuario = entrada.nextLine();
         
     }
     
