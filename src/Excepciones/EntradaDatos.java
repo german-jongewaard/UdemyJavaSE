@@ -47,6 +47,8 @@ public class EntradaDatos {
         
         String nombre_usuario = entrada.nextLine();
         
+        System.out.println("Introduce edad, por favor");
+        
     }
     
 }
