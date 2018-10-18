@@ -49,6 +49,8 @@ public class EntradaDatos {
         
         System.out.println("Introduce edad, por favor");
         
+        int edad = entrada.nextInt();
+        
     }
     
 }
