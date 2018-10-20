@@ -51,7 +51,7 @@ public class EntradaDatos {
         
         int edad = entrada.nextInt();
         
-        System.out.println("");
+        System.out.println("Hola " + nombre_usuario);
         
     }
     
