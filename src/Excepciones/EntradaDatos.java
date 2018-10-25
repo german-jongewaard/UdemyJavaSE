@@ -1,5 +1,6 @@
 package Excepciones;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -24,7 +25,11 @@ public class EntradaDatos {
         
         if(decision == 1){
             
-            pedirDatos();
+            try {
+                pedirDatos();
+            } catch (Exception e) {
+                System.out.println("Introducción erronea");
+            }
             
         }else{
             
@@ -39,7 +44,7 @@ public class EntradaDatos {
             
     }
 
-    private static void pedirDatos() {
+    private static void pedirDatos() throws InputMismatchException{
         
         Scanner entrada = new Scanner(System.in);
         
