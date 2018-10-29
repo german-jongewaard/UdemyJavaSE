@@ -13,6 +13,12 @@ public class Comprueba_mail {
         // TODO code application logic here
         
         String mail = JOptionPane.showInputDialog("Introduce email");
+        
+        examinaMail(mail);
     }
+
+    private static void examinaMail(String mail) {
+        
+     }
     
 }
