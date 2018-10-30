@@ -19,6 +19,10 @@ public class Comprueba_mail {
 
     private static void examinaMail(String mail) {
         
+        int arroba = 0;
+        
+        boolean punto = false;
+        
      }
     
 }
