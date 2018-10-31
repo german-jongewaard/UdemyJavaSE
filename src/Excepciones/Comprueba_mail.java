@@ -23,6 +23,10 @@ public class Comprueba_mail {
         
         boolean punto = false;
         
+        for(int i=0; i<mail.length(); i++){
+            
+        }
+        
      }
     
 }
