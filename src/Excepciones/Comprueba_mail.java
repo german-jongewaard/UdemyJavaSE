@@ -25,6 +25,12 @@ public class Comprueba_mail {
         
         for(int i=0; i<mail.length(); i++){
             
+            if(mail.charAt(i)=='@'){
+                arroba++;
+            }
+            
+            
+            
         }
         
      }
