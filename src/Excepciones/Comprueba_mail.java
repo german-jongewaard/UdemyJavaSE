@@ -35,7 +35,9 @@ public class Comprueba_mail {
             
         }
         
-        if()
+        if(arroba==1 && punto==true){
+            
+        }
         
      }
     
