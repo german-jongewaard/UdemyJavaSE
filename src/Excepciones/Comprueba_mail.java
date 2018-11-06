@@ -36,7 +36,7 @@ public class Comprueba_mail {
         }
         
         if(arroba==1 && punto==true){
-            
+            System.out.println("Es");
         }
         
      }
