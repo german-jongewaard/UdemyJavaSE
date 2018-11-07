@@ -23,6 +23,8 @@ public class Comprueba_mail {
         
         boolean punto = false;
         
+        if(mail.length()<=3)
+        
         for(int i=0; i<mail.length(); i++){
             
             if(mail.charAt(i)=='@'){
@@ -36,7 +38,7 @@ public class Comprueba_mail {
         }
         
         if(arroba==1 && punto==true){
-            System.out.println("Es");
+            System.out.println("Es correcto");
         }
         
      }
