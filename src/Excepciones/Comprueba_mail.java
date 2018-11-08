@@ -17,13 +17,18 @@ public class Comprueba_mail {
         examinaMail(mail);
     }
 
-    private static void examinaMail(String mail) {
+    private static void examinaMail(String mail)  throws EOFException{
         
         int arroba = 0;
         
         boolean punto = false;
         
-        if(mail.length()<=3)
+        
+        if(mail.length()<=3){
+            
+        }
+        
+        
         
         for(int i=0; i<mail.length(); i++){
             
