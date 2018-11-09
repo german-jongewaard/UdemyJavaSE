@@ -1,5 +1,6 @@
 package Excepciones;
 
+import java.io.EOFException;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,7 +15,12 @@ public class Comprueba_mail {
         
         String mail = JOptionPane.showInputDialog("Introduce email");
         
+        try{
         examinaMail(mail);
+        }catch(EOFException e){
+            
+        }
+            
     }
 
     private static void examinaMail(String mail)  throws EOFException{
