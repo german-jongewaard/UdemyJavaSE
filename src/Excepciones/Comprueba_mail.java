@@ -18,7 +18,7 @@ public class Comprueba_mail {
         try{
         examinaMail(mail);
         }catch(EOFException e){
-            
+            e.printStackTrace();
         }
             
     }
