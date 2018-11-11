@@ -32,6 +32,8 @@ public class Comprueba_mail {
         
         if(mail.length()<=3){
             
+            EOFException miEOFException = new EOFException();
+            
         }
         
         
