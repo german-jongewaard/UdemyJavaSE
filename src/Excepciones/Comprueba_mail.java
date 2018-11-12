@@ -34,6 +34,8 @@ public class Comprueba_mail {
             
             EOFException miEOFException = new EOFException();
             
+            throw miEOFException;
+            
         }
         
         
