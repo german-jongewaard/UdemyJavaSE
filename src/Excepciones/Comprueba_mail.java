@@ -18,7 +18,7 @@ public class Comprueba_mail {
         try{
         examinaMail(mail);
         }catch(EOFException e){
-            e.printStackTrace();
+            System.out.println("La dirección no es correcta. Tiene pocos caracteres");
         }
             
     }
