@@ -17,13 +17,13 @@ public class Comprueba_mail {
         
         try{
         examinaMail(mail);
-        }catch(EOFException e){
+        }catch(Exception e){
             System.out.println("La dirección no es correcta. Tiene pocos caracteres");
         }
             
     }
 
-    private static void examinaMail(String mail)  throws EOFException{
+    private static void examinaMail(String mail)  throws Exception{
         
         int arroba = 0;
         
@@ -32,9 +32,9 @@ public class Comprueba_mail {
         
         if(mail.length()<=3){
             
-            EOFException miEOFException = new EOFException();
+            Exception miException = new Exception();
             
-            throw miEOFException;
+            throw miException;
             
         }
         
