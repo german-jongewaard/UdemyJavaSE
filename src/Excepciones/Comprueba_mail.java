@@ -1,6 +1,8 @@
 package Excepciones;
 
 import java.io.EOFException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,15 +17,17 @@ public class Comprueba_mail {
         
         String mail = JOptionPane.showInputDialog("Introduce email");
         
-        try{
-        examinaMail(mail);
-        }catch(Exception e){
-            System.out.println("La dirección no es correcta. Tiene pocos caracteres");
-        }
+        
+        try {
+            examinaMail(mail);
+        } catch (LongitudMailErronea ex) {            
+            System.err.println("El mail es demasiado corto");    
             
+            ex.printStackTrace();
+        }        
     }
 
-    private static void examinaMail(String mail)  throws Exception{
+    private static void examinaMail(String mail)  throws LongitudMailErronea{
         
         int arroba = 0;
         
@@ -31,6 +35,12 @@ public class Comprueba_mail {
         
         
         if(mail.length()<=3){
+            
+            //LongitudMailErronea miException = new LongitudMailErronea("Mail con 3 o menos caracteres");
+            
+            //throw miException;
+            
+            throw new LongitudMailErronea("Mail con 3 o menos caracteres"); //Ms simplificado!
             
             
             
@@ -54,9 +64,21 @@ public class Comprueba_mail {
             System.out.println("Es correcto");
         }else{
             System.out.println("No es correcto");
-        }
-            
+        }          
         
      }
+    
+}
+
+//Construyo mi porpia Excepcion
+
+class LongitudMailErronea extends Exception{
+    
+    public LongitudMailErronea(){ }
+    
+    public LongitudMailErronea(String mensajeError){
+        
+        super(mensajeError);
+    }
     
 }
