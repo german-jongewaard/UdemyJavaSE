@@ -32,9 +32,7 @@ public class Comprueba_mail {
         
         if(mail.length()<=3){
             
-            Exception miException = new Exception();
             
-            throw miException;
             
         }
         
@@ -54,7 +52,10 @@ public class Comprueba_mail {
         
         if(arroba==1 && punto==true){
             System.out.println("Es correcto");
+        }else{
+            System.out.println("No es correcto");
         }
+            
         
      }
     
