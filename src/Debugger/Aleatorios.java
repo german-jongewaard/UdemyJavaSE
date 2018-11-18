@@ -19,7 +19,7 @@ public class Aleatorios {
         
         for(int i=0; i<num_aleat.length; i++){
             
-            num_aleat[i] = (int)Math.random()*100; 
+            num_aleat[i] = (int) (Math.random()*100); 
             
         }
         
