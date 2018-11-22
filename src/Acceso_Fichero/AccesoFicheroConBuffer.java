@@ -5,6 +5,7 @@
  */
 package Acceso_Fichero;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -33,17 +34,17 @@ class LeerFicheroConBuffer{
         try {
             FileReader entrada = new FileReader("/home/german/Escritorio/primerfichero");
             
-            int caracter = entrada.read();
+            BufferedReader miBuffer = new BufferedReader(entrada); // ya tengo mi Buffer!!!
             
-            char letra = (char)caracter;
+            String linea = "";
+                 
+            //int caracter = entrada.read();
             
-            while(caracter != -1){
+            //char letra = (char)caracter;
+            
+            while(linea != null){
                 
-                System.out.print(letra);
-                
-                caracter = entrada.read();
-                
-                letra = (char)caracter;
+                linea = miBuffer.readLine();
             }
             
              entrada.close();
