@@ -13,12 +13,10 @@ public class Leyendo_Escribiendo_Archivo {
     public static void main(String[] args) {
         
         
-        try {
-            // TODO code application logic here
-
+        try {          
             FileInputStream lectura_archivo = new FileInputStream("/home/german/Escritorio/logoGerman.jpg");
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Leyendo_Escribiendo_Archivo.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception e) {
+            System.out.println(e);
         }
         
         
