@@ -15,6 +15,9 @@ public class Leyendo_Escribiendo_Archivo {
         
         try {          
             FileInputStream lectura_archivo = new FileInputStream("/home/german/Escritorio/logoGerman.jpg");
+            
+            boolean final_archivo = false;
+            
         } catch (Exception e) {
             System.out.println(e);
         }
