@@ -18,6 +18,12 @@ public class Leyendo_Escribiendo_Archivo {
             
             boolean final_archivo = false;
             
+            while (!final_archivo) {//Mientras no hayas llegado al final del archivo
+                
+                
+                
+            }
+            
         } catch (Exception e) {
             System.out.println(e);
         }
