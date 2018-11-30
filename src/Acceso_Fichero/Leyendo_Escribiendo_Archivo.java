@@ -20,7 +20,7 @@ public class Leyendo_Escribiendo_Archivo {
             
             while (!final_archivo) {//Mientras no hayas llegado al final del archivo
                 
-                
+                int byteImagenEntrada = lectura_archivo.read();
                 
             }
             
