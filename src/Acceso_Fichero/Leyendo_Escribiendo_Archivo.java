@@ -22,9 +22,15 @@ public class Leyendo_Escribiendo_Archivo {
                 
                 int byteImagenEntrada = lectura_archivo.read();
                 
+                if(byteImagenEntrada == -1){//Si has llegado al final de la lectura de la imagen
+                    
+                    final_archivo = true;
+                    
+                    
+                }
             }
             
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e);
         }
         
