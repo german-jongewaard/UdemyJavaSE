@@ -29,6 +29,8 @@ public class Leyendo_Escribiendo_Archivo {
                 
             }
             
+            lectura_archivo.close(); 
+            
         } catch (IOException e) {
             System.out.println(e);
         }
