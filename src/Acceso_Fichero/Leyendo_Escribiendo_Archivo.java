@@ -47,4 +47,31 @@ public class Leyendo_Escribiendo_Archivo {
         
     }
     
+    
+    
+    static void CreaFichero(int arrayExterno[]){
+        
+        try {
+            FileOutputStream ficheroExterno = new FileOutputStream("/home/german/Escritorio/externo/logoGermanClon.jpg");
+            
+            for(int i=0; i<arrayExterno.length; i++)
+            {
+                
+                ficheroExterno.write(arrayExterno[i]);
+                
+                
+            }
+            
+            
+        } catch (IOException e) {
+            
+            e.printStackTrace();
+        }
+        
+        
+    }
+    
+    
+    
+    
 }
