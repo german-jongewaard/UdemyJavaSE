@@ -55,12 +55,11 @@ public class Leyendo_Escribiendo_Archivo {
             FileOutputStream ficheroExterno = new FileOutputStream("/home/german/Escritorio/externo/logoGermanClon.jpg");
             
             for(int i=0; i<arrayExterno.length; i++)
-            {
-                
+            {                
                 ficheroExterno.write(arrayExterno[i]);
-                
-                
             }
+            
+            ficheroExterno.close();
             
             
         } catch (IOException e) {
