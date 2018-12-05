@@ -44,6 +44,9 @@ public class Leyendo_Escribiendo_Archivo {
             System.out.println(e);
         }
        // System.out.println(contador);
+       
+       
+        CreaFichero(bytesImagen);
         
     }
     
