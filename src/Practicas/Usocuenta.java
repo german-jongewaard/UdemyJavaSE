@@ -7,22 +7,7 @@ import java.util.Random;
  * @author german
  * 
  */
-public class Usocuenta {
-    
-        double saldo;
-        String nombreTitular;
-        long numeroCuenta;
-        
-        
-        public Usocuenta(double saldo, String nombreTitular, long numeroCuenta){
-        
-            this.saldo = saldo;
-            this.nombreTitular = nombreTitular;
-            
-            Random rnd = new Random();
-            
-            
-        }
+public class Usocuenta {  
         
         
     public static void main(String[] args) {
@@ -33,4 +18,21 @@ public class Usocuenta {
         
     }
     
+}
+
+class CuentaCorriente {
+    
+        double saldo;
+        String nombreTitular;
+        long numeroCuenta;
+    
+        public CuentaCorriente(double saldo, String nombreTitular, long numeroCuenta){
+        
+            this.saldo = saldo;
+            this.nombreTitular = nombreTitular;
+            
+            Random rnd = new Random();
+            
+            
+        }
 }
