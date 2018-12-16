@@ -32,6 +32,7 @@ class CuentaCorriente {
             this.nombreTitular = nombreTitular;
             
             Random rnd = new Random();
+            numeroCuenta = Math.abs(rnd.nextLong());
             
             
         }
