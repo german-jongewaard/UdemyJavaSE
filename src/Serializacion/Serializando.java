@@ -12,7 +12,7 @@ public class Serializando {
     
     public static void main(String[] args){
         
-        Administrador jefe = new Administrador("Juan", 80000, 12, 15);
+        Administrador jefe = new Administrador("Juan", 80000, 2005, 12, 15);
         
         jefe.setIncentivo(5000);
                 
@@ -82,6 +82,7 @@ class Administrador extends Empleado{
         
         incentivo = 0;
     }
+ 
     
     public double getSueldo(){
         double sueldoBase = super.getSueldo();
