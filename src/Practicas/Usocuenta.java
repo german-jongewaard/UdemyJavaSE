@@ -22,7 +22,7 @@ public class Usocuenta {
 
 class CuentaCorriente { 
     
-        public CuentaCorriente(double saldo, String nombreTitular, long numeroCuenta){
+        public CuentaCorriente(double saldo, String nombreTitular){
         
             this.saldo = saldo;
             this.nombreTitular = nombreTitular;
