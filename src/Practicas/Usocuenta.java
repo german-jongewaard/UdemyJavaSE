@@ -20,11 +20,7 @@ public class Usocuenta {
     
 }
 
-class CuentaCorriente {
-    
-        double saldo;
-        String nombreTitular;
-        long numeroCuenta;
+class CuentaCorriente { 
     
         public CuentaCorriente(double saldo, String nombreTitular, long numeroCuenta){
         
@@ -51,7 +47,22 @@ class CuentaCorriente {
             return "El saldo de la cuenta es: " + saldo;
         }
         
+        public static void Transferencia(CuentaCorriente titu1, CuentaCorriente titu2, double cantidad){
+            
+            titu1.saldo -= cantidad;
+            titu2.saldo += cantidad;
+        }
+        
+        public String getDatosCuenta(){
+            
+            return "Titular: " + nombreTitular + "\n" +
+                    "Nº de Cuenta: " + numeroCuenta + "\n" +
+                    "Saldo: " + saldo;
+        }
         
         
+        private double saldo;
+        private String nombreTitular;
+        private long numeroCuenta;
         
 }
