@@ -13,6 +13,14 @@ public class Usocuenta {
     public static void main(String[] args) {
         // TODO code application logic here
          
+        CuentaCorriente cuenta1 = new CuentaCorriente("Juan Gómez", 1500);
+        CuentaCorriente cuenta2 = new CuentaCorriente("María López", 2500);
+        
+        CuentaCorriente.Transferencia(cuenta1, cuenta2, 200);
+        
+        System.out.println(cuenta1.getDatosCuenta());
+        
+        System.out.println(cuenta2.getDatosCuenta());
         
          
         
@@ -22,7 +30,7 @@ public class Usocuenta {
 
 class CuentaCorriente { 
     
-        public CuentaCorriente(double saldo, String nombreTitular){
+        public CuentaCorriente(String nombreTitular, double saldo){
         
             this.saldo = saldo;
             this.nombreTitular = nombreTitular;
