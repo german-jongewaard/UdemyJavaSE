@@ -1,7 +1,14 @@
 package Serializacion;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -24,11 +31,26 @@ public class Serializando {
         
         personal[2] = new Empleado("Luis", 18000, 2012, 9, 15);
         
+        try {
+            
+            ObjectOutputStream flujoSalida = new ObjectOutputStream(new FileOutputStream("/home/german/Escritorio/externo/miObjetoSerializado.dat"));
+            
+            flujoSalida.writeObject(personal);
+            
+            flujoSalida.close();
+            
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        
+        
     }
     
 }
 
-class Empleado{
+class Empleado implements Serializable{
     
     public Empleado(String n, double s, int agno, int mes, int dia){
         
