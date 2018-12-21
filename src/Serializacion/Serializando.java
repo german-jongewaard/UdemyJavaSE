@@ -52,6 +52,9 @@ public class Serializando {
 
 class Empleado implements Serializable{
     
+    
+    private static final long serialVersionUID = 1L;
+    
     public Empleado(String n, double s, int agno, int mes, int dia){
         
         nombre = n;
