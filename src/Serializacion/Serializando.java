@@ -1,8 +1,10 @@
 package Serializacion;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Date;
@@ -33,11 +35,31 @@ public class Serializando {
         
         try {
             
+            //Generando objeto serializado
+            
             ObjectOutputStream flujoSalida = new ObjectOutputStream(new FileOutputStream("/home/german/Escritorio/externo/miObjetoSerializado.dat"));
             
             flujoSalida.writeObject(personal);
             
             flujoSalida.close();
+            
+            
+            //Leyendo Objeto Serializado
+            
+            ObjectInputStream flujoEntrada = new ObjectInputStream(new FileInputStream("/home/german/Escritorio/externo/miObjetoSerializado.dat"));
+            
+            Empleado [] entradaObjeto = (Empleado[])flujoEntrada.readObject();
+            
+            flujoEntrada.close();
+            
+            
+            for(Empleado e: entradaObjeto){
+             
+                System.out.println(e);
+                
+            }
+            
+            
             
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
@@ -53,7 +75,8 @@ public class Serializando {
 class Empleado implements Serializable{
     
     
-    private static final long serialVersionUID = 1L;
+    
+    //private static final long serialVersionUID = 1L;
     
     public Empleado(String n, double s, int agno, int mes, int dia){
         
