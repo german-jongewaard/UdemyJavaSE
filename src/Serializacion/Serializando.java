@@ -65,6 +65,8 @@ public class Serializando {
             ex.printStackTrace();
         } catch (IOException ex) {
             ex.printStackTrace();
+        }catch(Exception e){
+            
         }
         
         
