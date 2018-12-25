@@ -78,7 +78,7 @@ class Empleado implements Serializable{
     
     
     
-    //private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     
     public Empleado(String n, double s, int agno, int mes, int dia){
         
@@ -125,6 +125,8 @@ class Empleado implements Serializable{
 //-----------------------------------------------------------------
 
 class Administrador extends Empleado{
+    
+    private static final long serialVersionUID = 1L;
     
     public Administrador(String n, double s, int agno, int mes, int dia){
         
