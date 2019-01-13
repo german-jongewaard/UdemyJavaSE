@@ -16,7 +16,7 @@ public class AccesoRutasMejorado {
    public static void main(String[] args) {
         // TODO code application logic here
         
-        File directorio = new File("/home/german/Escritorio/externo");
+        File directorio = new File(File.separator + "home" + File.separator + "german" + File.separator + "Escritorio" + File.separator + "externo");
         
         System.out.println(directorio.getAbsolutePath());
         
