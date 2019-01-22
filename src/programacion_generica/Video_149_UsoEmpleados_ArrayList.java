@@ -1,6 +1,6 @@
 package programacion_generica;
 
-import java.util.GregorianCalendar;
+import java.util.*;
 
 /**
  *
@@ -12,15 +12,25 @@ public class Video_149_UsoEmpleados_ArrayList {
     public static void main(String[] args) {
         // TODO code application logic here 
         
-        Empleados[] losEmpleados = new Empleados[5];
+      /*  Empleados[] losEmpleados = new Empleados[5];
         
         losEmpleados[0] = new Empleados("Antonio", 2300.5, 2005, 7, 5);
         losEmpleados[1] = new Empleados("Carlos", 5000.5, 2007, 6, 5);
         losEmpleados[2] = new Empleados("María", 2500.5, 2006, 11, 7);
         losEmpleados[3] = new Empleados("Ana", 7000, 2009, 5, 3);
-        losEmpleados[4] = new Empleados("German", 24000.5, 2002, 2, 2);
+        losEmpleados[4] = new Empleados("German", 24000.5, 2002, 2, 2); */
+      
+        ArrayList<Empleados> listaEmpleados = new ArrayList<Empleados>();
+      
+      
+        listaEmpleados.add(new Empleados ("Antonio", 2300.5, 2005, 7, 5));
+        listaEmpleados.add(new Empleados ("Carlos", 5000.5, 2007, 6, 5));
+        listaEmpleados.add(new Empleados ("María", 2500.5, 2006, 11, 7));
+        listaEmpleados.add(new Empleados ("Ana", 7000, 2009, 5, 3));
+        listaEmpleados.add(new Empleados ("German", 24000.5, 2002, 2, 2));
+      
         
-        for(Empleados obj : losEmpleados){
+        for(Empleados obj : listaEmpleados){
             
             System.out.println(obj.getDatosEmpleado() + " y un salario de: " + obj.getSueldo());
         }
