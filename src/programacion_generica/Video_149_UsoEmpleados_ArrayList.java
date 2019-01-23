@@ -28,6 +28,11 @@ public class Video_149_UsoEmpleados_ArrayList {
         listaEmpleados.add(new Empleados ("María", 2500.5, 2006, 11, 7));
         listaEmpleados.add(new Empleados ("Ana", 7000, 2009, 5, 3));
         listaEmpleados.add(new Empleados ("German", 24000.5, 2002, 2, 2));
+        
+        listaEmpleados.trimToSize(); // reduce el array a los elementos incluidos en el array
+        
+        
+        System.out.println(listaEmpleados.size());
       
         
         for(Empleados obj : listaEmpleados){
