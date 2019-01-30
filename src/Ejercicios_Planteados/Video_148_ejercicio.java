@@ -53,11 +53,8 @@ public class Video_148_ejercicio {
                 
        
     
-    
+        //JOptionPane
         int g = JOptionPane.YES_NO_OPTION;
-        
-                
-        //JOptionPane.showConfirmDialog(null, "¿Quieres borrar este Archivo? " + nombreArchivoo + ".txt" , "Volver?", g);
         
         int response = JOptionPane.showConfirmDialog(null, "¿Quieres borrar este Archivo? " + nombreArchivoo + ".txt" , "Volver?", g);
         
@@ -69,21 +66,13 @@ public class Video_148_ejercicio {
             
             System.out.println("Presionaste SI");
             //Elimino la ruta!
-            ruta_archivo.delete();
-            
-            //JOptionPane.showConfirmDialog(null, "El archivo " + nombreArchivoo + ".txt" + " fue eliminado", "", JOptionPane.OK_CANCEL_OPTION);
+            ruta_archivo.delete();            
             
             JOptionPane.showMessageDialog(null, "El archivo " + nombreArchivoo + ".txt" + " fue eliminado");
             
         } else {
             System.out.println("nada");
             System.exit(0);
-        }
-
-        
-      
+        }      
     }
-    
-    
-    
 }
