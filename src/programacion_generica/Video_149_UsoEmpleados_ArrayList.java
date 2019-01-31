@@ -29,16 +29,35 @@ public class Video_149_UsoEmpleados_ArrayList {
         listaEmpleados.add(new Empleados ("Ana", 7000, 2009, 5, 3));
         listaEmpleados.add(new Empleados ("German", 24000.5, 2002, 2, 2));
         
-        listaEmpleados.trimToSize(); // reduce el array a los elementos incluidos en el array
+        listaEmpleados.set(1, new Empleados("Jorge", 1900, 2003, 5, 6));
         
+        listaEmpleados.add(new Empleados("Olga", 2000.5, 2009, 5, 7));
         
-        System.out.println(listaEmpleados.size());
+        listaEmpleados.remove(0);
+        
+        //listaEmpleados.trimToSize(); // reduce el array a los elementos incluidos en el array
+        
+        //System.out.println(listaEmpleados.size());
       
         
-        for(Empleados obj : listaEmpleados){
+        //for(Empleados obj : listaEmpleados){            
+        //    System.out.println(obj.getDatosEmpleado() + " y un salario de: " + obj.getSueldo());
+        //}
+       /* 
+        Empleados EmpleadosArray[] = new Empleados[listaEmpleados.size()];
+        
+        listaEmpleados.toArray(EmpleadosArray);
+        
+        for(int i=0; i<EmpleadosArray.length; i++){
             
-            System.out.println(obj.getDatosEmpleado() + " y un salario de: " + obj.getSueldo());
+            System.out.println(EmpleadosArray[i].getDatosEmpleado());
         }
+        */
+       
+       //Corriendo ArrayList con un Iterador
+       Iterator<Empleados> myIterdorEmpleados = listaEmpleados.iterator();
+       
+       while(myIterdorEmpleados.hasNext()) System.out.println(myIterdorEmpleados.next().getDatosEmpleado());
         
         
     }
