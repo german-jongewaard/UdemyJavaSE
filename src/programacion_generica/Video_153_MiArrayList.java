@@ -12,6 +12,12 @@ public class Video_153_MiArrayList {
         datosElemento = new Object[z];
     }
     
+    public Object getObject(int i){
+        
+        
+        return datosElemento[i];
+    }
+    
     
     private Object[] datosElemento;
     
