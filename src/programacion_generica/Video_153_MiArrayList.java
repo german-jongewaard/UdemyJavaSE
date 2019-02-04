@@ -2,7 +2,7 @@ package programacion_generica;
 
 /**
  *
- * @author GermÁn
+ * @author Germán
  * 
  */
 public class Video_153_MiArrayList {
