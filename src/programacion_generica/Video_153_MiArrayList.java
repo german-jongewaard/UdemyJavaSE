@@ -19,6 +19,12 @@ public class Video_153_MiArrayList {
     }
     
     
+    public void agregaElemento(Object o){
+     
+        datosElemento[i] = 0;
+    }
+    
+    
     private Object[] datosElemento;
     
 }
