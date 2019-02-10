@@ -9,7 +9,7 @@ public class Video_154_GenericaMia<T> {
     
     public Video_154_GenericaMia(){
         
-        objecto = null;
+        objeto = null;
         
     }
     
@@ -17,13 +17,13 @@ public class Video_154_GenericaMia<T> {
     
     public void setObjeto(T nuevoValor) {
         
-        objeto
+        objeto = nuevoValor;
     }
     
     
     
     
-    private T objecto;
+    private T objeto;
      
     
 }
