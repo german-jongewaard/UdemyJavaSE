@@ -12,15 +12,12 @@ public class Video_154_GenericaMia<T> {
         objeto = null;
         
     }
-    
-    
+       
     
     public void setObjeto(T nuevoValor) {
         
         objeto = nuevoValor;
     }
-    
-    
     
     
     private T objeto;
