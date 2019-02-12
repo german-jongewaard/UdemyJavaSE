@@ -19,6 +19,11 @@ public class Video_154_GenericaMia<T> {
         objeto = nuevoValor;
     }
     
+    public T getObjeto(){
+        
+        return objeto;
+    }
+    
     
     private T objeto;
      
