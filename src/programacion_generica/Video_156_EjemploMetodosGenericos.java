@@ -12,3 +12,8 @@ public class Video_156_EjemploMetodosGenericos {
     }
     
 }
+
+
+class ExaminaArrays{
+    
+}
