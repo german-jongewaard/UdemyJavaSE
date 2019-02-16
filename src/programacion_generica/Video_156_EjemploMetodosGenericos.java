@@ -16,4 +16,20 @@ public class Video_156_EjemploMetodosGenericos {
 
 class ExaminaArrays{
     
+    
+    
+    public static <T> String getElementos(T[]elArray){
+        
+        
+        
+        
+        
+        return null;
+        
+    }
+    
+    
+    
+    
+    
 }
