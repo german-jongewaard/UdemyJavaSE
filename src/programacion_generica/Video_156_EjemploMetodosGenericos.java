@@ -20,11 +20,7 @@ class ExaminaArrays{
     
     public static <T> String getElementos(T[]elArray){
         
-        
-        
-        
-        
-        return null;
+        return "El array tiene " + elArray.length + " elementos.";
         
     }
     
