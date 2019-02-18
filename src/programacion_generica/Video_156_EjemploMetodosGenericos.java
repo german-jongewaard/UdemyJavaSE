@@ -8,7 +8,10 @@ package programacion_generica;
 public class Video_156_EjemploMetodosGenericos {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        String nombresPersonas[] = {"Sara", "Antonio", "María"};
+        
+        System.out.println("");
     }
     
 }
