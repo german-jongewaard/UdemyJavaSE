@@ -11,7 +11,7 @@ public class Video_156_EjemploMetodosGenericos {
         
         String nombresPersonas[] = {"Sara", "Antonio", "María"};
         
-        System.out.println("");
+        System.out.println(ExaminaArrays.getElementos(nombresPersonas));
     }
     
 }
