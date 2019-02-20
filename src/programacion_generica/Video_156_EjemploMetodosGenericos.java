@@ -13,7 +13,7 @@ public class Video_156_EjemploMetodosGenericos {
         
         System.out.println(ExaminaArrays.getElementos(nombresPersonas));
         
-        
+     /*  
         Empleados[] losEmpleados = new Empleados[5];
         
         losEmpleados[0] = new Empleados("Antonio", 2300.5, 2005, 7, 5);
@@ -23,19 +23,31 @@ public class Video_156_EjemploMetodosGenericos {
         losEmpleados[4] = new Empleados("German", 24000.5, 2002, 2, 2);
         
         System.out.println(ExaminaArrays.getElementos(losEmpleados));
+        */ 
     }
     
 }
 
 
-class ExaminaArrays{
+class ExaminaArrays implements Comparable{
     
     
-    
+                                //metodo generico 
     public static <T> String getElementos(T[]elArray){
         
         return "El array tiene " + elArray.length + " elementos.";
         
+    }
+
+    @Override
+    public int compareTo(Object o) {
+         Empleados[] otroEmpleado =new Empleados[5];
+        
+         if(otroEmpleado.equals("A")){
+             return "El que comienza en A es: " + o.toString();
+         }
+         
+         return 0;
     }
     
     
