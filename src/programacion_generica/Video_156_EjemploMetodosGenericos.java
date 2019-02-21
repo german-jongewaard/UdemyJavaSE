@@ -11,7 +11,7 @@ public class Video_156_EjemploMetodosGenericos {
         
         String nombresPersonas[] = {"Sara", "Antonio", "María"};
         
-        System.out.println(ExaminaArrays.getElementos(nombresPersonas));
+        System.out.println(ExaminaArrays.getMenor(nombresPersonas));
         
      /*  
         Empleados[] losEmpleados = new Empleados[5];
@@ -29,26 +29,28 @@ public class Video_156_EjemploMetodosGenericos {
 }
 
 
-class ExaminaArrays implements Comparable{
+class ExaminaArrays {
     
     
                                 //metodo generico 
-    public static <T> String getElementos(T[]elArray){
+    public static <T extends Comparable> T getMenor(T[]elArray){
         
-        return "El array tiene " + elArray.length + " elementos.";
+        T objetoMenor = elArray[0];
+        
+        for(int i=1; i<elArray.length;i++){
+            
+            if(objetoMenor.compareTo(elArray[i])>0){
+                
+                objetoMenor = elArray[i];
+            }
+            
+        }
+        
+        return objetoMenor;
         
     }
 
-    @Override
-    public int compareTo(Object o) {
-         Empleados[] otroEmpleado =new Empleados[5];
-        
-         if(otroEmpleado.equals("A")){
-             return "El que comienza en A es: " + o.toString();
-         }
-         
-         return 0;
-    }
+    
     
     
     
