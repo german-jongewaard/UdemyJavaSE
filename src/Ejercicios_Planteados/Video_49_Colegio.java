@@ -39,8 +39,10 @@ public class Video_49_Colegio  {
     }
     
     public void nuevoAlumno (String nombreAlumno, double notaAlumno){        
+        
        alumnosNuevos = new Video_49_Alumno(nombreAlumno, notaAlumno);       
        items.add(alumnosNuevos);         
+       
     }
     
     public void getDatosAlumno(String nombreAlumno){         
