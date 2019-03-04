@@ -122,6 +122,38 @@ class LaminaPelota extends JPanel{
 }
 
 
+class PelotaThread implements Runnable {
+    
+    public PelotaThread(Pelota pelota, Component lamina) {
+        this.pelota = pelota;
+        this.lamina = lamina;
+    }
+
+    @Override
+    public void run() {
+        
+        //Pelota pelota=new Pelota();        
+        
+        for (int i=1; i<=3000; i++){
+				
+				pelota.mueve_pelota(lamina.getBounds());
+				
+				lamina.paint(lamina.getGraphics());
+                                
+                            try {
+                                Thread.sleep(4);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(MarcoRebote.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+				
+			}
+    }
+
+        private Pelota pelota;        
+        private Component lamina;
+}
+
+
 //Marco con lámina y botones------------------------------------------------------------------------------
 
 class MarcoRebote extends JFrame{
@@ -177,31 +209,18 @@ class MarcoRebote extends JFrame{
 	//Añade pelota y la bota 1000 veces
 	
 	public void comienza_el_juego (){
-		
-					
-			Pelota pelota=new Pelota();
-			
-			lamina.add(pelota);
-			
-			for (int i=1; i<=3000; i++){
-				
-				pelota.mueve_pelota(lamina.getBounds());
-				
-				lamina.paint(lamina.getGraphics());
-                                
-                            try {
-                                Thread.sleep(4);
-                            } catch (InterruptedException ex) {
-                                Logger.getLogger(MarcoRebote.class.getName()).log(Level.SEVERE, null, ex);
-                            }
-				
-			}
-			
-		
-		
+							
+                Pelota pelota=new Pelota();
+
+                lamina.add(pelota); 
+                
+                Runnable r = new PelotaThread(pelota, lamina);
+                
+                Thread t = new Thread(r);
+                
+                t.start();
 	}
 	
 	private LaminaPelota lamina;
-	
 	
 }
