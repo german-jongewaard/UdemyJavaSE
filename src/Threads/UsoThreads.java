@@ -10,6 +10,8 @@ import javax.swing.*;
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class UsoThreads {
 
@@ -21,11 +23,8 @@ public class UsoThreads {
 		marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		marco.setVisible(true);
-
 	}
-
 }
-
 
 
 
@@ -116,8 +115,7 @@ class LaminaPelota extends JPanel{
 		for(Pelota b: pelotas){
 			
 			g2.fill(b.getShape());
-		}
-		
+		}             
 	}
 	
 	private ArrayList<Pelota> pelotas=new ArrayList<Pelota>();
@@ -190,6 +188,12 @@ class MarcoRebote extends JFrame{
 				pelota.mueve_pelota(lamina.getBounds());
 				
 				lamina.paint(lamina.getGraphics());
+                                
+                            try {
+                                Thread.sleep(4);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(MarcoRebote.class.getName()).log(Level.SEVERE, null, ex);
+                            }
 				
 			}
 			
