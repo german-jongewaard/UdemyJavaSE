@@ -11,3 +11,7 @@ public class SincronizandoHilos {
     }
     
 }
+
+class SincronizaThreads extends Thread{
+    
+}
