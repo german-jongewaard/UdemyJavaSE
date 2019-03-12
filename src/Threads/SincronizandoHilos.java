@@ -14,4 +14,8 @@ public class SincronizandoHilos {
 
 class SincronizaThreads extends Thread{
     
+    public void run(){
+        
+    }
+    
 }
