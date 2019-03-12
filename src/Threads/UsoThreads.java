@@ -5,6 +5,7 @@ package Threads;
  * @author german
  */
 
+import com.sun.media.jfxmedia.AudioClip;
 import java.awt.geom.*;
 import javax.swing.*;
 import java.util.*;
@@ -134,19 +135,25 @@ class PelotaThread implements Runnable {
         
         //Pelota pelota=new Pelota();        
         
-        for (int i=1; i<=3000; i++){
+       // for (int i=1; i<=3000; i++){
+        System.out.println("estado del hilo antes de comenzar la tarea: " + Thread.currentThread().isInterrupted());
+       
+       while(!Thread.currentThread().isInterrupted()){
 				
 				pelota.mueve_pelota(lamina.getBounds());
 				
 				lamina.paint(lamina.getGraphics());
                                 
-                            try {
+                        /*    try {
                                 Thread.sleep(4);
                             } catch (InterruptedException ex) {
                                 Logger.getLogger(MarcoRebote.class.getName()).log(Level.SEVERE, null, ex);
                             }
+                        */
 				
 			}
+       
+       System.out.println("estado del hilo antes de comenzar la tarea: " + Thread.currentThread().isInterrupted());
     }
 
         private Pelota pelota;        
@@ -189,6 +196,16 @@ class MarcoRebote extends JFrame{
 			}
 			
 		});
+                
+                ponerBoton(laminaBotones, "Parar", new ActionListener(){
+			
+			public void actionPerformed(ActionEvent evento){
+				
+				parar();
+				
+			} 
+			
+		});
 		
 		add(laminaBotones, BorderLayout.SOUTH);
 	}
@@ -216,11 +233,19 @@ class MarcoRebote extends JFrame{
                 
                 Runnable r = new PelotaThread(pelota, lamina);
                 
-                Thread t = new Thread(r);
+                t = new Thread(r);
                 
                 t.start();
 	}
+        
+        
+        public void parar(){
+            
+            t.interrupt();
+            
+        }
 	
+        private Thread t;
 	private LaminaPelota lamina;
 	
 }
