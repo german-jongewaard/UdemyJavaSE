@@ -182,8 +182,7 @@ class MarcoRebote extends JFrame{
 			public void actionPerformed(ActionEvent evento){
 				
 				comienza_el_juego();
-			}
-			
+			}			
 		});
 		
 		
@@ -191,20 +190,16 @@ class MarcoRebote extends JFrame{
 			
 			public void actionPerformed(ActionEvent evento){
 				
-				System.exit(0);
-				
-			}
-			
+				System.exit(0);				
+			}			
 		});
                 
                 ponerBoton(laminaBotones, "Parar", new ActionListener(){
 			
 			public void actionPerformed(ActionEvent evento){
 				
-				parar();
-				
-			} 
-			
+				parar();				
+			} 			
 		});
 		
 		add(laminaBotones, BorderLayout.SOUTH);
