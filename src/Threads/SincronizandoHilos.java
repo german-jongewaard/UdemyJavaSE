@@ -10,8 +10,9 @@ public class SincronizandoHilos {
         // TODO code application logic here
         
         SincronizaThreads hilo1 = new SincronizaThreads();
-        
+        SincronizaThreads hilo2 = new SincronizaThreads();
         hilo1.start();
+        hilo2.start();
     }
     
 }
