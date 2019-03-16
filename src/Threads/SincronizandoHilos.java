@@ -1,5 +1,8 @@
 package Threads;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author german
@@ -13,8 +16,7 @@ public class SincronizandoHilos {
         SincronizaThreads hilo2 = new SincronizaThreads();
         hilo1.start();
         hilo2.start();
-    }
-    
+    }    
 }
 
 class SincronizaThreads extends Thread{
@@ -23,7 +25,11 @@ class SincronizaThreads extends Thread{
         for(int i=0;i<20;i++){
             
             System.out.println("Ejecutando thread " + getName());
-            
+            try {
+                sleep(300);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
         }
         
     }
