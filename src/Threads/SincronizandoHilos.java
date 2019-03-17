@@ -15,6 +15,13 @@ public class SincronizandoHilos {
         SincronizaThreads hilo1 = new SincronizaThreads();
         SincronizaThreads hilo2 = new SincronizaThreads();
         hilo1.start();
+        
+        try {
+            hilo1.join();
+        } catch (InterruptedException ex) {
+           ex.printStackTrace();
+        }
+        
         hilo2.start();
     }    
 }
@@ -25,6 +32,7 @@ class SincronizaThreads extends Thread{
         for(int i=0;i<20;i++){
             
             System.out.println("Ejecutando thread " + getName());
+            
             try {
                 sleep(300);
             } catch (InterruptedException ex) {
