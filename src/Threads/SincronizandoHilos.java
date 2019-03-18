@@ -17,7 +17,9 @@ public class SincronizandoHilos {
         hilo1.start();
         
         try {
-            hilo1.join();
+            //ejecuta primero el hilo1, hasta que no muera el hilo1 no comienza el hilo2
+            hilo1.join(); //join() espera hasta que el hilo este muerto
+            
         } catch (InterruptedException ex) {
            ex.printStackTrace();
         }
