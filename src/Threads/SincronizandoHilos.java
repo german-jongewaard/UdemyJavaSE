@@ -25,6 +25,10 @@ public class SincronizandoHilos {
         }
         
         hilo2.start();
+        
+        
+        
+        System.out.println("Hemos terminado las tareas!!");
     }    
 }
 
