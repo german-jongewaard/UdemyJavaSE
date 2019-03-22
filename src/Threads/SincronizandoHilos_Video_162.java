@@ -16,6 +16,17 @@ class SincronizaThreadsIII extends Thread{
     
      public void run(){
          
+          for(int i=0;i<20;i++){
+            
+            System.out.println("Ejecutando thread " + getName());
+            
+            try {
+                sleep(300);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+         
      }
     
     
