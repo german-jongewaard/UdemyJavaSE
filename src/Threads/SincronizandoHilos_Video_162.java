@@ -8,6 +8,8 @@ public class SincronizandoHilos_Video_162 {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        SincronizaThreads hilo1 = new SincronizaThreads();
     }
     
 }
