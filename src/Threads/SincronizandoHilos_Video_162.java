@@ -10,6 +10,8 @@ public class SincronizandoHilos_Video_162 {
         // TODO code application logic here
         
         SincronizaThreads hilo1 = new SincronizaThreads();
+        SincronizaThreads hilo2 = new SincronizaThreads();
+        hilo1.start();
     }
     
 }
