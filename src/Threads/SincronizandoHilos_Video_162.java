@@ -13,7 +13,7 @@ public class SincronizandoHilos_Video_162 {
         SincronizaThreads hilo2 = new SincronizaThreads();
         hilo1.start();
         
-         try {
+        try {
             //ejecuta primero el hilo1, hasta que no muera el hilo1 no comienza el hilo2
             hilo1.join(); //join() espera hasta que el hilo este muerto
             
@@ -21,6 +21,15 @@ public class SincronizandoHilos_Video_162 {
            ex.printStackTrace();
         }
          
+         hilo2.start();
+        
+        try {
+            hilo2.join();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        
+        System.out.println("Hemos terminado las tareas!!");
     }
     
 }
