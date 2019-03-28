@@ -16,7 +16,9 @@ public class SincronizandoHilos_Video_162 {
         SincronizaThreadsIII hilo1 = new SincronizaThreadsIII();
         SincronizaThreadsIV hilo2 = new SincronizaThreadsIV(hilo1);
         hilo1.start();
-         
+        hilo2.start();
+        
+        System.out.println("Hemos terminado las tareas!!");
     }
     
 }
