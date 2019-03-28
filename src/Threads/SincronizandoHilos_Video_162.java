@@ -1,5 +1,9 @@
 package Threads;
 
+import static java.lang.Thread.sleep;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author german
@@ -49,7 +53,38 @@ class SincronizaThreadsIII extends Thread{
             }
         }
          
-     }
+     } 
+}
+
+class SincronizaThreadsIV extends Thread{
+
+    
+    public SincronizaThreadsIV(Thread thread) {
+        this.thread = thread;
+    }
     
     
+    
+     public void run(){
+         
+        try {
+            thread.join();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+         
+          for(int i=0;i<20;i++){
+            
+            System.out.println("Ejecutando thread " + getName());
+            
+            try {
+                sleep(300);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+         
+     } 
+     
+     private Thread thread;
 }
