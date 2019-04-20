@@ -26,13 +26,14 @@ class Banco {
         
         cuentas[cuentaDestino] += cantidad; //suma el saldo de la cuenta origen en cuenta destino
         
-        System.out.println(cantidad + " € de la cuenta " 
+       /* System.out.println(cantidad + " € de la cuenta " 
                                     + cuentaOrigen 
-                                    + " a la cuenta " + cuentaDestino);
+                                    + " a la cuenta " + cuentaDestino); */
         
-        //System.out.printf("%10.2 de %d para la cuenta %d", cantidad, cuentaOrigen, cuentaDestino);
-        
-        System.out.println(getSaldoTotal());
+        System.out.printf("%10.2f de %d para la cuenta %d", cantidad, cuentaOrigen, cuentaDestino);
+        System.out.println();
+        //System.out.println(getSaldoTotal());
+        System.out.printf("Saldo total: %10.2f%n", getSaldoTotal());
     }
     
     private final double [] cuentas;
