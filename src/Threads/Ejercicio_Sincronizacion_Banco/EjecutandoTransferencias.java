@@ -1,5 +1,8 @@
 package Threads.Ejercicio_Sincronizacion_Banco;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author german
@@ -22,6 +25,13 @@ public class EjecutandoTransferencias implements Runnable{
             double cantidadATransferir = cantidadMaxima*Math.random();
          
             miBanco.transferencias(cuentaDeOrigen, cuentaDeDestino, cantidadATransferir);
+            
+            try {
+                //durmiendo los hilos pra que se puedan ver las transferencias
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
         }        
     }
     
