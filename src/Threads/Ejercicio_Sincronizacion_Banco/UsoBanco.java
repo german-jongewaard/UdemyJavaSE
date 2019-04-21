@@ -19,6 +19,14 @@ public class UsoBanco {
             donde: b es el banco, i es la cntidad de transferencias
             y 2000 el importe a transferir */
             EjecutandoTransferencias r =new EjecutandoTransferencias(b, i, 2000);
+            
+            Thread t = new Thread(r); 
+            /*
+            hora creo una instancia perteneciente a la clase Thread
+            y cuendo la creamos, le pasamos como parametros el objeto 
+            de tipo transferencias
+            */
+            t.start();
         }
     }
     
