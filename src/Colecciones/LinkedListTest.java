@@ -23,6 +23,10 @@ public class LinkedListTest {
         
         ListIterator<String> it = personas.listIterator();
         
+        it.next();
+        
+        it.add("Germán");
+        
         for (String persona : personas) {
             
             System.out.println(persona);
