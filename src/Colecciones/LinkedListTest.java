@@ -1,6 +1,7 @@
 package Colecciones;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 /**
  *
@@ -19,6 +20,8 @@ public class LinkedListTest {
         personas.add("Pedro");
         
         System.out.println(personas.size());
+        
+        ListIterator<String> it = personas.listIterator();
         
         for (String persona : personas) {
             
