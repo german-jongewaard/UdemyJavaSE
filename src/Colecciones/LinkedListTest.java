@@ -20,6 +20,12 @@ public class LinkedListTest {
         
         System.out.println(personas.size());
         
+        for (String persona : personas) {
+            
+            System.out.println(persona);
+            
+        }
+        
     }
     
 }
