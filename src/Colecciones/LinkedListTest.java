@@ -18,6 +18,8 @@ public class LinkedListTest {
         personas.add("Sara");
         personas.add("Pedro");
         
+        System.out.println(personas.size());
+        
     }
     
 }
