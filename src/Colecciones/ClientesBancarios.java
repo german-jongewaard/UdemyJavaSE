@@ -26,10 +26,40 @@ public class ClientesBancarios {
         clientesDelBanco.add(cliente4);
         clientesDelBanco.add(cliente5);
         
+      /*  
+        for (Cliente cliente : clientesDelBanco) {
+            if(cliente.getNombre().equals("Ana Martín")){
+                clientesDelBanco.remove(cliente);
+            }
+        
+        }
+        
+        
         for (Cliente cliente : clientesDelBanco) {
             
             System.out.println(cliente.getNombre() + " " + cliente.getnCuenta() 
                     + " " + cliente.getSaldo());            
-        }        
+        } 
+        
+         */
+        //Construcción de un iterador
+        Iterator<Cliente> it = clientesDelBanco.iterator();
+        
+        while (it.hasNext()) {
+            
+            String nombreCliente = it.next().getNombre();
+            
+            if(nombreCliente.equals("Ana Martín")) it.remove();
+            
+         }
+       
+        
+        for (Cliente cliente : clientesDelBanco) {
+            
+            System.out.println(cliente.getNombre() + " " + cliente.getnCuenta() 
+                    + " " + cliente.getSaldo());            
+        } 
+        
+        
     }    
 }
