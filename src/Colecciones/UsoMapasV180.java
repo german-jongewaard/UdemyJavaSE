@@ -1,6 +1,7 @@
 package Colecciones;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -32,6 +33,16 @@ public class UsoMapasV180 {
         listaEmpleados.put("103", new Empleado("Ana"));
         
         System.err.println(listaEmpleados);
+        
+        for(Map.Entry<String, Empleado> personaEmpleado : listaEmpleados.entrySet()){
+            
+            String clave = personaEmpleado.getKey();
+            
+            Empleado valor = personaEmpleado.getValue();
+            
+            System.err.println("Clave " + clave + " Valor " + valor);
+            
+        }
 
         
     }    
