@@ -43,8 +43,6 @@ public class UsoMapasV180 {
             System.err.println("Clave " + clave + " Valor " + valor);
             
         }
-
-        
     }    
 }
 
@@ -59,8 +57,6 @@ class Empleado{
     public String toString() {
         return "Epmpleado{" + "nombre=" + nombre + ", salario=" + salario + '}';
     } 
-      
-    
     
     private String nombre;
     private double salario;
